@@ -1,0 +1,7 @@
+Library/
+obj/
+Temp/
+Assembly-CSharp-Editor.csproj
+.vscode/settings.json
+UGUI_Extention.sln
+Assembly-CSharp.csproj
