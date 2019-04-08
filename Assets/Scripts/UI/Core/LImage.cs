@@ -34,9 +34,12 @@ namespace UnityEngine.UI
         [SerializeField]
         private ShapeAnchors m_ShapeAnchors = ShapeAnchors.Center; // 裁剪锚点
         public ShapeAnchors shapeAnchorsType { get { return m_ShapeAnchors; } set { if (SetPropertyUtility.SetStruct(ref m_ShapeAnchors, value)) SetVerticesDirty(); } }
+        [VectorRange(-1f, 1f, -1f, 1f, true), SerializeField]
+        private Vector2 m_ShapeAnchorsOffSet = Vector2.zero; // 锚点偏移
+        public Vector2 shapeAnchorsOffSet { get { return m_ShapeAnchorsOffSet; } set { if (SetPropertyUtility.SetStruct(ref m_ShapeAnchorsOffSet, value)) SetVerticesDirty(); } }
         [SerializeField]
         private bool m_ShapeAnchorsCalPadding = false; // 裁剪锚点是否计算padding
-        [Range(0f, 1f), SerializeField]        
+        [Range(0f, 1f), SerializeField]
         private float m_ShapeScale = 1f; // 裁剪缩放
         public float shapeScale { get { return m_ShapeScale; } set { if (SetPropertyUtility.SetStruct(ref m_ShapeScale, value)) SetVerticesDirty(); } }
         [Range(1f, 50f), SerializeField]
@@ -55,7 +58,7 @@ namespace UnityEngine.UI
             var size = activeSprite == null ? Vector2.zero : new Vector2(activeSprite.rect.width, activeSprite.rect.height);
 
             Rect r = GetPixelAdjustedRect();
-            // Debug.Log(string.Format("r:{2}, size:{0}, padding:{1}", size, padding, r));
+            Debug.Log(string.Format("r:{2}, size:{0}, padding:{1}", size, padding, r));
 
             int spriteW = Mathf.RoundToInt(size.x);
             int spriteH = Mathf.RoundToInt(size.y);
@@ -132,8 +135,8 @@ namespace UnityEngine.UI
             }
             float tw = activeSprite.texture.width;
             float th = activeSprite.texture.height;
-            float s = tw/th;
-            float dx = (uv.z - uv.x)*s;
+            float s = tw / th;
+            float dx = (uv.z - uv.x) * s;
             float dy = (uv.w - uv.y);
             float d = dx - dy;//d>0 宽大于高，d<0 高大于宽
             if (d < 0)
@@ -156,12 +159,12 @@ namespace UnityEngine.UI
             {
                 if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.Bottom)
                 {
-                    uv.x += d/2;
-                    uv.z -= d/2; 
+                    uv.x += d / 2;
+                    uv.z -= d / 2;
                 }
                 else if (shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.BottomLeft)
                 {
-                    uv.z -= d; 
+                    uv.z -= d;
                 }
                 else if (shapeAnchorsType == ShapeAnchors.Right || shapeAnchorsType == ShapeAnchors.TopRight || shapeAnchorsType == ShapeAnchors.BottomRight)
                 {
@@ -170,44 +173,55 @@ namespace UnityEngine.UI
             }
             return uv;
         }
-
-        Vector4 SetShapeScale(Vector4 uv){
+        Vector4 SetShapeAnchorsOffset(Vector4 uv)
+        {
+            var dw = uv.z - uv.x;
+            var dh = uv.w - uv.y;
+            uv.x += dw * m_ShapeAnchorsOffSet.x;
+            uv.z += dw * m_ShapeAnchorsOffSet.x;
+            uv.y += dh * m_ShapeAnchorsOffSet.y;
+            uv.w += dh * m_ShapeAnchorsOffSet.y;
+            return uv;
+        }
+        Vector4 SetShapeScale(Vector4 uv)
+        {
             if (activeSprite == null)
             {
                 return uv;
             }
-            float scale = 1-m_ShapeScale;
-            float dx = (uv.z - uv.x)*scale;
-            float dy = (uv.w - uv.y)*scale;
+            float scale = 1 - m_ShapeScale;
+            float dx = (uv.z - uv.x) * scale;
+            float dy = (uv.w - uv.y) * scale;
             if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.Bottom)
             {
-                uv.x += dx*0.5f;
-                uv.z -= dx*0.5f;
+                uv.x += dx * 0.5f;
+                uv.z -= dx * 0.5f;
             }
             if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.Right)
             {
-                uv.y += dy*0.5f;
-                uv.w -= dy*0.5f;
+                uv.y += dy * 0.5f;
+                uv.w -= dy * 0.5f;
             }
-            if (shapeAnchorsType == ShapeAnchors.Bottom ||shapeAnchorsType == ShapeAnchors.BottomLeft ||shapeAnchorsType == ShapeAnchors.BottomRight)
+            if (shapeAnchorsType == ShapeAnchors.Bottom || shapeAnchorsType == ShapeAnchors.BottomLeft || shapeAnchorsType == ShapeAnchors.BottomRight)
             {
                 uv.w -= dy;
             }
-            if (shapeAnchorsType == ShapeAnchors.Top ||shapeAnchorsType == ShapeAnchors.TopLeft ||shapeAnchorsType == ShapeAnchors.TopRight)
+            if (shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.TopRight)
             {
                 uv.y += dy;
             }
-            if (shapeAnchorsType == ShapeAnchors.Left ||shapeAnchorsType == ShapeAnchors.TopLeft ||shapeAnchorsType == ShapeAnchors.BottomLeft)
+            if (shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.BottomLeft)
             {
                 uv.z -= dx;
             }
-            if (shapeAnchorsType == ShapeAnchors.Right ||shapeAnchorsType == ShapeAnchors.TopRight ||shapeAnchorsType == ShapeAnchors.BottomRight)
+            if (shapeAnchorsType == ShapeAnchors.Right || shapeAnchorsType == ShapeAnchors.TopRight || shapeAnchorsType == ShapeAnchors.BottomRight)
             {
                 uv.x += dx;
             }
             return uv;
         }
-        Vector4 IncludePaddingUV(Vector4 uv){
+        Vector4 IncludePaddingUV(Vector4 uv)
+        {
             if (activeSprite == null)
             {
                 return uv;
@@ -217,37 +231,41 @@ namespace UnityEngine.UI
             float width = activeSprite.rect.width;
             float height = activeSprite.rect.height;
             float odx = old_uv.z - old_uv.x;
-            float ody = (old_uv.w - old_uv.y);
-            float px = padding.x/width * odx;
-            float pz = padding.z/width * odx;
-            float pw = padding.w/height * ody;
-            float py = padding.y/height * ody;
+            float ody = old_uv.w - old_uv.y;
+            float px = padding.x / width * odx;
+            float pz = padding.z / width * odx;
+            float pw = padding.w / height * ody;
+            float py = padding.y / height * ody;
             if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.Bottom)
             {
-                uv.x += (pz-px)/2;
-                uv.z += (pz-px)/2;
+                uv.x += (pz - px) / 2;
+                uv.z += (pz - px) / 2;
             }
             if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.Right)
             {
-                uv.y += (py-pw)/2;
-                uv.w += (py-pw)/2;
+                uv.y += (py - pw) / 2;
+                uv.w += (py - pw) / 2;
             }
-            // if (shapeAnchorsType == ShapeAnchors.Bottom ||shapeAnchorsType == ShapeAnchors.BottomLeft ||shapeAnchorsType == ShapeAnchors.BottomRight)
-            // {
-            //     uv.w -= dy;
-            // }
-            // if (shapeAnchorsType == ShapeAnchors.Top ||shapeAnchorsType == ShapeAnchors.TopLeft ||shapeAnchorsType == ShapeAnchors.TopRight)
-            // {
-            //     uv.y += dy;
-            // }
-            // if (shapeAnchorsType == ShapeAnchors.Left ||shapeAnchorsType == ShapeAnchors.TopLeft ||shapeAnchorsType == ShapeAnchors.BottomLeft)
-            // {
-            //     uv.z -= dx;
-            // }
-            // if (shapeAnchorsType == ShapeAnchors.Right ||shapeAnchorsType == ShapeAnchors.TopRight ||shapeAnchorsType == ShapeAnchors.BottomRight)
-            // {
-            //     uv.x += dx;
-            // }
+            if (shapeAnchorsType == ShapeAnchors.Bottom || shapeAnchorsType == ShapeAnchors.BottomLeft || shapeAnchorsType == ShapeAnchors.BottomRight)
+            {
+                uv.y -= pw;
+                uv.w -= pw;
+            }
+            if (shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.TopRight)
+            {
+                uv.y += py;
+                uv.w += py;
+            }
+            if (shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.BottomLeft)
+            {
+                uv.z -= px;
+                uv.x -= px;
+            }
+            if (shapeAnchorsType == ShapeAnchors.Right || shapeAnchorsType == ShapeAnchors.TopRight || shapeAnchorsType == ShapeAnchors.BottomRight)
+            {
+                uv.z += pz;
+                uv.x += pz;
+            }
             return uv;
         }
         #endregion
@@ -257,7 +275,6 @@ namespace UnityEngine.UI
         /// </summary>
         void GenerateSimpleSprite(VertexHelper vh, bool lPreserveAspect)
         {
-            Vector4 v = GetDrawingDimensions(lPreserveAspect);
             var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
             var color32 = color;
             vh.Clear();
@@ -266,6 +283,7 @@ namespace UnityEngine.UI
             {
                 uv = SetShapeAnchors(uv);
                 uv = SetShapeScale(uv);
+                uv = SetShapeAnchorsOffset(uv);
                 if (m_ShapeAnchorsCalPadding)
                 {
                     uv = IncludePaddingUV(uv);
@@ -323,27 +341,30 @@ namespace UnityEngine.UI
             {
                 uv = SetShapeAnchors(uv);
                 uv = SetShapeScale(uv);
+                uv = SetShapeAnchorsOffset(uv);
                 if (m_ShapeAnchorsCalPadding)
                 {
                     uv = IncludePaddingUV(uv);
                 }
-                //需要去掉padding
+                //不计算padding
                 Rect r = GetPixelAdjustedRect();
-                v.y = r.y;
-                v.w = r.y + r.height;
-                v.x = r.x;
-                v.z = r.x + r.width;
+                float v_y = r.y;
+                float v_w = r.y + r.height;
+                float v_x = r.x;
+                float v_z = r.x + r.width;
 
-                vh.AddVert(new Vector3(v.x, v.y), color32, new Vector2(uv.x, uv.y));
-                vh.AddVert(new Vector3(v.x, v.w), color32, new Vector2(uv.x, uv.w));
-                vh.AddVert(new Vector3(v.z, v.w), color32, new Vector2(uv.z, uv.w));
-                vh.AddVert(new Vector3(v.z, v.y), color32, new Vector2(uv.z, uv.y));
+                vh.AddVert(new Vector3(v_x, v_y), color32, new Vector2(uv.x, uv.y));
+                vh.AddVert(new Vector3(v_x, v_w), color32, new Vector2(uv.x, uv.w));
+                vh.AddVert(new Vector3(v_z, v_w), color32, new Vector2(uv.z, uv.w));
+                vh.AddVert(new Vector3(v_z, v_y), color32, new Vector2(uv.z, uv.y));
 
                 vh.AddTriangle(0, 1, 2);
                 vh.AddTriangle(2, 3, 0);
             }
             else
             {
+                Vector4 v = GetDrawingDimensions(lPreserveAspect);
+
                 vh.AddVert(new Vector3(v.x, v.y), color32, new Vector2(uv.x, uv.y));
                 vh.AddVert(new Vector3(v.x, v.w), color32, new Vector2(uv.x, uv.w));
                 vh.AddVert(new Vector3(v.z, v.w), color32, new Vector2(uv.z, uv.w));

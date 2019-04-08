@@ -175,8 +175,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
-  m_ShapeAnchors: 0
+  m_ShapeType: 2
+  m_ShapeAnchors: 1
   m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
@@ -252,7 +252,7 @@ MonoBehaviour:
   m_ShapeType: 2
   m_ShapeAnchors: 1
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 0.608
+  m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &49239526
@@ -540,7 +540,7 @@ MonoBehaviour:
   m_ShapeType: 2
   m_ShapeAnchors: 1
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 0.735
+  m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &360665920
@@ -784,7 +784,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 100, y: 100}
+  m_SizeDelta: {x: 108.71, y: 98.94}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629310775
 MonoBehaviour:
@@ -1098,8 +1098,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 6
+  m_ShapeType: 1
+  m_ShapeAnchors: 1
   m_ShapeAnchorsCalPadding: 0
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
@@ -1549,8 +1549,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 6
+  m_ShapeType: 1
+  m_ShapeAnchors: 1
   m_ShapeAnchorsCalPadding: 0
   m_ShapeScale: 1
   m_CircleShape_Segements: 25

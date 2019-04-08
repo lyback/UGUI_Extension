@@ -29,6 +29,7 @@ namespace UnityEditor.UI
         SerializedProperty m_ShapeType;
         GUIContent m_ShapeTypeContent;
         SerializedProperty m_ShapeAnchors;
+        SerializedProperty m_ShapeAnchorsOffSet;
         SerializedProperty m_ShapeAnchorsCalPadding;
         SerializedProperty m_ShapeScale;
         SerializedProperty m_CircleShape_Segements;
@@ -54,6 +55,7 @@ namespace UnityEditor.UI
 
             m_ShapeType = serializedObject.FindProperty("m_ShapeType");
             m_ShapeAnchors = serializedObject.FindProperty("m_ShapeAnchors");
+            m_ShapeAnchorsOffSet = serializedObject.FindProperty("m_ShapeAnchorsOffSet");
             m_ShapeAnchorsCalPadding = serializedObject.FindProperty("m_ShapeAnchorsCalPadding");
             m_ShapeScale = serializedObject.FindProperty("m_ShapeScale");
             m_CircleShape_Segements = serializedObject.FindProperty("m_CircleShape_Segements");
@@ -125,7 +127,7 @@ namespace UnityEditor.UI
             EditorGUILayout.PropertyField(m_ShapeType, m_ShapeTypeContent);
 
             LImage.ShapeType typeEnum = (LImage.ShapeType)m_ShapeType.enumValueIndex;
-            LImage image = target as LImage;
+            // LImage image = target as LImage;
 
             ++EditorGUI.indentLevel;
             {
@@ -136,11 +138,12 @@ namespace UnityEditor.UI
                 if (EditorGUILayout.BeginFadeGroup(m_ShowCommonShapeType.faded))
                 {
                     EditorGUILayout.PropertyField(m_ShapeAnchors);
+                    EditorGUILayout.PropertyField(m_ShapeAnchorsOffSet);
                     EditorGUILayout.PropertyField(m_ShapeAnchorsCalPadding);
-                    // if (m_ShapeAnchorsCalPadding.boolValue && ((Sprite)m_Sprite.objectReferenceValue).packed)
-                    // {
-                    //     EditorGUILayout.HelpBox("计算Padding可能会截取到图集中其他像素，", MessageType.Warning);
-                    // }
+                    if (m_ShapeAnchorsCalPadding.boolValue && ((Sprite)m_Sprite.objectReferenceValue).packed)
+                    {
+                        EditorGUILayout.HelpBox("计算Padding可能会截取到图集中其他像素，", MessageType.Warning);
+                    }
                     EditorGUILayout.PropertyField(m_ShapeScale);
                 }
                 EditorGUILayout.EndFadeGroup();
