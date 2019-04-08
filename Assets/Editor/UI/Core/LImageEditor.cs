@@ -137,9 +137,9 @@ namespace UnityEditor.UI
 
                 if (EditorGUILayout.BeginFadeGroup(m_ShowCommonShapeType.faded))
                 {
-                    EditorGUILayout.PropertyField(m_ShapeAnchors);
-                    EditorGUILayout.PropertyField(m_ShapeAnchorsOffSet);
-                    EditorGUILayout.PropertyField(m_ShapeAnchorsCalPadding);
+                    EditorGUILayout.PropertyField(m_ShapeAnchors,new GUIContent("Anchors"));
+                    EditorGUILayout.PropertyField(m_ShapeAnchorsOffSet,new GUIContent("OffSet"));
+                    EditorGUILayout.PropertyField(m_ShapeAnchorsCalPadding,new GUIContent("IncludePadding"));
                     if (m_ShapeAnchorsCalPadding.boolValue && ((Sprite)m_Sprite.objectReferenceValue).packed)
                     {
                         EditorGUILayout.HelpBox("计算Padding可能会截取到图集中其他像素，", MessageType.Warning);

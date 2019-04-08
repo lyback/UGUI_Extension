@@ -167,7 +167,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a7ad5dfe3eabb114789a04ff6c32717d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: cf422e3f35b3f21469412f4f1f1542d0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -175,8 +175,9 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 1
+  m_ShapeType: 1
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
@@ -241,7 +242,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7e5aa4f11d69faa4e81e2524e3c1b0ba, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e31bbd0386bb51e43ba8c876f11cfff8, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -249,9 +250,10 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 1
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeType: 1
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
@@ -315,7 +317,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: cb727c9c9e9a1de469296e7407ce134d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: eddf5e04c01c41c42bc61e481e52020d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -323,9 +325,10 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 6
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeType: 1
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
@@ -529,7 +532,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: a93b42512ca06434bb15d5662aa88d6c, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 689ce7a2b2cafd6469abf3c861e53322, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -539,6 +542,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
@@ -731,7 +735,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d10bb9656a8b1b945979acb54b318c1a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: e59c6045f20c85849b7d1ddf21e1078e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -739,10 +743,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.9
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &496394757
@@ -784,7 +789,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 108.71, y: 98.94}
+  m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &629310775
 MonoBehaviour:
@@ -805,7 +810,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 7f70d824a0c81f54b87f89a161d0d513, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7bc9540ec525e194a8ee22ef97f5cd93, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -815,7 +820,8 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_ShapeType: 1
   m_ShapeAnchors: 0
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
@@ -942,7 +948,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 278bd90f1f301f54fbbaf4a119ee4727, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d498bf33240df4d4fa4ff52e06c13d8e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -950,9 +956,10 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 2
-  m_ShapeAnchors: 6
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeType: 1
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
@@ -1016,7 +1023,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d42ffc9524f6b8b41b8a21f141eeded0, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 506b5ba783c34a6489a84251a694831c, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1024,10 +1031,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.4
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &944158042
@@ -1090,7 +1098,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: d52123eaf43ae564cb840f9b49d629b6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 151ec6fd511b2c74184d56a9fcd0ad82, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1099,8 +1107,9 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_ShapeType: 1
-  m_ShapeAnchors: 1
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
@@ -1164,7 +1173,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 3f29606e0c338b94fb665c588b09db47, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 0fc53a238397b3449aa5b48f792d258f, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1172,10 +1181,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.7
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &1133068443
@@ -1238,7 +1248,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: c42e4f262b6a3a54ba433f5b710f9cb5, type: 3}
+  m_Sprite: {fileID: 21300000, guid: df4637e4ee73d2f4cb2b8d859fa7c88d, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1246,10 +1256,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.8
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &1323870646
@@ -1312,7 +1323,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 09205006c0425114383186ac9d3a35c3, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4f1a2aa789b1ae54f86b24958df2d733, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1320,10 +1331,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.6
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &1434170193
@@ -1386,7 +1398,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: f7f29273912c698459a75b222d948bf6, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 2b74fc38a9000f04da375f272e52fece, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1394,10 +1406,11 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
-  m_ShapeType: 1
+  m_ShapeType: 2
   m_ShapeAnchors: 1
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
   m_ShapeAnchorsCalPadding: 0
-  m_ShapeScale: 1
+  m_ShapeScale: 0.5
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
 --- !u!222 &1477535638
@@ -1541,7 +1554,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 5b364238f7cbc5a4da78885d874a3843, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d0af889efdff793468eacaf56ab3e8a5, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -1550,8 +1563,9 @@ MonoBehaviour:
   m_FillClockwise: 1
   m_FillOrigin: 0
   m_ShapeType: 1
-  m_ShapeAnchors: 1
-  m_ShapeAnchorsCalPadding: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 1
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
