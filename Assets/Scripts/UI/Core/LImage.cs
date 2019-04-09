@@ -9,7 +9,7 @@ namespace UnityEngine.UI
 {
     public class LImage : Image
     {
-        #region 异形裁剪
+        #region shape属性
         public enum ShapeType
         {
             None,
@@ -49,16 +49,20 @@ namespace UnityEngine.UI
         float m_CircleShape_FillPercent = 1f; // 显示比例
         public float circleShape_FillPercent { get { return m_CircleShape_FillPercent; } set { if (SetPropertyUtility.SetStruct(ref m_CircleShape_FillPercent, value)) SetVerticesDirty(); } }
         #endregion
-        private Sprite activeSprite { get { return overrideSprite != null ? overrideSprite : sprite; } }
-
+        #region PolyImage属性
+        [SerializeField]
+        private bool m_UsePolyMesh = false;
+        public bool usePolyMesh { get { return m_UsePolyMesh; } set { if (SetPropertyUtility.SetStruct(ref m_UsePolyMesh, value)) SetVerticesDirty(); } }
+        #endregion
         /// Image's dimensions used for drawing. X = left, Y = bottom, Z = right, W = top.
         private Vector4 GetDrawingDimensions(bool shouldPreserveAspect)
         {
+            var activeSprite = this.overrideSprite;
             var padding = activeSprite == null ? Vector4.zero : Sprites.DataUtility.GetPadding(activeSprite);
             var size = activeSprite == null ? Vector2.zero : new Vector2(activeSprite.rect.width, activeSprite.rect.height);
 
             Rect r = GetPixelAdjustedRect();
-            Debug.Log(string.Format("r:{2}, size:{0}, padding:{1}", size, padding, r));
+            // Debug.Log(string.Format("r:{2}, size:{0}, padding:{1}", size, padding, r));
 
             int spriteW = Mathf.RoundToInt(size.x);
             int spriteH = Mathf.RoundToInt(size.y);
@@ -102,7 +106,7 @@ namespace UnityEngine.UI
         /// </summary>
         protected override void OnPopulateMesh(VertexHelper toFill)
         {
-            if (activeSprite == null)
+            if (overrideSprite == null)
             {
                 base.OnPopulateMesh(toFill);
                 return;
@@ -110,10 +114,26 @@ namespace UnityEngine.UI
             switch (type)
             {
                 case Type.Simple:
-                    GenerateSimpleSprite(toFill, preserveAspect);
+                    if (m_UsePolyMesh)
+                        GenerateSimplePolySprite(toFill, preserveAspect);
+                    else
+                        if (m_ShapeType == ShapeType.Circle)
+                        {
+                            GenerateSimpleCircleSprite(toFill, preserveAspect);
+                        }
+                        else if (m_ShapeType == ShapeType.Square)
+                        {
+                            GenerateSimpleSquareSprite(toFill, preserveAspect);
+                        }
+                        else{
+                            GenerateSimpleSprite(toFill, preserveAspect);
+                        }
                     break;
                 case Type.Sliced:
-                    GenerateSlicedSprite(toFill);
+                    if (m_UsePolyMesh)
+                        GenerateSlicedPolySprite(toFill);
+                    else
+                        GenerateSlicedSprite(toFill);
                     break;
                 case Type.Tiled:
                     GenerateTiledSprite(toFill);
@@ -123,12 +143,139 @@ namespace UnityEngine.UI
                     break;
             }
         }
-        #region shape自定义
+        #region PolyImage绘制方法
+        void GenerateSimplePolySprite(VertexHelper vh, bool lPreserveAspect)
+        {
+            vh.Clear();
+            Vector4 v = GetDrawingDimensions(lPreserveAspect);
+            Vector4 uv = Sprites.DataUtility.GetOuterUV(overrideSprite);
+            Color color32 = color;
+            Vector2[] uvs = overrideSprite.uv;
+            float invU = 1 / (uv.z - uv.x);
+            float invV = 1 / (uv.w - uv.y);
+            for (int i = 0; i < uvs.Length; i++)
+            {
+                float u2 = invU * (uvs[i].x - uv.x);
+                float v2 = invV * (uvs[i].y - uv.y);
+                float x = u2 * (v.z - v.x) + v.x;
+                float y = v2 * (v.w - v.y) + v.y;
+                vh.AddVert(new Vector2(x, y), color32, uvs[i]);
+            }
+
+            ushort[] triangles = overrideSprite.triangles;
+            for (int i = 0; i < triangles.Length; i += 3)
+            {
+                vh.AddTriangle(triangles[i], triangles[i + 1], triangles[i + 2]);
+            }
+        }
+        private void GenerateSlicedPolySprite(VertexHelper vh)
+        {
+            if (!hasBorder)
+            {
+                GenerateSimplePolySprite(vh, false);
+                return;
+            }
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color32 = color;
+            Vector4 outer, inner, padding, border;
+            if (activeSprite != null)
+            {
+                outer = Sprites.DataUtility.GetOuterUV(activeSprite);
+                inner = Sprites.DataUtility.GetInnerUV(activeSprite);
+                padding = Sprites.DataUtility.GetPadding(activeSprite);
+                border = activeSprite.border;
+            }
+            else
+            {
+                outer = Vector4.zero;
+                inner = Vector4.zero;
+                padding = Vector4.zero;
+                border = Vector4.zero;
+            }
+
+            Rect rect = GetPixelAdjustedRect();
+            float _pixelsPerUnit = pixelsPerUnit;
+            Vector4 adjustedBorders = GetAdjustedBorders(border / _pixelsPerUnit, rect);
+            padding = padding / _pixelsPerUnit;
+
+            s_VertScratch[0] = new Vector2(padding.x, padding.y);
+            s_VertScratch[3] = new Vector2(rect.width - padding.z, rect.height - padding.w);
+
+            s_VertScratch[1].x = adjustedBorders.x;
+            s_VertScratch[1].y = adjustedBorders.y;
+
+            s_VertScratch[2].x = rect.width - adjustedBorders.z;
+            s_VertScratch[2].y = rect.height - adjustedBorders.w;
+
+            for (int i = 0; i < 4; ++i)
+            {
+                s_VertScratch[i].x += rect.x;
+                s_VertScratch[i].y += rect.y;
+            }
+
+            s_UVScratch[0] = new Vector2(outer.x, outer.y);
+            s_UVScratch[1] = new Vector2(inner.x, inner.y);
+            s_UVScratch[2] = new Vector2(inner.z, inner.w);
+            s_UVScratch[3] = new Vector2(outer.z, outer.w);
+
+            vh.Clear();
+
+            List<Vector2> uvs = new List<Vector2>(activeSprite.uv);
+            List<ushort> triangles = new List<ushort>(activeSprite.triangles);
+
+            var splitedTriangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), Mathf.PI / 2);
+            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), Mathf.PI / 2);
+            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.x, inner.y), 0);
+            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), 0);
+
+            for (int i = 0; i < uvs.Count; i++)
+            {
+                int x = XSlot(uvs[i].x);
+                int y = YSlot(uvs[i].y);
+
+                float kX = (uvs[i].x - s_UVScratch[x].x) / (s_UVScratch[x + 1].x - s_UVScratch[x].x);
+                float kY = (uvs[i].y - s_UVScratch[y].y) / (s_UVScratch[y + 1].y - s_UVScratch[y].y);
+
+                Vector2 pos = new Vector2(kX * (s_VertScratch[x + 1].x - s_VertScratch[x].x) + s_VertScratch[x].x,
+                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y);
+
+                vh.AddVert(pos, color32, uvs[i]);
+            }
+
+            for (int i = 0; i < splitedTriangles.Count; i += 3)
+            {
+                int x = XSlot(uvs[splitedTriangles[i + 0]].x);
+                int y = YSlot(uvs[splitedTriangles[i + 0]].y);
+                if (x == 1 && y == 1 && !fillCenter) continue;
+                vh.AddTriangle(splitedTriangles[i + 0], splitedTriangles[i + 1], splitedTriangles[i + 2]);
+            }
+        }
+        private static int XSlot(float x)
+        {
+            for (int idx = 0; idx < 3; idx++)
+            {
+                if (s_UVScratch[idx].x < s_UVScratch[idx + 1].x && x <= s_UVScratch[idx + 1].x)
+                    return idx;
+            }
+            return 2;
+        }
+        private static int YSlot(float y)
+        {
+            for (int idx = 0; idx < 3; idx++)
+            {
+                if (s_UVScratch[idx].y < s_UVScratch[idx + 1].y && y <= s_UVScratch[idx + 1].y)
+                    return idx;
+            }
+            return 2;
+        }
+        #endregion
+        #region shape绘制方法
         /// <summary>
         /// shape锚点设置.
         /// </summary>
         Vector4 SetShapeAnchors(Vector4 uv)
         {
+            Sprite activeSprite = this.overrideSprite;
             if (activeSprite == null)
             {
                 return uv;
@@ -185,6 +332,7 @@ namespace UnityEngine.UI
         }
         Vector4 SetShapeScale(Vector4 uv)
         {
+            Sprite activeSprite = this.overrideSprite;
             if (activeSprite == null)
             {
                 return uv;
@@ -222,6 +370,7 @@ namespace UnityEngine.UI
         }
         Vector4 IncludePaddingUV(Vector4 uv)
         {
+            Sprite activeSprite = this.overrideSprite;
             if (activeSprite == null)
             {
                 return uv;
@@ -268,120 +417,129 @@ namespace UnityEngine.UI
             }
             return uv;
         }
+        /// <summary>
+        /// 绘制圆形图片
+        /// </summary>
+        void GenerateSimpleCircleSprite(VertexHelper vh, bool lPreserveAspect)
+        {
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color = this.color;
+            vh.Clear();
+            var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
+            uv = SetShapeAnchors(uv);
+            uv = SetShapeScale(uv);
+            uv = SetShapeAnchorsOffset(uv);
+            if (m_ShapeAnchorsCalPadding)
+            {
+                uv = IncludePaddingUV(uv);
+            }
+
+            float tw = rectTransform.rect.width;
+            float th = rectTransform.rect.height;
+            float outerRadius = rectTransform.pivot.x * tw;
+            float uvCenterX = (uv.x + uv.z) * 0.5f;
+            float uvCenterY = (uv.y + uv.w) * 0.5f;
+            float uvScaleX = (uv.z - uv.x) / tw;
+            float uvScaleY = (uv.w - uv.y) / th;
+            float degreeDelta = 2 * Mathf.PI / circleShape_Segements;
+            int curSegements = (int)(circleShape_Segements * circleShape_FillPercent);
+
+            float curDegree = 0;
+            UIVertex uiVertex;
+            int verticeCount;
+            int triangleCount;
+            Vector2 curVertice;
+            curVertice = Vector2.zero;
+            verticeCount = curSegements + 1;
+            //圆心
+            uiVertex = new UIVertex();
+            uiVertex.color = color;
+            uiVertex.position = curVertice;
+            uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
+            vh.AddVert(uiVertex);
+            for (int i = 1; i < verticeCount; i++)
+            {
+                float cosA = Mathf.Cos(curDegree);
+                float sinA = Mathf.Sin(curDegree);
+                curVertice = new Vector2(cosA * outerRadius, sinA * outerRadius);
+                curDegree += degreeDelta;
+
+                uiVertex = new UIVertex();
+                uiVertex.color = color;
+                uiVertex.position = curVertice;
+                uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
+                vh.AddVert(uiVertex);
+            }
+            triangleCount = curSegements * 3;
+            for (int i = 0, vIdx = 1; i < triangleCount - 3; i += 3, vIdx++)
+            {
+                vh.AddTriangle(vIdx, 0, vIdx + 1);
+            }
+            if (circleShape_FillPercent == 1)
+            {
+                //首尾顶点相连
+                vh.AddTriangle(verticeCount - 1, 0, 1);
+            }
+        }
+        /// <summary>
+        /// 绘制方形图片
+        /// </summary>
+        void GenerateSimpleSquareSprite(VertexHelper vh, bool lPreserveAspect)
+        {
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color = this.color;
+            vh.Clear();
+            var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
+            uv = SetShapeAnchors(uv);
+            uv = SetShapeScale(uv);
+            uv = SetShapeAnchorsOffset(uv);
+            if (m_ShapeAnchorsCalPadding)
+            {
+                uv = IncludePaddingUV(uv);
+            }
+            //不计算padding
+            Rect r = GetPixelAdjustedRect();
+            float v_y = r.y;
+            float v_w = r.y + r.height;
+            float v_x = r.x;
+            float v_z = r.x + r.width;
+
+            vh.AddVert(new Vector3(v_x, v_y), color, new Vector2(uv.x, uv.y));
+            vh.AddVert(new Vector3(v_x, v_w), color, new Vector2(uv.x, uv.w));
+            vh.AddVert(new Vector3(v_z, v_w), color, new Vector2(uv.z, uv.w));
+            vh.AddVert(new Vector3(v_z, v_y), color, new Vector2(uv.z, uv.y));
+
+            vh.AddTriangle(0, 1, 2);
+            vh.AddTriangle(2, 3, 0);
+        }
         #endregion
-        #region 绘制图片方法
+        #region Image原版绘制图片方法
         /// <summary>
         /// Generate vertices for a simple Image.
         /// </summary>
         void GenerateSimpleSprite(VertexHelper vh, bool lPreserveAspect)
         {
-            var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
-            var color32 = color;
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color = this.color;//优化：避免每次都要Color转为Color32
             vh.Clear();
 
-            if (shapeType == ShapeType.Circle)
-            {
-                uv = SetShapeAnchors(uv);
-                uv = SetShapeScale(uv);
-                uv = SetShapeAnchorsOffset(uv);
-                if (m_ShapeAnchorsCalPadding)
-                {
-                    uv = IncludePaddingUV(uv);
-                }
+            var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
+            Vector4 v = GetDrawingDimensions(lPreserveAspect);
 
-                float tw = rectTransform.rect.width;
-                float th = rectTransform.rect.height;
-                float outerRadius = rectTransform.pivot.x * tw;
-                float uvCenterX = (uv.x + uv.z) * 0.5f;
-                float uvCenterY = (uv.y + uv.w) * 0.5f;
-                float uvScaleX = (uv.z - uv.x) / tw;
-                float uvScaleY = (uv.w - uv.y) / th;
-                float degreeDelta = 2 * Mathf.PI / circleShape_Segements;
-                int curSegements = (int)(circleShape_Segements * circleShape_FillPercent);
+            vh.AddVert(new Vector3(v.x, v.y), color, new Vector2(uv.x, uv.y));
+            vh.AddVert(new Vector3(v.x, v.w), color, new Vector2(uv.x, uv.w));
+            vh.AddVert(new Vector3(v.z, v.w), color, new Vector2(uv.z, uv.w));
+            vh.AddVert(new Vector3(v.z, v.y), color, new Vector2(uv.z, uv.y));
 
-                float curDegree = 0;
-                UIVertex uiVertex;
-                int verticeCount;
-                int triangleCount;
-                Vector2 curVertice;
-                curVertice = Vector2.zero;
-                verticeCount = curSegements + 1;
-                //圆心
-                uiVertex = new UIVertex();
-                uiVertex.color = color32;
-                uiVertex.position = curVertice;
-                uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
-                vh.AddVert(uiVertex);
-                for (int i = 1; i < verticeCount; i++)
-                {
-                    float cosA = Mathf.Cos(curDegree);
-                    float sinA = Mathf.Sin(curDegree);
-                    curVertice = new Vector2(cosA * outerRadius, sinA * outerRadius);
-                    curDegree += degreeDelta;
-
-                    uiVertex = new UIVertex();
-                    uiVertex.color = color;
-                    uiVertex.position = curVertice;
-                    uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
-                    vh.AddVert(uiVertex);
-                    //outterVertices.Add(curVertice);
-                }
-                triangleCount = curSegements * 3;
-                for (int i = 0, vIdx = 1; i < triangleCount - 3; i += 3, vIdx++)
-                {
-                    vh.AddTriangle(vIdx, 0, vIdx + 1);
-                }
-                if (circleShape_FillPercent == 1)
-                {
-                    //首尾顶点相连
-                    vh.AddTriangle(verticeCount - 1, 0, 1);
-                }
-            }
-            else if (shapeType == ShapeType.Square)
-            {
-                uv = SetShapeAnchors(uv);
-                uv = SetShapeScale(uv);
-                uv = SetShapeAnchorsOffset(uv);
-                if (m_ShapeAnchorsCalPadding)
-                {
-                    uv = IncludePaddingUV(uv);
-                }
-                //不计算padding
-                Rect r = GetPixelAdjustedRect();
-                float v_y = r.y;
-                float v_w = r.y + r.height;
-                float v_x = r.x;
-                float v_z = r.x + r.width;
-
-                vh.AddVert(new Vector3(v_x, v_y), color32, new Vector2(uv.x, uv.y));
-                vh.AddVert(new Vector3(v_x, v_w), color32, new Vector2(uv.x, uv.w));
-                vh.AddVert(new Vector3(v_z, v_w), color32, new Vector2(uv.z, uv.w));
-                vh.AddVert(new Vector3(v_z, v_y), color32, new Vector2(uv.z, uv.y));
-
-                vh.AddTriangle(0, 1, 2);
-                vh.AddTriangle(2, 3, 0);
-            }
-            else
-            {
-                Vector4 v = GetDrawingDimensions(lPreserveAspect);
-
-                vh.AddVert(new Vector3(v.x, v.y), color32, new Vector2(uv.x, uv.y));
-                vh.AddVert(new Vector3(v.x, v.w), color32, new Vector2(uv.x, uv.w));
-                vh.AddVert(new Vector3(v.z, v.w), color32, new Vector2(uv.z, uv.w));
-                vh.AddVert(new Vector3(v.z, v.y), color32, new Vector2(uv.z, uv.y));
-
-                vh.AddTriangle(0, 1, 2);
-                vh.AddTriangle(2, 3, 0);
-            }
+            vh.AddTriangle(0, 1, 2);
+            vh.AddTriangle(2, 3, 0);
         }
 
         /// <summary>
         /// Generate vertices for a 9-sliced Image.
         /// </summary>
-
         static readonly Vector2[] s_VertScratch = new Vector2[4];
         static readonly Vector2[] s_UVScratch = new Vector2[4];
-
         private void GenerateSlicedSprite(VertexHelper toFill)
         {
             if (!hasBorder)
@@ -389,7 +547,8 @@ namespace UnityEngine.UI
                 GenerateSimpleSprite(toFill, false);
                 return;
             }
-
+            Color32 color = this.color;//优化：避免每次都要Color转为Color32
+            Sprite activeSprite = this.overrideSprite;
             Vector4 outer, inner, padding, border;
 
             if (activeSprite != null)
@@ -463,7 +622,8 @@ namespace UnityEngine.UI
         {
             Vector4 outer, inner, border;
             Vector2 spriteSize;
-
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color = this.color;//优化：避免每次都要Color转为Color32
             if (activeSprite != null)
             {
                 outer = Sprites.DataUtility.GetOuterUV(activeSprite);
@@ -771,6 +931,8 @@ namespace UnityEngine.UI
             if (fillAmount < 0.001f)
                 return;
 
+            Color32 color = this.color;//优化：避免每次都要Color转为Color32
+            Sprite activeSprite = this.overrideSprite;
             Vector4 v = GetDrawingDimensions(preserveAspect);
             Vector4 outer = activeSprite != null ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
             UIVertex uiv = UIVertex.simpleVert;

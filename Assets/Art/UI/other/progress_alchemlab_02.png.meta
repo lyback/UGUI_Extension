@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2b74fc38a9000f04da375f272e52fece
+guid: effa2923a3b169342b85ba2e3865e961
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -44,10 +44,10 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 12, y: 12, z: 12, w: 12}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
-  alphaIsTransparency: 0
+  alphaIsTransparency: 1
   spriteTessellationDetail: -1
   textureType: 8
   textureShape: 1
@@ -80,7 +80,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-  spritePackingTag: armyIcon
+  spritePackingTag: other
   userData: 
   assetBundleName: 
   assetBundleVariant: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: eddf5e04c01c41c42bc61e481e52020d
+guid: d498bf33240df4d4fa4ff52e06c13d8e
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -80,7 +80,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-  spritePackingTag: armyIcon
+  spritePackingTag: armyicon
   userData: 
   assetBundleName: 
   assetBundleVariant: 

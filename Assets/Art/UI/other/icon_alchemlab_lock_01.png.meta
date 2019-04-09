@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 0fc53a238397b3449aa5b48f792d258f
+guid: 385183dff598bf84ba05dc156eb0e400
 TextureImporter:
   fileIDToRecycleName: {}
   externalObjects: {}
@@ -44,7 +44,7 @@ TextureImporter:
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteBorder: {x: 21, y: 17, z: 22, w: 36}
   spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 0
@@ -80,7 +80,7 @@ TextureImporter:
     sprites: []
     outline: []
     physicsShape: []
-  spritePackingTag: armyIcon
+  spritePackingTag: other
   userData: 
   assetBundleName: 
   assetBundleVariant: 
