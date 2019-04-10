@@ -18,7 +18,7 @@ Unity Version：2017.4.23f1
 ![Image text](img-folder/LImage/LImageEditor_Cricle.png)
 
 
-2.Image多边形Mesh绘制。
+2.Image多边形Mesh绘制。  
 --|--|
 |Use Poly Mesh |是否开启多边形绘制模式，目前仅支持Simple和Sliced|  
 |Use Poly Raycast Target | 是否开启多边形碰撞检测|  
