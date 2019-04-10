@@ -19,8 +19,9 @@ Unity Version：2017.4.23f1
 
 
 2.Image多边形Mesh绘制。  
+|属性|描述|
 --|--|
-|Use Poly Mesh |是否开启多边形绘制模式，目前仅支持Simple和Sliced|  
-|Use Poly Raycast Target | 是否开启多边形碰撞检测|  
+|Use Poly Mesh |是否开启多边形绘制模式，目前仅支持Simple和Sliced |  
+|Use Poly Raycast Target | 是否开启多边形碰撞检测 |    
 
 ![Image text](img-folder/LImage/LImage_PolyMesh.png)
