@@ -50,6 +50,10 @@ namespace UnityEngine.UI
         public float circleShape_FillPercent { get { return m_CircleShape_FillPercent; } set { if (SetPropertyUtility.SetStruct(ref m_CircleShape_FillPercent, value)) SetVerticesDirty(); } }
         #endregion
         #region PolyImage属性
+        private Vector3[] m_PolyMeshVertices;
+        [SerializeField]
+        private bool m_UsePolyRaycastTarget = false;
+        public bool usePolyRaycastTarget { get { return m_UsePolyRaycastTarget; } set { if (SetPropertyUtility.SetStruct(ref m_UsePolyRaycastTarget, value)) SetVerticesDirty(); } }
         [SerializeField]
         private bool m_UsePolyMesh = false;
         public bool usePolyMesh { get { return m_UsePolyMesh; } set { if (SetPropertyUtility.SetStruct(ref m_UsePolyMesh, value)) SetVerticesDirty(); } }
@@ -106,6 +110,7 @@ namespace UnityEngine.UI
         /// </summary>
         protected override void OnPopulateMesh(VertexHelper toFill)
         {
+            m_PolyMeshVertices = null;
             if (overrideSprite == null)
             {
                 base.OnPopulateMesh(toFill);
@@ -118,16 +123,17 @@ namespace UnityEngine.UI
                         GenerateSimplePolySprite(toFill, preserveAspect);
                     else
                         if (m_ShapeType == ShapeType.Circle)
-                        {
-                            GenerateSimpleCircleSprite(toFill, preserveAspect);
-                        }
-                        else if (m_ShapeType == ShapeType.Square)
-                        {
-                            GenerateSimpleSquareSprite(toFill, preserveAspect);
-                        }
-                        else{
-                            GenerateSimpleSprite(toFill, preserveAspect);
-                        }
+                    {
+                        GenerateSimpleCircleSprite(toFill, preserveAspect);
+                    }
+                    else if (m_ShapeType == ShapeType.Square)
+                    {
+                        GenerateSimpleSquareSprite(toFill, preserveAspect);
+                    }
+                    else
+                    {
+                        GenerateSimpleSprite(toFill, preserveAspect);
+                    }
                     break;
                 case Type.Sliced:
                     if (m_UsePolyMesh)
@@ -149,17 +155,22 @@ namespace UnityEngine.UI
             vh.Clear();
             Vector4 v = GetDrawingDimensions(lPreserveAspect);
             Vector4 uv = Sprites.DataUtility.GetOuterUV(overrideSprite);
-            Color color32 = color;
+            Color32 color32 = color;
             Vector2[] uvs = overrideSprite.uv;
             float invU = 1 / (uv.z - uv.x);
             float invV = 1 / (uv.w - uv.y);
+            if (m_UsePolyRaycastTarget)
+                m_PolyMeshVertices = new Vector3[uvs.Length];
             for (int i = 0; i < uvs.Length; i++)
             {
                 float u2 = invU * (uvs[i].x - uv.x);
                 float v2 = invV * (uvs[i].y - uv.y);
                 float x = u2 * (v.z - v.x) + v.x;
                 float y = v2 * (v.w - v.y) + v.y;
-                vh.AddVert(new Vector2(x, y), color32, uvs[i]);
+                Vector3 vert = new Vector3(x,y,0f);
+                vh.AddVert(vert, color32, uvs[i]);
+                if (m_UsePolyRaycastTarget)
+                    m_PolyMeshVertices[i] = vert;
             }
 
             ushort[] triangles = overrideSprite.triangles;
@@ -227,7 +238,8 @@ namespace UnityEngine.UI
             splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), Mathf.PI / 2);
             splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.x, inner.y), 0);
             splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), 0);
-
+            if (m_UsePolyRaycastTarget)
+                m_PolyMeshVertices = new Vector3[uvs.Count];
             for (int i = 0; i < uvs.Count; i++)
             {
                 int x = XSlot(uvs[i].x);
@@ -236,10 +248,12 @@ namespace UnityEngine.UI
                 float kX = (uvs[i].x - s_UVScratch[x].x) / (s_UVScratch[x + 1].x - s_UVScratch[x].x);
                 float kY = (uvs[i].y - s_UVScratch[y].y) / (s_UVScratch[y + 1].y - s_UVScratch[y].y);
 
-                Vector2 pos = new Vector2(kX * (s_VertScratch[x + 1].x - s_VertScratch[x].x) + s_VertScratch[x].x,
-                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y);
+                Vector3 pos = new Vector3(kX * (s_VertScratch[x + 1].x - s_VertScratch[x].x) + s_VertScratch[x].x,
+                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y,0f);
 
                 vh.AddVert(pos, color32, uvs[i]);
+                if (m_UsePolyRaycastTarget)
+                    m_PolyMeshVertices[i] = pos;
             }
 
             for (int i = 0; i < splitedTriangles.Count; i += 3)
@@ -448,8 +462,7 @@ namespace UnityEngine.UI
             UIVertex uiVertex;
             int verticeCount;
             int triangleCount;
-            Vector2 curVertice;
-            curVertice = Vector2.zero;
+            Vector3 curVertice = Vector3.zero;
             verticeCount = curSegements + 1;
             //圆心
             uiVertex = new UIVertex();
@@ -461,7 +474,7 @@ namespace UnityEngine.UI
             {
                 float cosA = Mathf.Cos(curDegree);
                 float sinA = Mathf.Sin(curDegree);
-                curVertice = new Vector2(cosA * outerRadius, sinA * outerRadius);
+                curVertice = new Vector3(cosA * outerRadius, sinA * outerRadius);
                 curDegree += degreeDelta;
 
                 uiVertex = new UIVertex();
@@ -774,7 +787,8 @@ namespace UnityEngine.UI
                 }
                 if (hasBorder)
                 {
-                    clipped = uvMax;
+                    clipped = uvMax;                    
+                    // Left and right tiled border
                     for (long j = 0; j < nTilesH; j++)
                     {
                         float y1 = yMin + j * tileHeight;
@@ -798,8 +812,8 @@ namespace UnityEngine.UI
                             new Vector2(outer.z, clipped.y));
                     }
 
-                    // Bottom and top tiled border
                     clipped = uvMax;
+                    // Bottom and top tiled border
                     for (long i = 0; i < nTilesW; i++)
                     {
                         float x1 = xMin + i * tileWidth;
@@ -1230,6 +1244,62 @@ namespace UnityEngine.UI
             }
         }
         #endregion
+        #region 多边形碰撞检测
 
+        public override bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)
+        {
+            if (!m_UsePolyMesh||!m_UsePolyRaycastTarget)
+            {
+                return base.IsRaycastLocationValid(screenPoint, eventCamera);
+            }
+
+            Vector2 local;
+            RectTransformUtility.ScreenPointToLocalPointInRectangle(rectTransform, screenPoint, eventCamera, out local);
+
+            var triangles = overrideSprite.triangles;
+            for (var i = 0; i < triangles.Length; i += 3)
+            {
+                if (IsInTriangle(m_PolyMeshVertices[triangles[i]],
+                    m_PolyMeshVertices[triangles[i + 1]],
+                    m_PolyMeshVertices[triangles[i + 2]],
+                    local))
+                {
+                    return true;
+                }
+            }
+
+            return false;
+        }
+
+        // see more info at: http://oldking.wang/20ae1da0-d6d5-11e8-b3e6-29fe0b430026/
+        private static bool IsInTriangle(Vector2 A, Vector2 B, Vector2 C, Vector2 P)
+        {
+            var v0 = C - A;
+            var v1 = B - A;
+            var v2 = P - A;
+
+            var dot00 = Vector2.Dot(v0, v0);
+            var dot01 = Vector2.Dot(v0, v1);
+            var dot02 = Vector2.Dot(v0, v2);
+            var dot11 = Vector2.Dot(v1, v1);
+            var dot12 = Vector2.Dot(v1, v2);
+
+            var inverDeno = 1 / (dot00 * dot11 - dot01 * dot01);
+
+            var u = (dot11 * dot02 - dot01 * dot12) * inverDeno;
+            if (u < 0 || u > 1)
+            {
+                return false;
+            }
+
+            var v = (dot00 * dot12 - dot01 * dot02) * inverDeno;
+            if (v < 0 || v > 1)
+            {
+                return false;
+            }
+
+            return u + v <= 1;
+        }
+        #endregion
     }
 }

@@ -41,6 +41,9 @@ namespace UnityEditor.UI
         #endregion
         #region PolyImage属性
         SerializedProperty m_UsePolyMesh;
+        SerializedProperty m_UsePolyRaycastTarget;
+        AnimBool m_ShowUsePolyMesh;
+        AnimBool m_ShowUsePolyRaycastTarget;
         #endregion
         protected override void OnEnable()
         {
@@ -76,6 +79,11 @@ namespace UnityEditor.UI
             #endregion
             #region PolyImage
             m_UsePolyMesh = serializedObject.FindProperty("m_UsePolyMesh");
+            m_UsePolyRaycastTarget = serializedObject.FindProperty("m_UsePolyRaycastTarget");
+            m_ShowUsePolyMesh = new AnimBool();
+            m_ShowUsePolyMesh.valueChanged.AddListener(Repaint);
+            m_ShowUsePolyRaycastTarget = new AnimBool();
+            m_ShowUsePolyRaycastTarget.valueChanged.AddListener(Repaint);
             #endregion
         }
         protected override void OnDisable()
@@ -86,6 +94,10 @@ namespace UnityEditor.UI
             m_ShowCommonShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowSquareShape.valueChanged.RemoveListener(Repaint);
             m_ShowCircleShape.valueChanged.RemoveListener(Repaint);
+            #endregion
+            #region PolyImage
+            m_ShowUsePolyMesh.valueChanged.RemoveListener(Repaint);
+            m_ShowUsePolyRaycastTarget.valueChanged.RemoveListener(Repaint);
             #endregion
         }
 
@@ -112,11 +124,15 @@ namespace UnityEditor.UI
             EditorGUILayout.EndFadeGroup();
 
             #region PolyImage
-            EditorGUI.indentLevel++;
-            EditorGUILayout.PropertyField(m_UsePolyMesh);
-            EditorGUI.indentLevel--;
+            m_ShowUsePolyMesh.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex != Image.Type.Filled && (Image.Type)m_Type.enumValueIndex != Image.Type.Tiled;
+            if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyMesh.faded))
+            {
+                PolyImageGUI();
+            }
+            EditorGUILayout.EndFadeGroup();
+
             #endregion
-            
+
             #region Shape
             m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && !m_UsePolyMesh.boolValue && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
             if (EditorGUILayout.BeginFadeGroup(m_ShowShapeType.faded))
@@ -149,9 +165,9 @@ namespace UnityEditor.UI
 
                 if (EditorGUILayout.BeginFadeGroup(m_ShowCommonShapeType.faded))
                 {
-                    EditorGUILayout.PropertyField(m_ShapeAnchors,new GUIContent("Anchors"));
-                    EditorGUILayout.PropertyField(m_ShapeAnchorsOffSet,new GUIContent("OffSet"));
-                    EditorGUILayout.PropertyField(m_ShapeAnchorsCalPadding,new GUIContent("IncludePadding"));
+                    EditorGUILayout.PropertyField(m_ShapeAnchors, new GUIContent("Anchors"));
+                    EditorGUILayout.PropertyField(m_ShapeAnchorsOffSet, new GUIContent("OffSet"));
+                    EditorGUILayout.PropertyField(m_ShapeAnchorsCalPadding, new GUIContent("IncludePadding"));
                     if (m_ShapeAnchorsCalPadding.boolValue && ((Sprite)m_Sprite.objectReferenceValue).packed)
                     {
                         EditorGUILayout.HelpBox("计算Padding可能会截取到图集中其他像素，", MessageType.Warning);
@@ -170,6 +186,21 @@ namespace UnityEditor.UI
             --EditorGUI.indentLevel;
         }
         #endregion
-
+        #region PolyImage
+        protected void PolyImageGUI()
+        {
+            EditorGUI.indentLevel++;
+            {
+                EditorGUILayout.PropertyField(m_UsePolyMesh);
+                m_ShowUsePolyRaycastTarget.target = m_UsePolyMesh.boolValue;
+                if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyRaycastTarget.faded))
+                {
+                    EditorGUILayout.PropertyField(m_UsePolyRaycastTarget);
+                }
+                EditorGUILayout.EndFadeGroup();
+            }
+            EditorGUI.indentLevel--;
+        }
+        #endregion
     }
 }
