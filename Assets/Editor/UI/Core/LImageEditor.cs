@@ -130,7 +130,6 @@ namespace UnityEditor.UI
                 PolyImageGUI();
             }
             EditorGUILayout.EndFadeGroup();
-
             #endregion
 
             #region Shape

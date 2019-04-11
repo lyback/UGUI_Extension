@@ -167,7 +167,7 @@ namespace UnityEngine.UI
                 float v2 = invV * (uvs[i].y - uv.y);
                 float x = u2 * (v.z - v.x) + v.x;
                 float y = v2 * (v.w - v.y) + v.y;
-                Vector3 vert = new Vector3(x,y,0f);
+                Vector3 vert = new Vector3(x, y, 0f);
                 vh.AddVert(vert, color32, uvs[i]);
                 if (m_UsePolyRaycastTarget)
                     m_PolyMeshVertices[i] = vert;
@@ -249,7 +249,7 @@ namespace UnityEngine.UI
                 float kY = (uvs[i].y - s_UVScratch[y].y) / (s_UVScratch[y + 1].y - s_UVScratch[y].y);
 
                 Vector3 pos = new Vector3(kX * (s_VertScratch[x + 1].x - s_VertScratch[x].x) + s_VertScratch[x].x,
-                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y,0f);
+                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y, 0f);
 
                 vh.AddVert(pos, color32, uvs[i]);
                 if (m_UsePolyRaycastTarget)
@@ -450,7 +450,7 @@ namespace UnityEngine.UI
 
             float tw = rectTransform.rect.width;
             float th = rectTransform.rect.height;
-            float outerRadius = rectTransform.pivot.x * tw;
+            float outerRadius = tw > th ? th / 2f : tw / 2f;
             float uvCenterX = (uv.x + uv.z) * 0.5f;
             float uvCenterY = (uv.y + uv.w) * 0.5f;
             float uvScaleX = (uv.z - uv.x) / tw;
@@ -458,32 +458,25 @@ namespace UnityEngine.UI
             float degreeDelta = 2 * Mathf.PI / circleShape_Segements;
             int curSegements = (int)(circleShape_Segements * circleShape_FillPercent);
 
-            float curDegree = 0;
-            UIVertex uiVertex;
-            int verticeCount;
-            int triangleCount;
-            Vector3 curVertice = Vector3.zero;
-            verticeCount = curSegements + 1;
+            float curDegree = 0f;
+            int verticeCount = curSegements + 1;
             //圆心
-            uiVertex = new UIVertex();
-            uiVertex.color = color;
-            uiVertex.position = curVertice;
-            uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
-            vh.AddVert(uiVertex);
+            Rect r = GetPixelAdjustedRect();
+            Vector3 centerVertice = new Vector3(r.x + r.width / 2f, r.y + r.height / 2f);
+            vh.AddVert(centerVertice, color, new Vector2(uvCenterX, uvCenterY));
+            Vector3 curVertice = new Vector3();
             for (int i = 1; i < verticeCount; i++)
             {
                 float cosA = Mathf.Cos(curDegree);
                 float sinA = Mathf.Sin(curDegree);
-                curVertice = new Vector3(cosA * outerRadius, sinA * outerRadius);
+                float posX = cosA * outerRadius;
+                float posY = sinA * outerRadius;
+                curVertice.x = posX + centerVertice.x;
+                curVertice.y = posY + centerVertice.y;
+                vh.AddVert(curVertice, color, new Vector2(uvCenterX + posX * uvScaleX, uvCenterY + posY * uvScaleY));
                 curDegree += degreeDelta;
-
-                uiVertex = new UIVertex();
-                uiVertex.color = color;
-                uiVertex.position = curVertice;
-                uiVertex.uv0 = new Vector2(curVertice.x * uvScaleX + uvCenterX, curVertice.y * uvScaleY + uvCenterY);
-                vh.AddVert(uiVertex);
             }
-            triangleCount = curSegements * 3;
+            int triangleCount = curSegements * 3;
             for (int i = 0, vIdx = 1; i < triangleCount - 3; i += 3, vIdx++)
             {
                 vh.AddTriangle(vIdx, 0, vIdx + 1);
@@ -787,7 +780,7 @@ namespace UnityEngine.UI
                 }
                 if (hasBorder)
                 {
-                    clipped = uvMax;                    
+                    clipped = uvMax;
                     // Left and right tiled border
                     for (long j = 0; j < nTilesH; j++)
                     {
@@ -1248,7 +1241,7 @@ namespace UnityEngine.UI
 
         public override bool IsRaycastLocationValid(Vector2 screenPoint, Camera eventCamera)
         {
-            if (!m_UsePolyMesh||!m_UsePolyRaycastTarget)
+            if (!m_UsePolyMesh || !m_UsePolyRaycastTarget)
             {
                 return base.IsRaycastLocationValid(screenPoint, eventCamera);
             }
