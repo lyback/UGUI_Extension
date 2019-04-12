@@ -153,10 +153,11 @@ namespace UnityEngine.UI
         void GenerateSimplePolySprite(VertexHelper vh, bool lPreserveAspect)
         {
             vh.Clear();
+            Sprite activeSprite = this.overrideSprite;
             Vector4 v = GetDrawingDimensions(lPreserveAspect);
-            Vector4 uv = Sprites.DataUtility.GetOuterUV(overrideSprite);
+            Vector4 uv = Sprites.DataUtility.GetOuterUV(activeSprite);
             Color32 color32 = color;
-            Vector2[] uvs = overrideSprite.uv;
+            Vector2[] uvs = activeSprite.uv;
             float invU = 1 / (uv.z - uv.x);
             float invV = 1 / (uv.w - uv.y);
             if (m_UsePolyRaycastTarget)
@@ -173,7 +174,7 @@ namespace UnityEngine.UI
                     m_PolyMeshVertices[i] = vert;
             }
 
-            ushort[] triangles = overrideSprite.triangles;
+            ushort[] triangles = activeSprite.triangles;
             for (int i = 0; i < triangles.Length; i += 3)
             {
                 vh.AddTriangle(triangles[i], triangles[i + 1], triangles[i + 2]);
@@ -234,10 +235,10 @@ namespace UnityEngine.UI
             List<Vector2> uvs = new List<Vector2>(activeSprite.uv);
             List<ushort> triangles = new List<ushort>(activeSprite.triangles);
 
-            var splitedTriangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), Mathf.PI / 2);
-            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), Mathf.PI / 2);
-            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.x, inner.y), 0);
-            splitedTriangles = MathUtility.LineCut(uvs, splitedTriangles, new Vector2(inner.z, inner.w), 0);
+            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), Mathf.PI / 2);
+            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.z, inner.w), Mathf.PI / 2);
+            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), 0);
+            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.z, inner.w), 0);
             if (m_UsePolyRaycastTarget)
                 m_PolyMeshVertices = new Vector3[uvs.Count];
             for (int i = 0; i < uvs.Count; i++)
@@ -256,12 +257,12 @@ namespace UnityEngine.UI
                     m_PolyMeshVertices[i] = pos;
             }
 
-            for (int i = 0; i < splitedTriangles.Count; i += 3)
+            for (int i = 0; i < triangles.Count; i += 3)
             {
-                int x = XSlot(uvs[splitedTriangles[i + 0]].x);
-                int y = YSlot(uvs[splitedTriangles[i + 0]].y);
+                int x = XSlot(uvs[triangles[i + 0]].x);
+                int y = YSlot(uvs[triangles[i + 0]].y);
                 if (x == 1 && y == 1 && !fillCenter) continue;
-                vh.AddTriangle(splitedTriangles[i + 0], splitedTriangles[i + 1], splitedTriangles[i + 2]);
+                vh.AddTriangle(triangles[i + 0], triangles[i + 1], triangles[i + 2]);
             }
         }
         private static int XSlot(float x)
@@ -506,9 +507,24 @@ namespace UnityEngine.UI
             //不计算padding
             Rect r = GetPixelAdjustedRect();
             float v_y = r.y;
-            float v_w = r.y + r.height;
+            float v_w = r.y;
             float v_x = r.x;
-            float v_z = r.x + r.width;
+            float v_z = r.x;
+            float d = r.height-r.width;
+            if (d>0) // 高大于宽
+            {
+                float dy = d*0.5f;
+                v_y += dy;
+                v_w += r.width + dy;
+                v_z += r.width;
+            }
+            else
+            {
+                float dx = -d*0.5f;
+                v_x += dx;
+                v_z += r.height + dx;
+                v_w += r.height;
+            }
 
             vh.AddVert(new Vector3(v_x, v_y), color, new Vector2(uv.x, uv.y));
             vh.AddVert(new Vector3(v_x, v_w), color, new Vector2(uv.x, uv.w));
