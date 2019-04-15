@@ -247,9 +247,9 @@ namespace UnityEngine.UI
             if (inner.z != 0) p++;
             if (inner.y != 0) p++;
             if (inner.w != 0) p++;
-            int triCapacity = arrayTriangels.Length * (int)Mathf.Pow(2f,p);
+            int triCapacity = arrayTriangels.Length * (int)Mathf.Pow(2f, p);
             s_Triangles.Capacity = triCapacity;
-            s_Uvs.Capacity = arrayUvs.Length + triCapacity/3*2;
+            s_Uvs.Capacity = arrayUvs.Length + triCapacity / 3 * 2;
             s_Triangles.AddRange(arrayTriangels);
             s_Uvs.AddRange(arrayUvs);
 
@@ -291,15 +291,15 @@ namespace UnityEngine.UI
                 Vector2 s_UVScratch_x = s_UVScratch[x];
                 Vector2 s_UVScratch_y = s_UVScratch[y];
 
-                float kX = (_uv.x - s_UVScratch_x.x) / (s_UVScratch[x+1].x - s_UVScratch_x.x);
-                float kY = (_uv.y - s_UVScratch_y.y) / (s_UVScratch[y+1].y - s_UVScratch_y.y);
-                
+                float kX = (_uv.x - s_UVScratch_x.x) / (s_UVScratch[x + 1].x - s_UVScratch_x.x);
+                float kY = (_uv.y - s_UVScratch_y.y) / (s_UVScratch[y + 1].y - s_UVScratch_y.y);
+
                 Vector2 s_VertScratch_x = s_VertScratch[x];
                 Vector2 s_VertScratch_y = s_VertScratch[y];
 
                 pos.x = kX * (s_VertScratch[x + 1].x - s_VertScratch_x.x) + s_VertScratch_x.x;
                 pos.y = kY * (s_VertScratch[y + 1].y - s_VertScratch_y.y) + s_VertScratch_y.y;
-                
+
                 vh.AddVert(pos, color32, _uv);
                 if (m_UsePolyRaycastTarget)
                     m_PolyMeshVertices[i] = pos;
@@ -559,17 +559,17 @@ namespace UnityEngine.UI
             float v_w = r.y;
             float v_x = r.x;
             float v_z = r.x;
-            float d = r.height-r.width;
-            if (d>0) // 高大于宽
+            float d = r.height - r.width;
+            if (d > 0) // 高大于宽
             {
-                float dy = d*0.5f;
+                float dy = d * 0.5f;
                 v_y += dy;
                 v_w += r.width + dy;
                 v_z += r.width;
             }
             else
             {
-                float dx = -d*0.5f;
+                float dx = -d * 0.5f;
                 v_x += dx;
                 v_z += r.height + dx;
                 v_w += r.height;
