@@ -5,3 +5,4 @@ Assembly-CSharp-Editor.csproj
 .vscode/settings.json
 UGUI_Extention.sln
 Assembly-CSharp.csproj
+.vscode/launch.json

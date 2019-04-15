@@ -180,6 +180,8 @@ namespace UnityEngine.UI
                 vh.AddTriangle(triangles[i], triangles[i + 1], triangles[i + 2]);
             }
         }
+        static List<ushort> s_Triangles = new List<ushort>();
+        static List<Vector2> s_Uvs = new List<Vector2>();
         private void GenerateSlicedPolySprite(VertexHelper vh)
         {
             if (!hasBorder)
@@ -187,9 +189,12 @@ namespace UnityEngine.UI
                 GenerateSimplePolySprite(vh, false);
                 return;
             }
+            s_Triangles.Clear();
+            s_Uvs.Clear();
             Sprite activeSprite = this.overrideSprite;
             Color32 color32 = color;
             Vector4 outer, inner, padding, border;
+            bool _fillCenter = this.fillCenter;
             if (activeSprite != null)
             {
                 outer = Sprites.DataUtility.GetOuterUV(activeSprite);
@@ -225,44 +230,88 @@ namespace UnityEngine.UI
                 s_VertScratch[i].y += rect.y;
             }
 
-            s_UVScratch[0] = new Vector2(outer.x, outer.y);
-            s_UVScratch[1] = new Vector2(inner.x, inner.y);
-            s_UVScratch[2] = new Vector2(inner.z, inner.w);
-            s_UVScratch[3] = new Vector2(outer.z, outer.w);
+            Vector2 outer_xy = new Vector2(outer.x, outer.y);
+            Vector2 outer_zw = new Vector2(outer.z, outer.w);
+            Vector2 inner_xy = new Vector2(inner.x, inner.y);
+            Vector2 inner_zw = new Vector2(inner.z, inner.w);
+            s_UVScratch[0] = outer_xy;
+            s_UVScratch[1] = inner_xy;
+            s_UVScratch[2] = inner_zw;
+            s_UVScratch[3] = outer_zw;
+
+            var arrayTriangels = activeSprite.triangles;
+            var arrayUvs = activeSprite.uv;
+            //给List扩容，减少GC
+            int p = 0;
+            if (inner.x != 0) p++;
+            if (inner.z != 0) p++;
+            if (inner.y != 0) p++;
+            if (inner.w != 0) p++;
+            int triCapacity = arrayTriangels.Length * (int)Mathf.Pow(2f,p);
+            s_Triangles.Capacity = triCapacity;
+            s_Uvs.Capacity = arrayUvs.Length + triCapacity/3*2;
+            s_Triangles.AddRange(arrayTriangels);
+            s_Uvs.AddRange(arrayUvs);
+
+            // Debug.Log("before，triangles:"+"Capacity:"+s_Triangles.Capacity + ",Count:"+ s_Triangles.Count);
+            // Debug.Log("before，uv:"+"Capacity:"+s_Uvs.Capacity + ",Count:"+ s_Uvs.Count);
+
+            if (inner.x != 0)
+                MathUtility.NewLineCut(ref s_Uvs, ref s_Triangles, inner_xy, Mathf.PI / 2);
+            if (inner.z != 0)
+                MathUtility.NewLineCut(ref s_Uvs, ref s_Triangles, inner_zw, Mathf.PI / 2);
+            if (inner.y != 0)
+                MathUtility.NewLineCut(ref s_Uvs, ref s_Triangles, inner_xy, 0);
+            if (inner.w != 0)
+                MathUtility.NewLineCut(ref s_Uvs, ref s_Triangles, inner_zw, 0);
+
+            // if (inner.x != 0)
+            //     s_Triangles = MathUtility.LineCut(s_Uvs, s_Triangles, inner_xy, Mathf.PI / 2);
+            // if (inner.z != 0)
+            //     s_Triangles = MathUtility.LineCut(s_Uvs, s_Triangles, inner_zw, Mathf.PI / 2);
+            // if (inner.y != 0)
+            //     s_Triangles = MathUtility.LineCut(s_Uvs, s_Triangles, inner_xy, 0);
+            // if (inner.w != 0)
+            //     s_Triangles = MathUtility.LineCut(s_Uvs, s_Triangles, inner_zw, 0);
+
+            // Debug.Log("after，triangles:"+"Capacity:"+s_Triangles.Capacity + ",Count:"+ s_Triangles.Count);
+            // Debug.Log("after，uv:"+"Capacity:"+s_Uvs.Capacity + ",Count:"+ s_Uvs.Count);
 
             vh.Clear();
-
-            List<Vector2> uvs = new List<Vector2>(activeSprite.uv);
-            List<ushort> triangles = new List<ushort>(activeSprite.triangles);
-
-            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), Mathf.PI / 2);
-            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.z, inner.w), Mathf.PI / 2);
-            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.x, inner.y), 0);
-            triangles = MathUtility.LineCut(uvs, triangles, new Vector2(inner.z, inner.w), 0);
+            int uvsCount = s_Uvs.Count;
+            Vector3 pos = new Vector3();
             if (m_UsePolyRaycastTarget)
-                m_PolyMeshVertices = new Vector3[uvs.Count];
-            for (int i = 0; i < uvs.Count; i++)
+                m_PolyMeshVertices = new Vector3[uvsCount];
+            for (int i = 0; i < uvsCount; i++)
             {
-                int x = XSlot(uvs[i].x);
-                int y = YSlot(uvs[i].y);
+                Vector2 _uv = s_Uvs[i];
+                int x = XSlot(_uv.x);
+                int y = YSlot(_uv.y);
 
-                float kX = (uvs[i].x - s_UVScratch[x].x) / (s_UVScratch[x + 1].x - s_UVScratch[x].x);
-                float kY = (uvs[i].y - s_UVScratch[y].y) / (s_UVScratch[y + 1].y - s_UVScratch[y].y);
+                Vector2 s_UVScratch_x = s_UVScratch[x];
+                Vector2 s_UVScratch_y = s_UVScratch[y];
 
-                Vector3 pos = new Vector3(kX * (s_VertScratch[x + 1].x - s_VertScratch[x].x) + s_VertScratch[x].x,
-                    kY * (s_VertScratch[y + 1].y - s_VertScratch[y].y) + s_VertScratch[y].y, 0f);
+                float kX = (_uv.x - s_UVScratch_x.x) / (s_UVScratch[x+1].x - s_UVScratch_x.x);
+                float kY = (_uv.y - s_UVScratch_y.y) / (s_UVScratch[y+1].y - s_UVScratch_y.y);
+                
+                Vector2 s_VertScratch_x = s_VertScratch[x];
+                Vector2 s_VertScratch_y = s_VertScratch[y];
 
-                vh.AddVert(pos, color32, uvs[i]);
+                pos.x = kX * (s_VertScratch[x + 1].x - s_VertScratch_x.x) + s_VertScratch_x.x;
+                pos.y = kY * (s_VertScratch[y + 1].y - s_VertScratch_y.y) + s_VertScratch_y.y;
+                
+                vh.AddVert(pos, color32, _uv);
                 if (m_UsePolyRaycastTarget)
                     m_PolyMeshVertices[i] = pos;
             }
-
-            for (int i = 0; i < triangles.Count; i += 3)
+            int trianglesCount = s_Triangles.Count;
+            for (int i = 0; i < trianglesCount; i += 3)
             {
-                int x = XSlot(uvs[triangles[i + 0]].x);
-                int y = YSlot(uvs[triangles[i + 0]].y);
-                if (x == 1 && y == 1 && !fillCenter) continue;
-                vh.AddTriangle(triangles[i + 0], triangles[i + 1], triangles[i + 2]);
+                Vector2 _uv = s_Uvs[s_Triangles[i + 0]];
+                int x = XSlot(_uv.x);
+                int y = YSlot(_uv.y);
+                if (x == 1 && y == 1 && !_fillCenter) continue;
+                vh.AddTriangle(s_Triangles[i + 0], s_Triangles[i + 1], s_Triangles[i + 2]);
             }
         }
         private static int XSlot(float x)
