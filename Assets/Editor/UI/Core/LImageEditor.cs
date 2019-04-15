@@ -13,10 +13,10 @@ namespace UnityEditor.UI
         // SerializedProperty m_FillOrigin;
         // SerializedProperty m_FillAmount;
         // SerializedProperty m_FillClockwise;
-        SerializedProperty m_Type;
+        protected SerializedProperty m_Type;
         // SerializedProperty m_FillCenter;
-        SerializedProperty m_Sprite;
-        SerializedProperty m_PreserveAspect;
+        protected SerializedProperty m_Sprite;
+        protected SerializedProperty m_PreserveAspect;
         // GUIContent m_SpriteContent;
         // GUIContent m_SpriteTypeContent;
         // GUIContent m_ClockwiseContent;
@@ -24,7 +24,7 @@ namespace UnityEditor.UI
         // AnimBool m_ShowSliced;
         // AnimBool m_ShowTiled;
         // AnimBool m_ShowFilled;
-        AnimBool m_ShowType_LImage;
+        protected AnimBool m_ShowType_LImage;
         #region Shape属性
         SerializedProperty m_ShapeType;
         GUIContent m_ShapeTypeContent;
@@ -34,16 +34,10 @@ namespace UnityEditor.UI
         SerializedProperty m_ShapeScale;
         SerializedProperty m_CircleShape_Segements;
         SerializedProperty m_CircleShape_FillPercent;
-        AnimBool m_ShowShapeType;
+        protected AnimBool m_ShowShapeType;
         AnimBool m_ShowCommonShapeType;
         AnimBool m_ShowSquareShape;
         AnimBool m_ShowCircleShape;
-        #endregion
-        #region PolyImage属性
-        SerializedProperty m_UsePolyMesh;
-        SerializedProperty m_UsePolyRaycastTarget;
-        AnimBool m_ShowUsePolyMesh;
-        AnimBool m_ShowUsePolyRaycastTarget;
         #endregion
         protected override void OnEnable()
         {
@@ -77,27 +71,16 @@ namespace UnityEditor.UI
             m_ShowCircleShape = new AnimBool(shapeTypeEnum == LImage.ShapeType.Circle);
             m_ShowCircleShape.valueChanged.AddListener(Repaint);
             #endregion
-            #region PolyImage
-            m_UsePolyMesh = serializedObject.FindProperty("m_UsePolyMesh");
-            m_UsePolyRaycastTarget = serializedObject.FindProperty("m_UsePolyRaycastTarget");
-            m_ShowUsePolyMesh = new AnimBool();
-            m_ShowUsePolyMesh.valueChanged.AddListener(Repaint);
-            m_ShowUsePolyRaycastTarget = new AnimBool();
-            m_ShowUsePolyRaycastTarget.valueChanged.AddListener(Repaint);
-            #endregion
         }
         protected override void OnDisable()
         {
+            base.OnEnable();
             m_ShowType_LImage.valueChanged.RemoveListener(Repaint);
             #region Shape
             m_ShowShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowCommonShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowSquareShape.valueChanged.RemoveListener(Repaint);
             m_ShowCircleShape.valueChanged.RemoveListener(Repaint);
-            #endregion
-            #region PolyImage
-            m_ShowUsePolyMesh.valueChanged.RemoveListener(Repaint);
-            m_ShowUsePolyRaycastTarget.valueChanged.RemoveListener(Repaint);
             #endregion
         }
 
@@ -123,17 +106,8 @@ namespace UnityEditor.UI
             }
             EditorGUILayout.EndFadeGroup();
 
-            #region PolyImage
-            m_ShowUsePolyMesh.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex != Image.Type.Filled && (Image.Type)m_Type.enumValueIndex != Image.Type.Tiled;
-            if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyMesh.faded))
-            {
-                PolyImageGUI();
-            }
-            EditorGUILayout.EndFadeGroup();
-            #endregion
-
             #region Shape
-            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && !m_UsePolyMesh.boolValue && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
+            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
             if (EditorGUILayout.BeginFadeGroup(m_ShowShapeType.faded))
                 ShapeTypeGUI();
             EditorGUILayout.EndFadeGroup();
@@ -142,7 +116,7 @@ namespace UnityEditor.UI
             NativeSizeButtonGUI();
             serializedObject.ApplyModifiedProperties();
         }
-        void SetShowNativeSize(bool instant)
+        protected void SetShowNativeSize(bool instant)
         {
             Image.Type type = (Image.Type)m_Type.enumValueIndex;
             bool showNativeSize = (type == Image.Type.Simple || type == Image.Type.Filled) && m_Sprite.objectReferenceValue != null;
@@ -183,22 +157,6 @@ namespace UnityEditor.UI
                 EditorGUILayout.EndFadeGroup();
             }
             --EditorGUI.indentLevel;
-        }
-        #endregion
-        #region PolyImage
-        protected void PolyImageGUI()
-        {
-            EditorGUI.indentLevel++;
-            {
-                EditorGUILayout.PropertyField(m_UsePolyMesh);
-                m_ShowUsePolyRaycastTarget.target = m_UsePolyMesh.boolValue;
-                if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyRaycastTarget.faded))
-                {
-                    EditorGUILayout.PropertyField(m_UsePolyRaycastTarget);
-                }
-                EditorGUILayout.EndFadeGroup();
-            }
-            EditorGUI.indentLevel--;
         }
         #endregion
     }

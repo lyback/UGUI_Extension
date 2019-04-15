@@ -183,8 +183,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &8215699
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -302,8 +300,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &10104085
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -367,7 +363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &14829332
 RectTransform:
   m_ObjectHideFlags: 0
@@ -420,8 +416,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &14829334
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -444,7 +438,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &26939270
 RectTransform:
   m_ObjectHideFlags: 0
@@ -497,8 +491,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &26939272
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -521,7 +513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &28899646
 RectTransform:
   m_ObjectHideFlags: 0
@@ -574,8 +566,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &28899648
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -652,8 +642,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &31070089
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,8 +759,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &31611312
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -890,8 +876,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &32210307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -955,7 +939,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &32803919
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1008,8 +992,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &32803921
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1086,8 +1068,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &37268202
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1205,8 +1185,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &37876768
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1324,8 +1302,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &65051427
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1443,8 +1419,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &65714107
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1508,7 +1482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &72113281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1561,8 +1535,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &72113283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1639,8 +1611,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &72226527
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1704,7 +1674,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &91528009
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1757,8 +1727,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &91528011
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1835,8 +1803,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &99508924
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1954,8 +1920,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &107711691
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2019,7 +1983,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &109044111
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2072,8 +2036,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &109044113
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2096,7 +2058,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &111861459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2149,8 +2111,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &111861461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2227,8 +2187,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &112459446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2346,8 +2304,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &115864693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2411,7 +2367,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121069738
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2464,8 +2420,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &121069740
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2488,7 +2442,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &121944806
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2541,8 +2495,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &121944808
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2619,8 +2571,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &124863561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2738,8 +2688,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &127252440
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2857,8 +2805,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 1
-  m_UsePolyMesh: 1
 --- !u!114 &142462438
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2976,8 +2922,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &151823572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3313,8 +3257,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &169172403
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3432,8 +3374,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &170142227
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3497,7 +3437,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &170839954
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3550,8 +3490,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &170839956
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3574,7 +3512,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &177178116
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3627,8 +3565,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &177178118
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3651,7 +3587,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &180198193
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3704,8 +3640,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &180198195
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3782,8 +3716,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &224761291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3901,8 +3833,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &229414662
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3966,7 +3896,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &235069477
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4019,8 +3949,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &235069479
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4043,7 +3971,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &241018045
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4096,8 +4024,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &241018047
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4174,8 +4100,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &252028910
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4239,7 +4163,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &262175325
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4292,8 +4216,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &262175327
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4316,7 +4238,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &294383567
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4369,8 +4291,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &294383569
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4447,8 +4367,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &324835549
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4512,7 +4430,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &329032495
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4565,8 +4483,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &329032497
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4643,8 +4559,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &339387572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4708,7 +4622,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &341342358
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4761,8 +4675,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &341342360
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4785,7 +4697,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &343001118
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4838,8 +4750,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &343001120
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -4916,8 +4826,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &344451668
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5035,8 +4943,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &353108318
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5154,8 +5060,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &372838241
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5273,8 +5177,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &374636671
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5392,8 +5294,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &379484875
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5511,8 +5411,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &397420282
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5630,8 +5528,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &419394583
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5695,7 +5591,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &419767138
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5748,8 +5644,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &419767140
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -5826,8 +5720,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &433430561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5945,8 +5837,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &434409735
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6064,8 +5954,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &447643497
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6129,7 +6017,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &465495399
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6182,8 +6070,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &465495401
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6260,8 +6146,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &472319513
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6325,7 +6209,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &483607535
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6378,8 +6262,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &483607537
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6402,7 +6284,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &494143949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6455,8 +6337,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &494143951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6533,8 +6413,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &502266781
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6652,8 +6530,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &503054261
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6771,8 +6647,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &515246533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6836,7 +6710,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &517892586
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6889,8 +6763,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &517892588
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6913,7 +6785,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &522803381
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6966,8 +6838,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &522803383
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7044,8 +6914,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &529764693
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7163,8 +7031,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &534561799
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7228,7 +7094,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &540539319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7281,8 +7147,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &540539321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7305,7 +7169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &547490571
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7358,8 +7222,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &547490573
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7436,8 +7298,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &550353658
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7485,6 +7345,83 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 550353655}
+--- !u!1 &552565750
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 552565751}
+  - component: {fileID: 552565753}
+  - component: {fileID: 552565752}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &552565751
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552565750}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 779076063}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 100, y: -133.5}
+  m_SizeDelta: {x: 170.3, y: 164.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &552565752
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552565750}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f025a157e76d13488f34cf51819f952, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 385183dff598bf84ba05dc156eb0e400, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_ShapeType: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 0
+  m_ShapeScale: 1
+  m_CircleShape_Segements: 25
+  m_CircleShape_FillPercent: 1
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
+--- !u!222 &552565753
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 552565750}
 --- !u!1 &552796334
 GameObject:
   m_ObjectHideFlags: 0
@@ -7555,8 +7492,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &552796337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7620,7 +7555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &553308781
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7673,8 +7608,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &553308783
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7697,7 +7630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &554277123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7750,8 +7683,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &554277125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7828,8 +7759,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &561438608
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7893,7 +7822,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &565159278
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7946,8 +7875,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &565159280
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7970,7 +7897,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &584275577
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8023,8 +7950,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &584275579
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8047,7 +7972,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &590922173
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8100,8 +8025,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &590922175
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8178,8 +8101,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &592809182
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8243,7 +8164,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &596125271
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8296,8 +8217,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &596125273
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8374,8 +8293,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &608617594
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8493,8 +8410,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &628385763
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8558,7 +8473,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &635763674
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8611,8 +8526,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &635763676
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8635,7 +8548,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &637890838
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8688,8 +8601,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &637890840
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8712,7 +8623,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &639210679
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8765,8 +8676,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &639210681
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8789,7 +8698,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &647225546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8842,8 +8751,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &647225548
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8920,8 +8827,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &651536498
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9039,8 +8944,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &661393730
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9104,7 +9007,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &665337319
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9157,8 +9060,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &665337321
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9181,7 +9082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &669591927
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9234,8 +9135,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &669591929
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9258,7 +9157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &672687989
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9311,8 +9210,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &672687991
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9389,8 +9286,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &677582287
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9570,8 +9465,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &728730731
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9635,7 +9528,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &738838608
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9688,8 +9581,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &738838610
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -9766,8 +9657,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &749640213
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9885,8 +9774,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &753890920
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10004,8 +9891,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &754817025
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10069,7 +9954,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &762683938
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10122,14 +10007,107 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &762683940
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 762683937}
+--- !u!1 &779076059
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 779076063}
+  - component: {fileID: 779076062}
+  - component: {fileID: 779076061}
+  - component: {fileID: 779076060}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &779076060
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779076059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &779076061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779076059}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &779076062
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779076059}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &779076063
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 779076059}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1467664473}
+  - {fileID: 552565751}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &793435222
 GameObject:
   m_ObjectHideFlags: 0
@@ -10200,8 +10178,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &793435225
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10265,7 +10241,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &799157376
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10318,8 +10294,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &799157378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10342,7 +10316,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &829100205
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10395,8 +10369,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &829100207
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10473,8 +10445,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &831968519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10538,7 +10508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &846113963
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10591,8 +10561,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &846113965
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10669,8 +10637,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &853006745
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10734,7 +10700,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &854604409
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10787,8 +10753,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &854604411
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -10865,8 +10829,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &861180609
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10930,7 +10892,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &886822029
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10983,8 +10945,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &886822031
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11007,7 +10967,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &889793508
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11060,8 +11020,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &889793510
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11084,7 +11042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &901386728
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11137,8 +11095,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &901386730
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11215,8 +11171,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &902658081
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11280,7 +11234,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &903475937
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11333,8 +11287,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &903475939
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11357,7 +11309,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &908116949
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11410,8 +11362,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &908116951
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11434,7 +11384,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &917714281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11487,8 +11437,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &917714283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11565,8 +11513,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &922886729
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11684,8 +11630,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &925299499
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11749,7 +11693,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &928201487
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11802,8 +11746,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &928201489
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -11880,8 +11822,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &931877719
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11945,7 +11885,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &934798192
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11998,8 +11938,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &934798194
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12022,7 +11960,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &936236682
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12075,8 +12013,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &936236684
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12099,7 +12035,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &939028401
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12152,8 +12088,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &939028403
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12230,8 +12164,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &956877274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12295,7 +12227,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &962308970
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12348,8 +12280,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &962308972
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12372,7 +12302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &967986157
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12425,8 +12355,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &967986159
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12503,8 +12431,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &969047624
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12568,7 +12494,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &982538603
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12621,8 +12547,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &982538605
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12645,7 +12569,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &986974935
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12698,8 +12622,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &986974937
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12722,7 +12644,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &990381676
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12775,8 +12697,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &990381678
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12799,7 +12719,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &995817875
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12852,8 +12772,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &995817877
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -12930,8 +12848,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1002819506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12995,7 +12911,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1003740124
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13048,8 +12964,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1003740126
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13126,8 +13040,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1055797116
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13191,7 +13103,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1060575549
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13244,8 +13156,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1060575551
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13268,7 +13178,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1084547627
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13321,8 +13231,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1084547629
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13399,8 +13307,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1094903331
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13518,8 +13424,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1096172351
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13583,7 +13487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1098911844
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13636,8 +13540,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1098911846
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13660,7 +13562,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1113721459
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13713,8 +13615,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1113721461
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13737,7 +13637,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1123557669
 RectTransform:
   m_ObjectHideFlags: 0
@@ -13790,8 +13690,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1123557671
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -13868,8 +13766,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1124940280
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13987,8 +13883,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1126096211
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14106,8 +14000,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1127160891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14171,7 +14063,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1143410998
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14224,8 +14116,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1143411000
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14248,7 +14138,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1148326260
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14301,8 +14191,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1148326262
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14325,7 +14213,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1150839443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14378,8 +14266,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1150839445
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14402,7 +14288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1157022212
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14455,8 +14341,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1157022214
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14479,7 +14363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1157607741
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14532,8 +14416,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1157607743
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14610,8 +14492,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1157835360
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14675,7 +14555,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1168734413
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14728,8 +14608,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1168734415
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14752,7 +14630,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1191844427
 RectTransform:
   m_ObjectHideFlags: 0
@@ -14805,8 +14683,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1191844429
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -14883,8 +14759,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1192978324
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15002,8 +14876,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1197928657
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15121,8 +14993,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1207109130
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15186,7 +15056,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1207864614
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15239,8 +15109,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1207864616
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15317,8 +15185,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1216810237
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15436,8 +15302,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1230044201
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15501,7 +15365,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1230292281
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15554,8 +15418,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1230292283
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15632,8 +15494,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1241883623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15697,7 +15557,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1245664808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15750,8 +15610,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1245664810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15828,8 +15686,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1250070615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15893,7 +15749,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1250668086
 RectTransform:
   m_ObjectHideFlags: 0
@@ -15946,8 +15802,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1250668088
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16024,8 +15878,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1253185652
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16089,7 +15941,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1265423808
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16142,8 +15994,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1265423810
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16166,7 +16016,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1273255882
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16219,8 +16069,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1273255884
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16243,7 +16091,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1275004027
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16296,8 +16144,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1275004029
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16320,7 +16166,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1278472123
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16373,8 +16219,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1278472125
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16451,8 +16295,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1289267593
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16516,7 +16358,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1302003005
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16569,8 +16411,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1302003007
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16593,7 +16433,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1304488437
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16646,8 +16486,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1304488439
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16724,8 +16562,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1326685775
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16843,8 +16679,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1332851704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16908,7 +16742,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1336926955
 RectTransform:
   m_ObjectHideFlags: 0
@@ -16961,8 +16795,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1336926957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -16985,7 +16817,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1338086761
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17038,8 +16870,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1338086763
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17116,8 +16946,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1342310094
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17235,8 +17063,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1345404274
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17354,8 +17180,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1355300183
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17419,7 +17243,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1356903143
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17472,8 +17296,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1356903145
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17550,8 +17372,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1362533790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17615,7 +17435,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1364736893
 RectTransform:
   m_ObjectHideFlags: 0
@@ -17631,8 +17451,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -58.5, y: -135.1}
-  m_SizeDelta: {x: 171, y: 62.9}
+  m_AnchoredPosition: {x: -8.6, y: -427.42}
+  m_SizeDelta: {x: 184.7, y: 140.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1364736894
 MonoBehaviour:
@@ -17668,8 +17488,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1364736895
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -17746,8 +17564,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1366095512
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17865,8 +17681,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1394082971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17984,8 +17798,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1395031436
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18049,7 +17861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1409878709
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18102,8 +17914,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1409878711
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18180,8 +17990,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1417786653
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18299,8 +18107,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1421779732
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18418,8 +18224,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1423355558
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18484,7 +18288,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1439181525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18707,7 +18511,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1444620533
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18760,8 +18564,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1444620535
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18784,7 +18586,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1454372834
 RectTransform:
   m_ObjectHideFlags: 0
@@ -18837,8 +18639,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1454372836
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -18915,8 +18715,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1460904747
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18964,6 +18762,81 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1460904744}
+--- !u!1 &1467664472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1467664473}
+  - component: {fileID: 1467664475}
+  - component: {fileID: 1467664474}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1467664473
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467664472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 779076063}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -108, y: -133.5}
+  m_SizeDelta: {x: 170.3, y: 164.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1467664474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467664472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f9b913edc7ae749a404e3b5abb30b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 385183dff598bf84ba05dc156eb0e400, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_ShapeType: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 0
+  m_ShapeScale: 1
+  m_CircleShape_Segements: 25
+  m_CircleShape_FillPercent: 1
+--- !u!222 &1467664475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1467664472}
 --- !u!1 &1468997439
 GameObject:
   m_ObjectHideFlags: 0
@@ -19034,8 +18907,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1468997442
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19153,8 +19024,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1478953776
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19283,7 +19152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1495473057
 RectTransform:
   m_ObjectHideFlags: 0
@@ -19336,8 +19205,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1495473059
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -19414,8 +19281,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1504643266
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19533,8 +19398,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1515056136
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19652,8 +19515,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1516501365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19771,8 +19632,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1524928137
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19890,8 +19749,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1541247927
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19955,7 +19812,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1542093906
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20008,8 +19865,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1542093908
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20086,8 +19941,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1550939281
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20151,7 +20004,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1572934744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20204,8 +20057,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1572934746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20228,7 +20079,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1579345833
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20281,8 +20132,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1579345835
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20359,8 +20208,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1581715725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20424,7 +20271,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1585719485
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20477,8 +20324,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1585719487
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20501,7 +20346,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1586084827
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20554,8 +20399,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1586084829
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -20632,8 +20475,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1587767075
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20832,8 +20673,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1594992444
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20951,8 +20790,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1604045639
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21070,8 +20907,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1613291544
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21189,8 +21024,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1658841374
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21308,8 +21141,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1665825016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21373,7 +21204,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1675459531
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21426,8 +21257,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1675459533
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21450,7 +21279,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1677821615
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21503,8 +21332,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1677821617
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21527,7 +21354,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1682153829
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21580,8 +21407,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1682153831
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21658,8 +21483,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1695293291
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21777,8 +21600,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1703325712
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21842,7 +21663,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1712531568
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21895,8 +21716,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1712531570
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -21973,8 +21792,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1718389968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22038,7 +21855,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1743708322
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22091,8 +21908,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1743708324
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22115,7 +21930,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1755879310
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22168,8 +21983,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1755879312
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22192,7 +22005,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1762473423
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22245,8 +22058,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1762473425
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22269,7 +22080,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1768850350
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22322,8 +22133,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1768850352
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22346,7 +22155,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1783438107
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22399,8 +22208,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1783438109
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22423,7 +22230,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1785752744
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22476,8 +22283,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1785752746
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22554,8 +22359,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1790626613
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22673,8 +22476,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1793677362
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22792,8 +22593,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1795335235
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22857,7 +22656,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1796577745
 RectTransform:
   m_ObjectHideFlags: 0
@@ -22910,8 +22709,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1796577747
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -22988,8 +22785,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1799172826
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23107,8 +22902,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1800456664
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23226,8 +23019,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1821227469
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23291,7 +23082,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1826145532
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23344,8 +23135,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1826145534
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23368,7 +23157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1835740099
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23421,8 +23210,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1835740101
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23499,8 +23286,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1838016860
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23564,7 +23349,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1858323395
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23617,8 +23402,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1858323397
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23695,8 +23478,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1879337859
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23814,8 +23595,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1897457207
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -23879,7 +23658,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1898165189
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23932,8 +23711,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1898165191
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -23956,7 +23733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1913558417
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24009,8 +23786,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1913558419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24087,8 +23862,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1917533309
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24206,8 +23979,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1920791494
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24271,7 +24042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1925635894
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24324,8 +24095,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1925635896
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24348,7 +24117,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1929896941
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24401,8 +24170,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1929896943
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24425,7 +24192,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1957730672
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24478,8 +24245,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1957730674
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24556,8 +24321,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1972071649
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24675,8 +24438,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &1985121950
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24740,7 +24501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1998822934
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24793,8 +24554,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &1998822936
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24817,7 +24576,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2024031359
 RectTransform:
   m_ObjectHideFlags: 0
@@ -24870,8 +24629,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2024031361
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -24948,8 +24705,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2035167687
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25013,7 +24768,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2042751030
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25066,8 +24821,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2042751032
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25090,7 +24843,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2044363174
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25143,8 +24896,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2044363176
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25167,7 +24918,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2046864344
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25220,8 +24971,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2046864346
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25298,8 +25047,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2056309205
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25363,7 +25110,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2069719096
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25416,8 +25163,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2069719098
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25494,8 +25239,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2073050968
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25559,7 +25302,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2089535904
 RectTransform:
   m_ObjectHideFlags: 0
@@ -25612,8 +25355,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!222 &2089535906
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -25690,8 +25431,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2115644718
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25809,8 +25548,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2130898543
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -25928,8 +25665,6 @@ MonoBehaviour:
   m_ShapeScale: 1
   m_CircleShape_Segements: 25
   m_CircleShape_FillPercent: 1
-  m_UsePolyRaycastTarget: 0
-  m_UsePolyMesh: 1
 --- !u!114 &2136473778
 MonoBehaviour:
   m_ObjectHideFlags: 0

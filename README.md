@@ -3,7 +3,7 @@
 Unity Version：2017.4.23f1
 
 1.Image裁剪方形&圆形的功能。 
- 
+ LImage.cs
 |属性|描述|
 --|--|
 |Shape Type |裁剪形状|  
@@ -19,7 +19,7 @@ Unity Version：2017.4.23f1
 
 
 2.Image多边形Mesh绘制。
-  
+LImagePoly.cs
 |属性|描述|
 --|--|
 |Use Poly Mesh |是否开启多边形绘制模式，目前仅支持Simple和Sliced |  
