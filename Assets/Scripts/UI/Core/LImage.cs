@@ -120,19 +120,17 @@ namespace UnityEngine.UI
             {
                 case Type.Simple:
                     if (m_UsePolyMesh)
+                    {
                         GenerateSimplePolySprite(toFill, preserveAspect);
+                    }
                     else
+                    {
                         if (m_ShapeType == ShapeType.Circle)
-                    {
-                        GenerateSimpleCircleSprite(toFill, preserveAspect);
-                    }
-                    else if (m_ShapeType == ShapeType.Square)
-                    {
-                        GenerateSimpleSquareSprite(toFill, preserveAspect);
-                    }
-                    else
-                    {
-                        GenerateSimpleSprite(toFill, preserveAspect);
+                            GenerateSimpleCircleSprite(toFill, preserveAspect);
+                        else if (m_ShapeType == ShapeType.Square)
+                            GenerateSimpleSquareSprite(toFill, preserveAspect);
+                        else
+                            GenerateSimpleSprite(toFill, preserveAspect);
                     }
                     break;
                 case Type.Sliced:
