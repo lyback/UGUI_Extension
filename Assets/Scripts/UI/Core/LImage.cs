@@ -156,6 +156,7 @@ namespace UnityEngine.UI
             Vector4 uv = Sprites.DataUtility.GetOuterUV(activeSprite);
             Color32 color32 = color;
             Vector2[] uvs = activeSprite.uv;
+            Vector3 vert = new Vector3();
             float invU = 1 / (uv.z - uv.x);
             float invV = 1 / (uv.w - uv.y);
             if (m_UsePolyRaycastTarget)
@@ -166,7 +167,8 @@ namespace UnityEngine.UI
                 float v2 = invV * (uvs[i].y - uv.y);
                 float x = u2 * (v.z - v.x) + v.x;
                 float y = v2 * (v.w - v.y) + v.y;
-                Vector3 vert = new Vector3(x, y, 0f);
+                vert.x = x;
+                vert.y = y;
                 vh.AddVert(vert, color32, uvs[i]);
                 if (m_UsePolyRaycastTarget)
                     m_PolyMeshVertices[i] = vert;
