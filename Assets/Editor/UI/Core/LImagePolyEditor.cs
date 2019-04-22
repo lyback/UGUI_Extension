@@ -29,7 +29,7 @@ namespace UnityEditor.UI
         }
         protected override void OnDisable()
         {
-            base.OnEnable();
+            base.OnDisable();
             #region PolyImage
             m_ShowUsePolyMesh.valueChanged.RemoveListener(Repaint);
             m_ShowUsePolyRaycastTarget.valueChanged.RemoveListener(Repaint);

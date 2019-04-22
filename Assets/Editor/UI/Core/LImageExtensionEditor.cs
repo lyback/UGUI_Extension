@@ -57,7 +57,7 @@ namespace UnityEngine.UI
             image2.raycastTarget = raycastTarget;
             image2.type = type;
         }
-		[MenuItem("CONTEXT/Image/LImage to LImagePoly")]
+		[MenuItem("CONTEXT/LImage/LImage to LImagePoly")]
         static void LImage2LImagePoly(MenuCommand menuCommand)
         {
             LImage image = menuCommand.context as LImage;

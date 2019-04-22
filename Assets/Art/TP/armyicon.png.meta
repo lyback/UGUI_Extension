@@ -1,0 +1,301 @@
+fileFormatVersion: 2
+guid: 32b9054a6ddc0ca44a79c8a44c05ce7e
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: armyicon_b_501
+    21300002: armyicon_b_502
+    21300004: armyicon_b_503
+    21300006: armyicon_b_504
+    21300008: armyicon_b_505
+    21300010: armyicon_b_506
+    21300012: armyicon_b_507
+    21300014: armyicon_b_508
+    21300016: armyicon_b_509
+    21300018: armyicon_b_510
+    21300020: armyicon_b_511
+    21300022: armyicon_b_512
+    21300024: armyicon_b_513
+    21300026: armyicon_b_514
+    21300028: armyicon_b_515
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: armyicon_b_501
+      rect:
+        serializedVersion: 2
+        x: 807
+        y: 681
+        width: 403
+        height: 442
+      alignment: 9
+      pivot: {x: 0.4305211, y: 0.49660632}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_502
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 1615
+        width: 354
+        height: 426
+      alignment: 9
+      pivot: {x: 0.5748588, y: 0.5152582}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_503
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 245
+        width: 369
+        height: 488
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5153689}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_504
+      rect:
+        serializedVersion: 2
+        x: 399
+        y: 821
+        width: 430
+        height: 449
+      alignment: 9
+      pivot: {x: 0.6104651, y: 0.47104678}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_505
+      rect:
+        serializedVersion: 2
+        x: 1193
+        y: 1082
+        width: 334
+        height: 435
+      alignment: 9
+      pivot: {x: 0.5254491, y: 0.5229885}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_506
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 705
+        width: 423
+        height: 452
+      alignment: 9
+      pivot: {x: 0.40543735, y: 0.4988938}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_507
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 263
+        width: 422
+        height: 436
+      alignment: 9
+      pivot: {x: 0.4277251, y: 0.52408254}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_508
+      rect:
+        serializedVersion: 2
+        x: 749
+        y: 1645
+        width: 435
+        height: 402
+      alignment: 9
+      pivot: {x: 0.55287355, y: 0.51865673}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_509
+      rect:
+        serializedVersion: 2
+        x: 962
+        y: 338
+        width: 341
+        height: 453
+      alignment: 9
+      pivot: {x: 0.5439883, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_510
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1568
+        width: 423
+        height: 479
+      alignment: 9
+      pivot: {x: 0.46926713, y: 0.52296454}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_511
+      rect:
+        serializedVersion: 2
+        x: 924
+        y: 1038
+        width: 327
+        height: 448
+      alignment: 9
+      pivot: {x: 0.52446485, y: 0.5479911}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_512
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 485
+        width: 392
+        height: 479
+      alignment: 9
+      pivot: {x: 0.44260204, y: 0.47912318}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_513
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 1158
+        width: 435
+        height: 461
+      alignment: 9
+      pivot: {x: 0.46091953, y: 0.521692}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_514
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1145
+        width: 433
+        height: 440
+      alignment: 9
+      pivot: {x: 0.4861432, y: 0.5125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: armyicon_b_515
+      rect:
+        serializedVersion: 2
+        x: 337
+        y: 1536
+        width: 429
+        height: 468
+      alignment: 9
+      pivot: {x: 0.530303, y: 0.49893162}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
