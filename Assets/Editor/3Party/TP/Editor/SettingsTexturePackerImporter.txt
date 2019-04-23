@@ -4,12 +4,15 @@ tpsheetFileNames:
 - Assets/Art/TP/armyicon.tpsheet
 - Assets/Art/TP/test.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Temp/TP/ui/other.tpsheet
 textureFileNames:
 - Assets/Art/TP/armyicon.png
 - Assets/Art/TP/test.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Temp/TP/ui/other.png
 normalmapFileNames:
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
 enableDebugOutput: 0
