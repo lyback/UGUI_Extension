@@ -194,7 +194,7 @@ public class TPAtlasPacker
             return;
         }
         List<SpriteMetaData> sprites = new List<SpriteMetaData>(importer.spritesheet);
-        RewriteSpriteInfo(sprites, pathSrc);
+        RewriteSpriteMetaData(sprites, pathSrc);
         importer.spritesheet = sprites.ToArray();
         importer.textureType = TextureImporterType.Sprite;
         importer.spriteImportMode = SpriteImportMode.Multiple;
@@ -216,7 +216,7 @@ public class TPAtlasPacker
         AssetDatabase.ImportAsset(pathTexture, ImportAssetOptions.ForceUpdate | ImportAssetOptions.ForceSynchronousImport);
         AssetDatabase.Refresh();
     }
-    private static void RewriteSpriteInfo(List<SpriteMetaData> sprites, string pathSrc)
+    private static void RewriteSpriteMetaData(List<SpriteMetaData> sprites, string pathSrc)
     {
         var assetObjects = FindBase.GetSourceTexture(pathSrc);
         for (int i = 0; i < sprites.Count; ++i)
@@ -238,14 +238,37 @@ public class TPAtlasPacker
         }
     }
     #endregion
-    #region 创建图集Prefab
-    static void CreatePolySpritePrefab(string name, string pathScr, string pathDst, string pathTP)
+    #region 创建图集Asset
+    public static void CreateSpriteAsset(string name, string pathScr, string pathDst)
     {
-        string pathPrefab = string.Format("{0}/{1}.prefab", pathDst, name);
+        string pathAsset = string.Format("{0}/{1}.asset", pathDst, name);
         string pathColor = string.Format("{0}/{1}.png", pathDst, name);
         string pathMaterial = string.Format("{0}/{1}_mat.mat", pathDst, name);
-        string pathTpScr = string.Format("{0}/{1}.png", pathTP, name);
 
+        var sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(pathColor);
+
+        var atlasInfo = ScriptableObject.CreateInstance<AtlasInfo>();
+        atlasInfo.m_Mat = AssetDatabase.LoadAssetAtPath<Material>(pathMaterial);
+        RewriteSpriteInfoAsset(sprites, pathScr, ref atlasInfo.m_SpriteInfoList);
+
+        AssetDatabase.CreateAsset(atlasInfo, pathAsset);
+        AssetDatabase.Refresh();
+    }
+    private static void RewriteSpriteInfoAsset(Object[] sprites, string pathSrc, ref List<SpriteInfo> spriteInfo)
+    {
+        var assetObjects = FindBase.GetSourceSprites(pathSrc);
+        for (int i = 0; i < sprites.Length; ++i)
+        {
+            for (int j = 0; j < assetObjects.Count; j++)
+            {
+                if (Path.GetFileNameWithoutExtension(assetObjects[j].name) == sprites[i].name)
+                {
+                    var padding = UnityEngine.Sprites.DataUtility.GetPadding(assetObjects[j].sprite);
+                    spriteInfo.Add(new SpriteInfo(sprites[i] as Sprite,padding));
+                    break;
+                }
+            }
+        }
     }
     #endregion
     static string GetTexturePackerBatPath(string name)

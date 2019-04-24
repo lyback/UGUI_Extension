@@ -29,8 +29,8 @@ public class TPAtlasHelper
             EditorUtility.DisplayProgressBar(name, "IMPORT_SPRITE_INFO", (++current) / totalCount);
             TPAtlasPacker.ImportSpriteInfo(name, srcPath, PATH_ATLAS_TP, isCompress, isSplitChannel);
 
-            EditorUtility.DisplayProgressBar(name, "CREATE_POLY_PREFAB", (++current) / totalCount);
-
+            EditorUtility.DisplayProgressBar(name, "CREATE_ATLAS_ASSET", (++current) / totalCount);
+            TPAtlasPacker.CreateSpriteAsset(name, srcPath, PATH_ATLAS_TP);
             EditorUtility.ClearProgressBar();
         }
         catch (System.Exception)
@@ -60,8 +60,8 @@ public class TPAtlasHelper
             EditorUtility.DisplayProgressBar(name, "IMPORT_SPRITE_INFO", (++current) / totalCount);
             TPAtlasPacker.ImportSpriteInfo(name, srcPath, PATH_ATLAS_TP, isCompress, isSplitChannel);
 
-            EditorUtility.DisplayProgressBar(name, "CREATE_POLY_PREFAB", (++current) / totalCount);
-
+            EditorUtility.DisplayProgressBar(name, "CREATE_ATLAS_ASSET", (++current) / totalCount);
+            TPAtlasPacker.CreateSpriteAsset(name, srcPath, PATH_ATLAS_TP);
             EditorUtility.ClearProgressBar();
         }
         catch (System.Exception)
