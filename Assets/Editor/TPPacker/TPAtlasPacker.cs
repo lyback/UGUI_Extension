@@ -28,12 +28,12 @@ public class TPAtlasPacker
     }
     public static void MakeAtlas_None(string name, string pathSrc, string pathDst)
     {
-        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode None --algorithm MaxRects --extrude 1 --border-padding 0 --shape-padding 0\"";
+        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode CropKeepPos --algorithm MaxRects --extrude 1 --border-padding 0 --shape-padding 0 --multipack\"";
         MakeAtlas(name, pathSrc, pathDst, args);
     }
     public static void MakeAtlas_Polygon(string name, string pathSrc, string pathDst)
     {
-        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode Polygon --algorithm Polygon --extrude 1 --border-padding 0 --shape-padding 0\"";
+        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode Polygon --algorithm Polygon --extrude 1 --border-padding 0 --shape-padding 0 --multipack\"";
         MakeAtlas(name, pathSrc, pathDst, args);
     }
     #endregion
@@ -246,29 +246,59 @@ public class TPAtlasPacker
         string pathMaterial = string.Format("{0}/{1}_mat.mat", pathDst, name);
 
         var sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(pathColor);
-
-        var atlasInfo = ScriptableObject.CreateInstance<AtlasInfo>();
-        atlasInfo.m_Mat = AssetDatabase.LoadAssetAtPath<Material>(pathMaterial);
-        RewriteSpriteInfoAsset(sprites, pathScr, ref atlasInfo.m_SpriteInfoList);
-
-        AssetDatabase.CreateAsset(atlasInfo, pathAsset);
-        AssetDatabase.Refresh();
+        var mat = AssetDatabase.LoadAssetAtPath<Material>(pathMaterial);
+        RewriteAtlasInfoAsset(sprites, pathScr, pathAsset, mat);
+        RewriteAtlasMapAsset(name, sprites);
     }
-    private static void RewriteSpriteInfoAsset(Object[] sprites, string pathSrc, ref List<SpriteInfo> spriteInfo)
+    private static void RewriteAtlasInfoAsset(Object[] sprites, string pathSrc, string pathAsset, Material mat)
     {
+        var atlasInfo = ScriptableObject.CreateInstance<AtlasInfo>();
+        atlasInfo.m_Mat = mat;
+        List<SpriteInfo> spriteInfo = new List<SpriteInfo>();
         var assetObjects = FindBase.GetSourceSprites(pathSrc);
         for (int i = 0; i < sprites.Length; ++i)
         {
+            Sprite packSprite = sprites[i] as Sprite;
             for (int j = 0; j < assetObjects.Count; j++)
             {
-                if (Path.GetFileNameWithoutExtension(assetObjects[j].name) == sprites[i].name)
+                Sprite srcSprite = assetObjects[j].sprite;
+                if (Path.GetFileNameWithoutExtension(assetObjects[j].name) == packSprite.name)
                 {
-                    var padding = UnityEngine.Sprites.DataUtility.GetPadding(assetObjects[j].sprite);
+                    float left = srcSprite.rect.x;
+                    float top = srcSprite.rect.y;
+                    float right = srcSprite.rect.width - srcSprite.rect.x - packSprite.rect.width;
+                    float bottom = srcSprite.rect.height - srcSprite.rect.y - packSprite.rect.height;
+                    var padding = new Vector4(left,top,right,bottom);
                     spriteInfo.Add(new SpriteInfo(sprites[i] as Sprite,padding));
                     break;
                 }
             }
         }
+        atlasInfo.SetSpriteInfoList(spriteInfo);
+        AssetDatabase.CreateAsset(atlasInfo, pathAsset);
+        AssetDatabase.SaveAssets();
+        AssetDatabase.Refresh();
+        return;
+    }
+    private static void RewriteAtlasMapAsset(string name, Object[] sprites){
+        Atlas_SpriteNameList atlas_SpriteName = new Atlas_SpriteNameList();
+        atlas_SpriteName.name = name;
+        atlas_SpriteName.spriteNameList = new List<string>();
+        for (int i = 0; i < sprites.Length; i++)
+        {
+            atlas_SpriteName.spriteNameList.Add(sprites[i].name);
+        }
+        string pathAtlasMap = string.Format("{0}/{1}.asset",UIConfig.PATH_ATLAS_TP, UIConfig.ATLAS_MAP_NAME);
+        var atlasMap = AssetDatabase.LoadAssetAtPath<AtlasMap>(pathAtlasMap);
+        if (atlasMap == null)
+        {
+            atlasMap = ScriptableObject.CreateInstance<AtlasMap>();
+            AssetDatabase.CreateAsset(atlasMap, pathAtlasMap);
+            AssetDatabase.Refresh();
+        }
+        atlasMap.AddAtlas_SpriteName(atlas_SpriteName);
+        EditorUtility.SetDirty(atlasMap);
+        AssetDatabase.SaveAssets();
     }
     #endregion
     static string GetTexturePackerBatPath(string name)

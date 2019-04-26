@@ -4,15 +4,27 @@ tpsheetFileNames:
 - Assets/Art/TP/armyicon.tpsheet
 - Assets/Art/TP/test.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Temp/TP/ui/armyicon.tpsheet
+- Assets/Temp/TP/ui/armyicon2.tpsheet
 - Assets/Temp/TP/ui/other.tpsheet
+- Assets/Temp/TP/ui/search_k_horse.tpsheet
+- Assets/Temp/TP/ui/test.tpsheet
 textureFileNames:
 - Assets/Art/TP/armyicon.png
 - Assets/Art/TP/test.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Temp/TP/ui/armyicon.png
+- Assets/Temp/TP/ui/armyicon2.png
 - Assets/Temp/TP/ui/other.png
+- Assets/Temp/TP/ui/search_k_horse.png
+- Assets/Temp/TP/ui/test.png
 normalmapFileNames:
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
+- 
 - 
 enableDebugOutput: 0

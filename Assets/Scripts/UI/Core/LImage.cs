@@ -50,10 +50,10 @@ namespace UnityEngine.UI
         public float circleShape_FillPercent { get { return m_CircleShape_FillPercent; } set { if (SetPropertyUtility.SetStruct(ref m_CircleShape_FillPercent, value)) SetVerticesDirty(); } }
         #endregion
         /// Image's dimensions used for drawing. X = left, Y = bottom, Z = right, W = top.
-        protected Vector4 GetDrawingDimensions(bool shouldPreserveAspect)
+        protected virtual Vector4 GetDrawingDimensions(bool shouldPreserveAspect)
         {
             var activeSprite = this.overrideSprite;
-            var padding = activeSprite == null ? Vector4.zero : Sprites.DataUtility.GetPadding(activeSprite);
+            var padding = activeSprite == null ? Vector4.zero : GetPadding(activeSprite);
             var size = activeSprite == null ? Vector2.zero : new Vector2(activeSprite.rect.width, activeSprite.rect.height);
 
             Rect r = GetPixelAdjustedRect();
@@ -95,6 +95,10 @@ namespace UnityEngine.UI
             );
 
             return v;
+        }
+        //让子类可以重写GetPadding方法
+        protected virtual Vector4 GetPadding(Sprite spr){
+            return Sprites.DataUtility.GetPadding(spr);
         }
         /// <summary>
         /// Update the UI renderer mesh.
@@ -234,7 +238,7 @@ namespace UnityEngine.UI
                 return uv;
             }
             var old_uv = Sprites.DataUtility.GetOuterUV(activeSprite);
-            var padding = Sprites.DataUtility.GetPadding(activeSprite);
+            var padding = GetPadding(activeSprite);
             float width = activeSprite.rect.width;
             float height = activeSprite.rect.height;
             float odx = old_uv.z - old_uv.x;
@@ -420,7 +424,7 @@ namespace UnityEngine.UI
             {
                 outer = Sprites.DataUtility.GetOuterUV(activeSprite);
                 inner = Sprites.DataUtility.GetInnerUV(activeSprite);
-                padding = Sprites.DataUtility.GetPadding(activeSprite);
+                padding = GetPadding(activeSprite);
                 border = activeSprite.border;
             }
             else

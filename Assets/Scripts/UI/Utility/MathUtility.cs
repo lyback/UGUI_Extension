@@ -104,7 +104,7 @@ public class MathUtility
     public static void NewLineCut(ref List<Vector2> uvs, ref List<ushort> triangles, Vector2 linePoint, float angle)
     {
         Vector2 vecDir = new Vector2(Mathf.Cos(angle), Mathf.Sin(angle)); //射线方向向量
-        Vector2 vecLine = vecDir + linePoint; //切割的射线
+        // Vector2 vecLine = vecDir + linePoint; //切割的射线
         int triangleCount = triangles.Count;
         ushort uvCount = (ushort)uvs.Count;
         for (int i = 0; i < triangleCount; i += 3)

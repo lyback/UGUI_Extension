@@ -17,7 +17,7 @@ public class UIMenuItem {
         EditorHelper.ExcuteAssetOperat(obj =>
         {
             bool isCompress = true;
-            bool isSplitChannel = false;
+            bool isSplitChannel = true;
             TPAtlasHelper.MakeNoneAtlas(obj, isCompress, isSplitChannel);
         }, SelectionMode.Assets);
     }

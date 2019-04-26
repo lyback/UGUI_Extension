@@ -1,0 +1,348 @@
+fileFormatVersion: 2
+guid: bf05aa65a8fedb645ba25e106b54cf39
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: horse_run_10001
+    21300002: horse_run_10002
+    21300004: horse_run_10003
+    21300006: horse_run_10004
+    21300008: horse_run_10005
+    21300010: horse_run_10006
+    21300012: horse_run_10007
+    21300014: horse_run_10008
+    21300016: horse_run_20001
+    21300018: horse_run_20002
+    21300020: horse_run_20003
+    21300022: horse_run_20004
+    21300024: horse_run_20005
+    21300026: horse_run_20006
+    21300028: horse_run_20007
+    21300030: horse_run_20008
+    21300032: horse_run_30001
+    21300034: horse_run_30002
+    21300036: horse_run_30003
+    21300038: horse_run_30004
+    21300040: horse_run_30005
+    21300042: horse_run_30006
+    21300044: horse_run_30007
+    21300046: horse_run_30008
+    21300048: horse_standby_10001
+    21300050: horse_standby_10002
+    21300052: horse_standby_10003
+    21300054: horse_standby_10004
+    21300056: horse_standby_10005
+    21300058: horse_standby_10006
+    21300060: horse_standby_10007
+    21300062: horse_standby_10008
+    21300064: horse_standby_20001
+    21300066: horse_standby_20002
+    21300068: horse_standby_20003
+    21300070: horse_standby_20004
+    21300072: horse_standby_20005
+    21300074: horse_standby_20006
+    21300076: horse_standby_20007
+    21300078: horse_standby_20008
+    21300080: horse_standby_30001
+    21300082: horse_standby_30002
+    21300084: horse_standby_30003
+    21300086: horse_standby_30004
+    21300088: horse_standby_30005
+    21300090: horse_standby_30006
+    21300092: horse_standby_30007
+    21300094: horse_standby_30008
+  externalObjects: {}
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 0
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: horse_run_10001
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 56
+        width: 139
+        height: 85
+      alignment: 9
+      pivot: {x: 0.53956836, y: 0.6}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10002
+      rect:
+        serializedVersion: 2
+        x: 247
+        y: 427
+        width: 137
+        height: 84
+      alignment: 9
+      pivot: {x: 0.540146, y: 0.60714287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10003
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 143
+        width: 135
+        height: 88
+      alignment: 9
+      pivot: {x: 0.54814816, y: 0.5681818}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10004
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 407
+        width: 143
+        height: 104
+      alignment: 9
+      pivot: {x: 0.5104895, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10005
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 229
+        width: 139
+        height: 95
+      alignment: 9
+      pivot: {x: 0.5179856, y: 0.5473684}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10006
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 147
+        width: 146
+        height: 87
+      alignment: 9
+      pivot: {x: 0.51369864, y: 0.5862069}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10007
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 68
+        width: 148
+        height: 81
+      alignment: 9
+      pivot: {x: 0.5067568, y: 0.61728394}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_run_10008
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 319
+        width: 145
+        height: 89
+      alignment: 9
+      pivot: {x: 0.51724136, y: 0.58426964}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10001
+      rect:
+        serializedVersion: 2
+        x: 382
+        y: 413
+        width: 118
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5423729, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10002
+      rect:
+        serializedVersion: 2
+        x: 374
+        y: 158
+        width: 117
+        height: 92
+      alignment: 9
+      pivot: {x: 0.5470086, y: 0.4347826}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10003
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 334
+        width: 122
+        height: 91
+      alignment: 9
+      pivot: {x: 0.55737704, y: 0.42857143}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10004
+      rect:
+        serializedVersion: 2
+        x: 274
+        y: 142
+        width: 113
+        height: 98
+      alignment: 9
+      pivot: {x: 0.54867256, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10005
+      rect:
+        serializedVersion: 2
+        x: 124
+        y: 413
+        width: 126
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5952381, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10006
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 326
+        width: 124
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5645161, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10007
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 222
+        width: 124
+        height: 98
+      alignment: 9
+      pivot: {x: 0.5645161, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    - serializedVersion: 2
+      name: horse_standby_10008
+      rect:
+        serializedVersion: 2
+        x: 236
+        y: 223
+        width: 122
+        height: 98
+      alignment: 9
+      pivot: {x: 0.56557375, y: 0.46938777}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
