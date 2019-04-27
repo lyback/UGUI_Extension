@@ -98,7 +98,7 @@ namespace UnityEngine.UI
             {
                 outer = Sprites.DataUtility.GetOuterUV(activeSprite);
                 inner = Sprites.DataUtility.GetInnerUV(activeSprite);
-                padding = Sprites.DataUtility.GetPadding(activeSprite);
+                padding = GetPadding(activeSprite);
                 border = activeSprite.border;
             }
             else

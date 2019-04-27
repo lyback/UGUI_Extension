@@ -17,6 +17,7 @@ MonoBehaviour:
     - frame_equipment_hammer
     - frame_equipment_wall_03
     - icon_alchemlab_lock_01
+    - icon_alliance_building_06
     - icon_equipment_decompose
     - icon_equipment_storagebox
     - progress_alchemlab_02

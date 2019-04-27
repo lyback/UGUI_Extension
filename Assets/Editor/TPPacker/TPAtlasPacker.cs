@@ -264,12 +264,26 @@ public class TPAtlasPacker
                 Sprite srcSprite = assetObjects[j].sprite;
                 if (Path.GetFileNameWithoutExtension(assetObjects[j].name) == packSprite.name)
                 {
-                    float left = srcSprite.rect.x;
-                    float top = srcSprite.rect.y;
-                    float right = srcSprite.rect.width - srcSprite.rect.x - packSprite.rect.width;
-                    float bottom = srcSprite.rect.height - srcSprite.rect.y - packSprite.rect.height;
-                    var padding = new Vector4(left,top,right,bottom);
-                    spriteInfo.Add(new SpriteInfo(sprites[i] as Sprite,padding));
+                    var src_Padding = UnityEngine.Sprites.DataUtility.GetPadding(srcSprite);
+
+                    float pack_PivotLeft = packSprite.pivot.x;
+                    float pack_PivotRight = packSprite.rect.width - pack_PivotLeft;
+                    float pack_PivotBottom = packSprite.pivot.y;
+                    float pack_PivotTop = packSprite.rect.height - pack_PivotBottom;
+
+                    float src_PivotLeft = srcSprite.pivot.x - src_Padding.x;
+                    float src_PivotRight = (srcSprite.rect.width - src_Padding.x - src_Padding.z) - src_PivotLeft;
+                    float src_PivotBottom = srcSprite.pivot.y - src_Padding.y;
+                    float src_PivotTop = (srcSprite.rect.height - src_Padding.y - src_Padding.w) - src_PivotBottom;
+
+                    float d_PivotLeft = pack_PivotLeft - src_PivotLeft;
+                    float d_PivotRight = pack_PivotRight - src_PivotRight;
+                    float d_PivotTop = pack_PivotTop - src_PivotTop;
+                    float d_PivotBottom = pack_PivotBottom - src_PivotBottom;
+
+                    var padding = new Vector4(src_Padding.x - d_PivotLeft, src_Padding.y - d_PivotBottom, src_Padding.z - d_PivotRight, src_Padding.w - d_PivotTop);
+
+                    spriteInfo.Add(new SpriteInfo(sprites[i] as Sprite, padding));
                     break;
                 }
             }
@@ -280,7 +294,8 @@ public class TPAtlasPacker
         AssetDatabase.Refresh();
         return;
     }
-    private static void RewriteAtlasMapAsset(string name, Object[] sprites){
+    private static void RewriteAtlasMapAsset(string name, Object[] sprites)
+    {
         Atlas_SpriteNameList atlas_SpriteName = new Atlas_SpriteNameList();
         atlas_SpriteName.name = name;
         atlas_SpriteName.spriteNameList = new List<string>();
@@ -288,7 +303,7 @@ public class TPAtlasPacker
         {
             atlas_SpriteName.spriteNameList.Add(sprites[i].name);
         }
-        string pathAtlasMap = string.Format("{0}/{1}.asset",UIConfig.PATH_ATLAS_TP, UIConfig.ATLAS_MAP_NAME);
+        string pathAtlasMap = string.Format("{0}/{1}.asset", UIConfig.PATH_ATLAS_TP, UIConfig.ATLAS_MAP_NAME);
         var atlasMap = AssetDatabase.LoadAssetAtPath<AtlasMap>(pathAtlasMap);
         if (atlasMap == null)
         {

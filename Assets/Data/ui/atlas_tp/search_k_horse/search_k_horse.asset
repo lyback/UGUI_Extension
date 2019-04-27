@@ -14,34 +14,34 @@ MonoBehaviour:
   m_Mat: {fileID: 2100000, guid: 1041124792b4e124d8d7dd6b79c1986c, type: 2}
   m_SpriteInfoList:
   - m_Sprite: {fileID: 21300000, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 11, w: 19}
+    m_Padding: {x: 0, y: 0.9999944, z: 11, w: 18.000006}
   - m_Sprite: {fileID: 21300002, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 13, w: 20}
+    m_Padding: {x: 1.000002, y: 0.9999982, z: 11.999996, w: 19.000002}
   - m_Sprite: {fileID: 21300004, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 15, w: 16}
+    m_Padding: {x: 1.0000019, y: 1.9999986, z: 14, w: 14}
   - m_Sprite: {fileID: 21300006, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 7, w: 0}
+    m_Padding: {x: 2.000002, y: 0, z: 5, w: 0}
   - m_Sprite: {fileID: 21300008, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 11, w: 9}
+    m_Padding: {x: 3.0000095, y: 0, z: 7.9999924, w: 9}
   - m_Sprite: {fileID: 21300010, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 4, w: 17}
+    m_Padding: {x: 0.0000019073486, y: 0.99999857, z: 4, w: 16}
   - m_Sprite: {fileID: 21300012, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 2, w: 23}
+    m_Padding: {x: 0, y: 2.000002, z: 2, w: 20.999998}
   - m_Sprite: {fileID: 21300014, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 5, w: 15}
+    m_Padding: {x: 0, y: 0.0000019073486, z: 5, w: 14.999998}
   - m_Sprite: {fileID: 21300048, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 32, w: 6}
+    m_Padding: {x: 11.000002, y: 6.000002, z: 21, w: 0}
   - m_Sprite: {fileID: 21300050, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 33, w: 12}
+    m_Padding: {x: 11.000002, y: 12.000002, z: 22, w: 0}
   - m_Sprite: {fileID: 21300052, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 28, w: 13}
+    m_Padding: {x: 7, y: 12.999998, z: 21, w: 0}
   - m_Sprite: {fileID: 21300054, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 37, w: 6}
+    m_Padding: {x: 13.000002, y: 6.000002, z: 24, w: 0}
   - m_Sprite: {fileID: 21300056, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 24, w: 6}
+    m_Padding: {x: 0.0000019073486, y: 6.000002, z: 24, w: 0}
   - m_Sprite: {fileID: 21300058, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 26, w: 6}
+    m_Padding: {x: 5.000002, y: 6.000002, z: 21, w: 0}
   - m_Sprite: {fileID: 21300060, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 26, w: 6}
+    m_Padding: {x: 5.000002, y: 6, z: 21, w: 0}
   - m_Sprite: {fileID: 21300062, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
-    m_Padding: {x: 0, y: 0, z: 28, w: 6}
+    m_Padding: {x: 6.000002, y: 6.000002, z: 22, w: 0}
