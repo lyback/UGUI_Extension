@@ -4,6 +4,9 @@ tpsheetFileNames:
 - Assets/Art/TP/armyicon.tpsheet
 - Assets/Art/TP/test.tpsheet
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.tpsheet
+- Assets/Data/ui/atlas_tp/armyicon/armyicon.tpsheet
+- Assets/Data/ui/atlas_tp/other/other.tpsheet
+- Assets/Data/ui/atlas_tp/search_k_horse/search_k_horse.tpsheet
 - Assets/Temp/TP/ui/armyicon.tpsheet
 - Assets/Temp/TP/ui/armyicon2.tpsheet
 - Assets/Temp/TP/ui/other.tpsheet
@@ -13,6 +16,9 @@ textureFileNames:
 - Assets/Art/TP/armyicon.png
 - Assets/Art/TP/test.png
 - Assets/codeandweb.com/Example/SpriteSheet/sprites.png
+- Assets/Data/ui/atlas_tp/armyicon/armyicon.png
+- Assets/Data/ui/atlas_tp/other/other.png
+- Assets/Data/ui/atlas_tp/search_k_horse/search_k_horse.png
 - Assets/Temp/TP/ui/armyicon.png
 - Assets/Temp/TP/ui/armyicon2.png
 - Assets/Temp/TP/ui/other.png
@@ -22,6 +28,9 @@ normalmapFileNames:
 - 
 - 
 - Assets/codeandweb.com/Example/SpriteSheet/sprites_n.png
+- 
+- 
+- 
 - 
 - 
 - 

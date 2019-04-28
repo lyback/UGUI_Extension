@@ -123,7 +123,7 @@ public class TPAtlasPacker
         string pathTpSheet = string.Format("{0}/{1}.tpsheet", pathDst, name);
         File.Copy(pathSrcTpSheet, pathTpSheet, true);
         SplitChannel(name, pathSrc, pathDst, isCompress, isSplitChannel);
-        File.Delete(pathTpSheet);
+        // File.Delete(pathTpSheet);//不能删除，删除之后，别人拉取工程之后没有多边形信息
     }
     #endregion
     #region 创建材质球
