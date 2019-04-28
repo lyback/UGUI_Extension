@@ -11,6 +11,17 @@ namespace UnityEngine.UI
         public bool m_UseTPAtlas = true;
         [SerializeField]
         public string m_SpriteName = "";
+
+        protected override void OnPopulateMesh(VertexHelper toFill)
+        {
+            var overrideSprite = this.overrideSprite;
+            if (overrideSprite != null)
+            {
+                m_UsePolyMesh = AtlasManager.Instance.GetIsPolyAtlas(overrideSprite.name);
+            }
+            base.OnPopulateMesh(toFill);
+        }
+
         protected override Vector4 GetPadding(Sprite spr)
         {
             #region LImageForTP

@@ -239,7 +239,7 @@ public class TPAtlasPacker
     }
     #endregion
     #region 创建图集Asset
-    public static void CreateSpriteAsset(string name, string pathScr, string pathDst)
+    public static void CreateSpriteAsset(string name, bool isPoly, string pathScr, string pathDst)
     {
         string pathAsset = string.Format("{0}/{1}.asset", pathDst, name);
         string pathColor = string.Format("{0}/{1}.png", pathDst, name);
@@ -247,13 +247,14 @@ public class TPAtlasPacker
 
         var sprites = AssetDatabase.LoadAllAssetRepresentationsAtPath(pathColor);
         var mat = AssetDatabase.LoadAssetAtPath<Material>(pathMaterial);
-        RewriteAtlasInfoAsset(sprites, pathScr, pathAsset, mat);
+        RewriteAtlasInfoAsset(sprites, isPoly, pathScr, pathAsset, mat);
         RewriteAtlasMapAsset(name, sprites);
     }
-    private static void RewriteAtlasInfoAsset(Object[] sprites, string pathSrc, string pathAsset, Material mat)
+    private static void RewriteAtlasInfoAsset(Object[] sprites, bool isPoly, string pathSrc, string pathAsset, Material mat)
     {
         var atlasInfo = ScriptableObject.CreateInstance<AtlasInfo>();
         atlasInfo.m_Mat = mat;
+        atlasInfo.m_IsPoly = isPoly;
         List<SpriteInfo> spriteInfo = new List<SpriteInfo>();
         var assetObjects = FindBase.GetSourceSprites(pathSrc);
         for (int i = 0; i < sprites.Length; ++i)

@@ -25,17 +25,30 @@ public class AtlasManager
     static AtlasMap m_AtlasMap;
     static Dictionary<string, AtlasInfo> m_AtlasInfoDic;
     static Dictionary<string, Vector4> m_PaddingDic;
+    static Dictionary<string, bool> m_IsPolyDic;
 
     static void Init()
     {
         m_AtlasInfoDic = new Dictionary<string, AtlasInfo>();
         m_PaddingDic = new Dictionary<string, Vector4>();
+        m_IsPolyDic = new Dictionary<string, bool>();
         string pathAtlasMap = string.Format("{0}/{1}.asset", UIConfig.PATH_ATLAS_TP, UIConfig.ATLAS_MAP_NAME);
         //加载,todo:多平台加载
         m_AtlasMap = AssetDatabase.LoadAssetAtPath<AtlasMap>(pathAtlasMap);
         m_AtlasMap.Init();
     }
-
+    public bool GetIsPolyAtlas(string spriteName){
+        bool isPoly;
+        if (m_IsPolyDic.TryGetValue(spriteName, out isPoly))
+        {
+            return isPoly;
+        }
+        string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(spriteName);
+        AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
+        isPoly = atlasInfo.m_IsPoly;
+        m_IsPolyDic.Add(spriteName,isPoly);
+        return isPoly;
+    }
     public Vector4 GetPadding(string spriteName)
     {
         Vector4 padding = Vector4.zero;
@@ -82,7 +95,7 @@ public class AtlasManager
             return;
         }
         AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
-        mat = atlasInfo.GetMat();
+        mat = atlasInfo.m_Mat;
         spr = atlasInfo.GetSprite(sprName);
     }
 }

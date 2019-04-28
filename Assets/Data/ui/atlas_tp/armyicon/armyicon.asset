@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: armyicon
   m_EditorClassIdentifier: 
   m_Mat: {fileID: 2100000, guid: 8aa569bb83c176442ac83c56a9376b1b, type: 2}
+  m_IsPoly: 1
   m_SpriteInfoList:
   - m_Sprite: {fileID: 21300000, guid: e6f4d244231ed2f4b9a018862532cc4f, type: 3}
     m_Padding: {x: 124.00001, y: 39, z: 68, w: 36}

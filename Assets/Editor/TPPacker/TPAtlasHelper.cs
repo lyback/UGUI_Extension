@@ -33,7 +33,7 @@ public class TPAtlasHelper
             TPAtlasPacker.ImportSpriteInfo(name, srcPath, pathAtlasTP, isCompress, isSplitChannel);
 
             EditorUtility.DisplayProgressBar(name, "CREATE_ATLAS_ASSET", (++current) / totalCount);
-            TPAtlasPacker.CreateSpriteAsset(name, srcPath, pathAtlasTP);
+            TPAtlasPacker.CreateSpriteAsset(name, true, srcPath, pathAtlasTP);
             EditorUtility.ClearProgressBar();
         }
         catch (System.Exception)
@@ -67,7 +67,7 @@ public class TPAtlasHelper
             TPAtlasPacker.ImportSpriteInfo(name, srcPath, pathAtlasTP, isCompress, isSplitChannel);
 
             EditorUtility.DisplayProgressBar(name, "CREATE_ATLAS_ASSET", (++current) / totalCount);
-            TPAtlasPacker.CreateSpriteAsset(name, srcPath, pathAtlasTP);
+            TPAtlasPacker.CreateSpriteAsset(name, false, srcPath, pathAtlasTP);
             EditorUtility.ClearProgressBar();
         }
         catch (System.Exception)

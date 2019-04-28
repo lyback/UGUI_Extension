@@ -5,6 +5,7 @@ using UnityEngine;
 public class AtlasInfo : ScriptableObject
 {
     public Material m_Mat;
+    public bool m_IsPoly;
 	[SerializeField]
     private List<SpriteInfo> m_SpriteInfoList = new List<SpriteInfo>();
     public Dictionary<string, SpriteInfo> m_SpriteInfoDic = null;
@@ -39,9 +40,6 @@ public class AtlasInfo : ScriptableObject
             return null;
         }
         return sprInfo.m_Sprite;
-    }
-    public Material GetMat(){
-        return m_Mat;
     }
 #if UNITY_EDITOR
     public void SetSpriteInfoList(List<SpriteInfo> spriteInfoList)

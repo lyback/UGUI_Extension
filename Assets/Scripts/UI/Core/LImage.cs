@@ -15,7 +15,7 @@ namespace UnityEngine.UI
         private bool m_UsePolyRaycastTarget = false;
         public bool usePolyRaycastTarget { get { return m_UsePolyRaycastTarget; } set { if (SetPropertyUtility.SetStruct(ref m_UsePolyRaycastTarget, value)) SetVerticesDirty(); } }
         [SerializeField]
-        private bool m_UsePolyMesh = true;
+        protected bool m_UsePolyMesh = true;
         public bool usePolyMesh { get { return m_UsePolyMesh; } set { if (SetPropertyUtility.SetStruct(ref m_UsePolyMesh, value)) SetVerticesDirty(); } }
         #endregion
 

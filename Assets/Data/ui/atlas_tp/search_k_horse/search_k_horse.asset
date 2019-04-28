@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Name: search_k_horse
   m_EditorClassIdentifier: 
   m_Mat: {fileID: 2100000, guid: 1041124792b4e124d8d7dd6b79c1986c, type: 2}
+  m_IsPoly: 1
   m_SpriteInfoList:
   - m_Sprite: {fileID: 21300000, guid: bf05aa65a8fedb645ba25e106b54cf39, type: 3}
     m_Padding: {x: 0, y: 0.9999944, z: 11, w: 18.000006}

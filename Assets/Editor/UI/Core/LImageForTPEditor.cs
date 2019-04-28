@@ -52,7 +52,6 @@ namespace UnityEditor.UI
             AppearanceControlsGUI();
             RaycastControlsGUI();
 
-
             m_ShowType_LImage.target = m_Sprite.objectReferenceValue != null;
             if (EditorGUILayout.BeginFadeGroup(m_ShowType_LImage.faded))
                 TypeGUI();
