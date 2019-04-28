@@ -10,7 +10,7 @@ public class AtlasMap : ScriptableObject
 {
     [SerializeField]
     private List<Atlas_SpriteNameList> m_AtlasMapList = new List<Atlas_SpriteNameList>();
-    public Dictionary<string, string> m_AtlasMapDic = null;
+    private Dictionary<string, string> m_AtlasMapDic = null;
 
     public void Init()
     {
@@ -25,6 +25,17 @@ public class AtlasMap : ScriptableObject
             }
         }
     }
+
+    public string GetAtlasNameBySpriteName(string sprName){
+        string atlasName;
+        if (!m_AtlasMapDic.TryGetValue(sprName, out atlasName))
+        {
+            Debug.LogError(string.Format("Dont find sprite:{0} in AtlasMap",sprName));
+            return null;
+        }
+        return atlasName;
+    }
+
 #if UNITY_EDITOR
     public void AddAtlas_SpriteName(Atlas_SpriteNameList atlas)
     {

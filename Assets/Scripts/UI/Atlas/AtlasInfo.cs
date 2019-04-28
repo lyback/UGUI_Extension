@@ -8,6 +8,7 @@ public class AtlasInfo : ScriptableObject
 	[SerializeField]
     private List<SpriteInfo> m_SpriteInfoList = new List<SpriteInfo>();
     public Dictionary<string, SpriteInfo> m_SpriteInfoDic = null;
+
     public void Init()
     {
         if (m_SpriteInfoDic != null)
@@ -32,11 +33,15 @@ public class AtlasInfo : ScriptableObject
     public Sprite GetSprite(string sprName)
     {
         SpriteInfo sprInfo;
-        if (m_SpriteInfoDic.TryGetValue(sprName, out sprInfo))
+        if (!m_SpriteInfoDic.TryGetValue(sprName, out sprInfo))
         {
-            return sprInfo.m_Sprite;
+            Debug.LogError(string.Format("Dont find sprite:{0} in AtlasInfo",sprName));
+            return null;
         }
-        return null;
+        return sprInfo.m_Sprite;
+    }
+    public Material GetMat(){
+        return m_Mat;
     }
 #if UNITY_EDITOR
     public void SetSpriteInfoList(List<SpriteInfo> spriteInfoList)

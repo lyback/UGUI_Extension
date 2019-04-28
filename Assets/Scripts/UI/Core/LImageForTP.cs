@@ -8,29 +8,36 @@ namespace UnityEngine.UI
     public class LImageForTP : LImage
     {
         [SerializeField]
-        private bool m_UseTPAtlas = true;
-
+        public bool m_UseTPAtlas = true;
+        [SerializeField]
         public string m_SpriteName = "";
         protected override Vector4 GetPadding(Sprite spr)
         {
+            #region LImageForTP
             if (m_UseTPAtlas)
             {
                 return AtlasManager.Instance.GetPadding(spr.name);
             }
-            else
-            {
-                return Sprites.DataUtility.GetPadding(spr);
-            }
+            #endregion
+            return base.GetPadding(spr);
         }
         protected override Vector4 GetDrawingDimensions(bool shouldPreserveAspect)
         {
             var activeSprite = this.overrideSprite;
             var padding = activeSprite == null ? Vector4.zero : GetPadding(activeSprite);
             //需要加上padding才是原图大小
-            var size = activeSprite == null ? Vector2.zero : new Vector2(activeSprite.rect.width + padding.x + padding.z, activeSprite.rect.height + padding.y + padding.w);
+            var size = activeSprite == null ? Vector2.zero : new Vector2(activeSprite.rect.width, activeSprite.rect.height);
 
             Rect r = GetPixelAdjustedRect();
             // Debug.Log(string.Format("r:{2}, size:{0}, padding:{1}", size, padding, r));
+
+            #region LImageForTP
+            if (m_UseTPAtlas)
+            {
+                size.x += padding.x + padding.z;
+                size.y += padding.y + padding.w;
+            }
+            #endregion
 
             int spriteW = Mathf.RoundToInt(size.x);
             int spriteH = Mathf.RoundToInt(size.y);
@@ -76,6 +83,7 @@ namespace UnityEngine.UI
             {
                 float w;
                 float h;
+                #region LImageForTP
                 if (m_UseTPAtlas)
                 {
                     var padding = GetPadding(overrideSprite);
@@ -87,6 +95,7 @@ namespace UnityEngine.UI
                     w = overrideSprite.rect.width / pixelsPerUnit;
                     h = overrideSprite.rect.height / pixelsPerUnit;
                 }
+                #endregion
                 rectTransform.anchorMax = rectTransform.anchorMin;
                 rectTransform.sizeDelta = new Vector2(w, h);
                 SetAllDirty();

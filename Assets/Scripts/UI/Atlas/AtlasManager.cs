@@ -31,7 +31,7 @@ public class AtlasManager
         m_AtlasInfoDic = new Dictionary<string, AtlasInfo>();
         m_PaddingDic = new Dictionary<string, Vector4>();
         string pathAtlasMap = string.Format("{0}/{1}.asset", UIConfig.PATH_ATLAS_TP, UIConfig.ATLAS_MAP_NAME);
-        //加载
+        //加载,todo:多平台加载
         m_AtlasMap = AssetDatabase.LoadAssetAtPath<AtlasMap>(pathAtlasMap);
         m_AtlasMap.Init();
     }
@@ -43,7 +43,7 @@ public class AtlasManager
         {
             return padding;
         }
-        string atlasName = m_AtlasMap.m_AtlasMapDic[spriteName];
+        string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(spriteName);
         AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
         padding = atlasInfo.GetPadding(spriteName);
         m_PaddingDic.Add(spriteName, padding);
@@ -54,6 +54,7 @@ public class AtlasManager
         if (!m_AtlasInfoDic.TryGetValue(atlasName, out atlasInfo))
         {
             string pathAtlas = string.Format("{0}/{1}/{2}.asset", UIConfig.PATH_ATLAS_TP, atlasName, atlasName);
+            //加载,todo:多平台加载
             atlasInfo = AssetDatabase.LoadAssetAtPath<AtlasInfo>(pathAtlas);
             if (atlasInfo != null)
             {
@@ -62,5 +63,26 @@ public class AtlasManager
             }
         }
         return atlasInfo;
+    }
+    public Sprite GetSprite(string sprName){
+        string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);
+        if (string.IsNullOrEmpty(atlasName))
+        {
+            return null;
+        }
+        AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
+        return atlasInfo.GetSprite(sprName);
+    }
+    public void GetSpriteAndMat(string sprName,out Sprite spr, out Material mat){
+        string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);
+        if (string.IsNullOrEmpty(atlasName))
+        {
+            mat = null;
+            spr = null;
+            return;
+        }
+        AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
+        mat = atlasInfo.GetMat();
+        spr = atlasInfo.GetSprite(sprName);
     }
 }

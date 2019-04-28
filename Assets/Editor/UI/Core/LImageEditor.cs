@@ -39,6 +39,12 @@ namespace UnityEditor.UI
         AnimBool m_ShowSquareShape;
         AnimBool m_ShowCircleShape;
         #endregion
+        #region PolyImage属性
+        SerializedProperty m_UsePolyMesh;
+        SerializedProperty m_UsePolyRaycastTarget;
+        protected AnimBool m_ShowUsePolyMesh;
+        AnimBool m_ShowUsePolyRaycastTarget;
+        #endregion
         protected override void OnEnable()
         {
             base.OnEnable();
@@ -71,16 +77,28 @@ namespace UnityEditor.UI
             m_ShowCircleShape = new AnimBool(shapeTypeEnum == LImage.ShapeType.Circle);
             m_ShowCircleShape.valueChanged.AddListener(Repaint);
             #endregion
+            #region PolyImage
+            m_UsePolyMesh = serializedObject.FindProperty("m_UsePolyMesh");
+            m_UsePolyRaycastTarget = serializedObject.FindProperty("m_UsePolyRaycastTarget");
+            m_ShowUsePolyMesh = new AnimBool();
+            m_ShowUsePolyMesh.valueChanged.AddListener(Repaint);
+            m_ShowUsePolyRaycastTarget = new AnimBool();
+            m_ShowUsePolyRaycastTarget.valueChanged.AddListener(Repaint);
+            #endregion
         }
         protected override void OnDisable()
         {
-            base.OnEnable();
+            base.OnDisable();
             m_ShowType_LImage.valueChanged.RemoveListener(Repaint);
             #region Shape
             m_ShowShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowCommonShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowSquareShape.valueChanged.RemoveListener(Repaint);
             m_ShowCircleShape.valueChanged.RemoveListener(Repaint);
+            #endregion
+            #region PolyImage
+            m_ShowUsePolyMesh.valueChanged.RemoveListener(Repaint);
+            m_ShowUsePolyRaycastTarget.valueChanged.RemoveListener(Repaint);
             #endregion
         }
 
@@ -105,6 +123,15 @@ namespace UnityEditor.UI
                 EditorGUI.indentLevel--;
             }
             EditorGUILayout.EndFadeGroup();
+
+            #region PolyImage
+            m_ShowUsePolyMesh.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex != Image.Type.Filled && (Image.Type)m_Type.enumValueIndex != Image.Type.Tiled;
+            if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyMesh.faded))
+            {
+                PolyImageGUI();
+            }
+            EditorGUILayout.EndFadeGroup();
+            #endregion
 
             #region Shape
             m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
@@ -157,6 +184,23 @@ namespace UnityEditor.UI
                 EditorGUILayout.EndFadeGroup();
             }
             --EditorGUI.indentLevel;
+        }
+        #endregion
+        
+        #region PolyImage
+        protected void PolyImageGUI()
+        {
+            EditorGUI.indentLevel++;
+            {
+                EditorGUILayout.PropertyField(m_UsePolyMesh);
+                m_ShowUsePolyRaycastTarget.target = m_UsePolyMesh.boolValue;
+                if (EditorGUILayout.BeginFadeGroup(m_ShowUsePolyRaycastTarget.faded))
+                {
+                    EditorGUILayout.PropertyField(m_UsePolyRaycastTarget);
+                }
+                EditorGUILayout.EndFadeGroup();
+            }
+            EditorGUI.indentLevel--;
         }
         #endregion
     }
