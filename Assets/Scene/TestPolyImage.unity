@@ -176,6 +176,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -293,6 +295,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -409,6 +413,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -484,6 +490,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -559,6 +567,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -635,6 +645,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -752,6 +764,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -869,6 +883,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -985,6 +1001,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1061,6 +1079,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1178,6 +1198,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1295,6 +1317,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1412,6 +1436,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1528,6 +1554,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1604,6 +1632,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1720,6 +1750,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1796,6 +1828,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -1913,6 +1947,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2029,6 +2065,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2104,6 +2142,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2180,6 +2220,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2297,6 +2339,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2413,6 +2457,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2488,6 +2534,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2564,6 +2612,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2681,6 +2731,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2798,6 +2850,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2915,6 +2969,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -2986,7 +3042,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &166421877
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3250,6 +3306,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3367,6 +3425,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3483,6 +3543,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3558,6 +3620,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3633,6 +3697,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3709,6 +3775,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3826,6 +3894,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -3942,6 +4012,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4017,6 +4089,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4093,6 +4167,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4209,6 +4285,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4284,6 +4362,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4360,6 +4440,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4476,6 +4558,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4552,6 +4636,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4668,6 +4754,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4743,6 +4831,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4819,6 +4909,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -4936,6 +5028,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5053,6 +5147,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5170,6 +5266,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5287,6 +5385,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5404,6 +5504,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5521,6 +5623,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5637,6 +5741,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5713,6 +5819,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5830,6 +5938,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -5947,6 +6057,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6063,6 +6175,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6076,6 +6190,83 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 465495398}
+--- !u!1 &470073616
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 470073617}
+  - component: {fileID: 470073619}
+  - component: {fileID: 470073618}
+  m_Layer: 5
+  m_Name: LImage
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &470073617
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470073616}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766922634}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 300, y: 300}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &470073618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470073616}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f9b913edc7ae749a404e3b5abb30b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 385183dff598bf84ba05dc156eb0e400, type: 3}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
+  m_ShapeType: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 0
+  m_ShapeScale: 1
+  m_CircleShape_Segements: 25
+  m_CircleShape_FillPercent: 1
+--- !u!222 &470073619
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 470073616}
 --- !u!1 &472319510
 GameObject:
   m_ObjectHideFlags: 0
@@ -6139,6 +6330,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6255,6 +6448,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6330,6 +6525,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6406,6 +6603,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6523,6 +6722,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6640,6 +6841,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6756,6 +6959,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6831,6 +7036,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -6907,6 +7114,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7024,6 +7233,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7140,6 +7351,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7215,6 +7428,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7291,6 +7506,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7408,6 +7625,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7524,6 +7743,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7599,6 +7820,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7675,6 +7898,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7791,6 +8016,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7866,6 +8093,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -7941,6 +8170,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8017,6 +8248,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8133,6 +8366,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8209,6 +8444,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8326,6 +8563,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8442,6 +8681,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8517,6 +8758,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8592,6 +8835,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8667,6 +8912,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8743,6 +8990,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8860,6 +9109,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -8976,6 +9227,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9051,6 +9304,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9126,6 +9381,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9202,6 +9459,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9256,6 +9515,83 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 677582284}
+--- !u!1 &694680799
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 694680800}
+  - component: {fileID: 694680802}
+  - component: {fileID: 694680801}
+  m_Layer: 5
+  m_Name: LImage (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &694680800
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 694680799}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 766922634}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 276}
+  m_SizeDelta: {x: 123, y: 118}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &694680801
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 694680799}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 86f9b913edc7ae749a404e3b5abb30b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 21300000, guid: 7ab16f89063d1f5458417ce6dd66c134, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
+  m_ShapeType: 0
+  m_ShapeAnchors: 0
+  m_ShapeAnchorsOffSet: {x: 0, y: 0}
+  m_ShapeAnchorsCalPadding: 0
+  m_ShapeScale: 1
+  m_CircleShape_Segements: 25
+  m_CircleShape_FillPercent: 1
+--- !u!222 &694680802
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 694680799}
 --- !u!1 &727831700
 GameObject:
   m_ObjectHideFlags: 0
@@ -9381,6 +9717,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9497,6 +9835,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9573,6 +9913,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9690,6 +10032,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9807,6 +10151,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9923,6 +10269,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -9936,6 +10284,101 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 762683937}
+--- !u!1 &766922630
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 766922634}
+  - component: {fileID: 766922633}
+  - component: {fileID: 766922632}
+  - component: {fileID: 766922631}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &766922631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766922630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1301386320, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &766922632
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766922630}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &766922633
+Canvas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766922630}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &766922634
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 766922630}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 470073617}
+  - {fileID: 694680800}
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &793435222
 GameObject:
   m_ObjectHideFlags: 0
@@ -9999,6 +10442,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10115,6 +10560,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10190,6 +10637,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10266,6 +10715,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10382,6 +10833,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10458,6 +10911,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10574,6 +11029,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10650,6 +11107,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10766,6 +11225,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10841,6 +11302,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10916,6 +11379,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -10992,6 +11457,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11108,6 +11575,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11183,6 +11652,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11258,6 +11729,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11334,6 +11807,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11451,6 +11926,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11567,6 +12044,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11643,6 +12122,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11759,6 +12240,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11834,6 +12317,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11909,6 +12394,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -11985,6 +12472,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12101,6 +12590,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12176,6 +12667,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12252,6 +12745,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12368,6 +12863,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12443,6 +12940,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12518,6 +13017,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12593,6 +13094,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12669,6 +13172,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12785,6 +13290,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12861,6 +13368,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -12977,6 +13486,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13052,6 +13563,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13128,6 +13641,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13245,6 +13760,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13361,6 +13878,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13436,6 +13955,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13511,6 +14032,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13587,6 +14110,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13704,6 +14229,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13821,6 +14348,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -13937,6 +14466,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14012,6 +14543,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14087,6 +14620,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14162,6 +14697,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14237,6 +14774,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14313,6 +14852,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14429,6 +14970,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14504,6 +15047,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14580,6 +15125,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14697,6 +15244,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14814,6 +15363,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -14930,6 +15481,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15006,6 +15559,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15123,6 +15678,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15239,6 +15796,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15315,6 +15874,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15431,6 +15992,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15507,6 +16070,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15623,6 +16188,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15699,6 +16266,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15815,6 +16384,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15890,6 +16461,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -15965,6 +16538,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16040,6 +16615,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16116,6 +16693,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16232,6 +16811,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16307,6 +16888,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16383,6 +16966,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16500,6 +17085,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16616,6 +17203,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16691,6 +17280,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16767,6 +17358,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -16884,6 +17477,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17001,6 +17596,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17117,6 +17714,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17193,6 +17792,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17309,6 +17910,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17385,6 +17988,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17502,6 +18107,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17619,6 +18226,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17735,6 +18344,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17811,6 +18422,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -17928,6 +18541,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18045,6 +18660,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18116,7 +18733,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1439181525
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18385,6 +19002,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18460,6 +19079,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18536,6 +19157,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18653,6 +19276,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18770,6 +19395,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -18951,6 +19578,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19027,6 +19656,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19144,6 +19775,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19261,6 +19894,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19378,6 +20013,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19495,6 +20132,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19611,6 +20250,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19687,6 +20328,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19803,6 +20446,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19878,6 +20523,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -19954,6 +20601,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20070,6 +20719,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20145,6 +20796,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20221,6 +20874,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20419,6 +21074,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20536,6 +21193,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20653,6 +21312,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20770,6 +21431,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -20887,6 +21550,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21003,6 +21668,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21078,6 +21745,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21153,6 +21822,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21229,6 +21900,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21346,6 +22019,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21462,6 +22137,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21538,6 +22215,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21654,6 +22333,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21729,6 +22410,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21804,6 +22487,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21879,6 +22564,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -21954,6 +22641,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22029,6 +22718,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22105,6 +22796,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22222,6 +22915,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22339,6 +23034,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22455,6 +23152,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22531,6 +23230,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22648,6 +23349,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22765,6 +23468,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22881,6 +23586,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -22956,6 +23663,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23032,6 +23741,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23148,6 +23859,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23224,6 +23937,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23341,6 +24056,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23457,6 +24174,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23532,6 +24251,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23608,6 +24329,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23725,6 +24448,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23841,6 +24566,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23916,6 +24643,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -23991,6 +24720,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24067,6 +24798,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24184,6 +24917,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24300,6 +25035,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24375,6 +25112,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24451,6 +25190,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24567,6 +25308,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24642,6 +25385,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24717,6 +25462,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24793,6 +25540,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24909,6 +25658,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -24985,6 +25736,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -25101,6 +25854,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -25177,6 +25932,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -25294,6 +26051,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}
@@ -25411,6 +26170,8 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+  m_UsePolyRaycastTarget: 0
+  m_UsePolyMesh: 1
   m_ShapeType: 0
   m_ShapeAnchors: 0
   m_ShapeAnchorsOffSet: {x: 0, y: 0}

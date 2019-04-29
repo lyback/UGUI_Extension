@@ -40,7 +40,7 @@ namespace UnityEditor.UI
         AnimBool m_ShowCircleShape;
         #endregion
         #region PolyImage属性
-        SerializedProperty m_UsePolyMesh;
+        protected SerializedProperty m_UsePolyMesh;
         SerializedProperty m_UsePolyRaycastTarget;
         protected AnimBool m_ShowUsePolyMesh;
         AnimBool m_ShowUsePolyRaycastTarget;
@@ -134,7 +134,7 @@ namespace UnityEditor.UI
             #endregion
 
             #region Shape
-            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
+            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && !m_UsePolyMesh.boolValue && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
             if (EditorGUILayout.BeginFadeGroup(m_ShowShapeType.faded))
                 ShapeTypeGUI();
             EditorGUILayout.EndFadeGroup();

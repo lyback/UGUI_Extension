@@ -2,7 +2,7 @@
 
 Unity Version：2017.4.23f1
 
-1.Image裁剪方形&圆形的功能。 
+1.Image扩展功能。 
 
  LImage.cs  
 
@@ -15,18 +15,8 @@ Unity Version：2017.4.23f1
 |ShapeScale |截取范围的缩放，取值0到1 |  
 |CircleShape_Fill_Percent |圆形裁剪时的填充比例，取值0到1 |  
 |CirleShape_Segements |圆形裁剪时的面数设置，取值0到50，越小性能越好 | 
-
-![Image text](img-folder/LImage/LImageEditor_Square.png)
-![Image text](img-folder/LImage/LImageEditor_Cricle.png)
-
-
-2.Image多边形Mesh绘制。
-
-LImagePoly.cs  
-
-|属性|描述|
---|--|
 |Use Poly Mesh |是否开启多边形绘制模式，目前仅支持Simple和Sliced |  
 |Use Poly Raycast Target | 是否开启多边形碰撞检测 |    
 
+![Image text](img-folder/LImage/LImageEditor_Shape.png)
 ![Image text](img-folder/LImage/LImage_PolyMesh.png)

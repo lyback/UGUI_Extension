@@ -76,7 +76,7 @@ namespace UnityEditor.UI
             #endregion
 
             #region Shape
-            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
+            m_ShowShapeType.target = m_Sprite.objectReferenceValue != null && !m_UsePolyMesh.boolValue && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple;
             if (EditorGUILayout.BeginFadeGroup(m_ShowShapeType.faded))
                 ShapeTypeGUI();
             EditorGUILayout.EndFadeGroup();
