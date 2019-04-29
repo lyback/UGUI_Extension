@@ -15,7 +15,7 @@ namespace UnityEditor.UI
             GameObject go = DefaultControls.CreateLImage();
             MenuOptions.PlaceUIElementRoot(go, menuCommand);
         }
-		[MenuItem("GameObject/UI/LImageForTP", false, 2001)]
+        [MenuItem("GameObject/UI/LImageForTP", false, 2001)]
         static public void AddLImageForTP(MenuCommand menuCommand)
         {
             GameObject go = DefaultControls.CreateLImageForTP();
@@ -40,6 +40,41 @@ namespace UnityEditor.UI
             image2.raycastTarget = raycastTarget;
             image2.type = type;
         }
+        [MenuItem("CONTEXT/Image/Image to LImageForTP")]
+        static void Image2LImageForTP(MenuCommand menuCommand)
+        {
+            Image image = menuCommand.context as Image;
+            GameObject go = image.gameObject;
+            var color = image.color;
+            var sprite = image.sprite;
+            var raycastTarget = image.raycastTarget;
 
+            var type = image.type;
+            GameObject.DestroyImmediate(image);
+
+            LImageForTP image2 = go.AddComponent<LImageForTP>();
+            image2.color = color;
+            image2.sprite = sprite;
+            image2.raycastTarget = raycastTarget;
+            image2.type = type;
+        }
+        [MenuItem("CONTEXT/LImage/LImage to LImageForTP")]
+        static void LImage2LImageForTP(MenuCommand menuCommand)
+        {
+            LImage image = menuCommand.context as LImage;
+            GameObject go = image.gameObject;
+            var color = image.color;
+            var sprite = image.sprite;
+            var raycastTarget = image.raycastTarget;
+
+            var type = image.type;
+            GameObject.DestroyImmediate(image);
+
+            LImageForTP image2 = go.AddComponent<LImageForTP>();
+            image2.color = color;
+            image2.sprite = sprite;
+            image2.raycastTarget = raycastTarget;
+            image2.type = type;
+        }
     }
 }

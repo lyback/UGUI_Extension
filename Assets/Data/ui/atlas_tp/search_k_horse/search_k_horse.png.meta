@@ -120,8 +120,8 @@ TextureImporter:
       name: horse_run_10001
       rect:
         serializedVersion: 2
-        x: 113
-        y: 56
+        x: 1
+        y: 252
         width: 139
         height: 85
       alignment: 9
@@ -134,8 +134,8 @@ TextureImporter:
       name: horse_run_10002
       rect:
         serializedVersion: 2
-        x: 247
-        y: 427
+        x: 289
+        y: 321
         width: 137
         height: 84
       alignment: 9
@@ -148,8 +148,8 @@ TextureImporter:
       name: horse_run_10003
       rect:
         serializedVersion: 2
-        x: 138
-        y: 143
+        x: 142
+        y: 237
         width: 135
         height: 88
       alignment: 9
@@ -162,7 +162,7 @@ TextureImporter:
       name: horse_run_10004
       rect:
         serializedVersion: 2
-        x: 1
+        x: 299
         y: 407
         width: 143
         height: 104
@@ -176,8 +176,8 @@ TextureImporter:
       name: horse_run_10005
       rect:
         serializedVersion: 2
-        x: 1
-        y: 229
+        x: 148
+        y: 327
         width: 139
         height: 95
       alignment: 9
@@ -190,8 +190,8 @@ TextureImporter:
       name: horse_run_10006
       rect:
         serializedVersion: 2
-        x: 1
-        y: 147
+        x: 151
+        y: 424
         width: 146
         height: 87
       alignment: 9
@@ -205,7 +205,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 68
+        y: 430
         width: 148
         height: 81
       alignment: 9
@@ -219,7 +219,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 319
+        y: 339
         width: 145
         height: 89
       alignment: 9
@@ -232,8 +232,8 @@ TextureImporter:
       name: horse_standby_10001
       rect:
         serializedVersion: 2
-        x: 382
-        y: 413
+        x: 253
+        y: 121
         width: 118
         height: 98
       alignment: 9
@@ -246,8 +246,8 @@ TextureImporter:
       name: horse_standby_10002
       rect:
         serializedVersion: 2
-        x: 374
-        y: 158
+        x: 373
+        y: 34
         width: 117
         height: 92
       alignment: 9
@@ -260,8 +260,8 @@ TextureImporter:
       name: horse_standby_10003
       rect:
         serializedVersion: 2
-        x: 260
-        y: 334
+        x: 373
+        y: 128
         width: 122
         height: 91
       alignment: 9
@@ -274,8 +274,8 @@ TextureImporter:
       name: horse_standby_10004
       rect:
         serializedVersion: 2
-        x: 274
-        y: 142
+        x: 253
+        y: 21
         width: 113
         height: 98
       alignment: 9
@@ -288,8 +288,8 @@ TextureImporter:
       name: horse_standby_10005
       rect:
         serializedVersion: 2
-        x: 124
-        y: 413
+        x: 1
+        y: 152
         width: 126
         height: 98
       alignment: 9
@@ -302,8 +302,8 @@ TextureImporter:
       name: horse_standby_10006
       rect:
         serializedVersion: 2
-        x: 144
-        y: 326
+        x: 1
+        y: 52
         width: 124
         height: 98
       alignment: 9
@@ -316,8 +316,8 @@ TextureImporter:
       name: horse_standby_10007
       rect:
         serializedVersion: 2
-        x: 128
-        y: 222
+        x: 127
+        y: 52
         width: 124
         height: 98
       alignment: 9
@@ -330,8 +330,8 @@ TextureImporter:
       name: horse_standby_10008
       rect:
         serializedVersion: 2
-        x: 236
-        y: 223
+        x: 279
+        y: 221
         width: 122
         height: 98
       alignment: 9

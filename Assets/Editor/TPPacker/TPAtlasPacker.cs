@@ -28,12 +28,14 @@ public class TPAtlasPacker
     }
     public static void MakeAtlas_None(string name, string pathSrc, string pathDst)
     {
-        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode CropKeepPos --algorithm MaxRects --extrude 1 --border-padding 0 --shape-padding 0 --multipack\"";
+        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode CropKeepPos --algorithm MaxRects --extrude 1 --border-padding 0 --shape-padding 0 \"";
         MakeAtlas(name, pathSrc, pathDst, args);
     }
-    public static void MakeAtlas_Polygon(string name, string pathSrc, string pathDst)
+    //algorithm:Polygon;MaxRects
+    public static void MakeAtlas_Polygon(string name, string pathSrc, string pathDst, string algorithm = "Polygon")
     {
-        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode Polygon --algorithm Polygon --extrude 1 --border-padding 0 --shape-padding 0 --multipack\"";
+        string args = "\"--max-size 2048 --force-squared --size-constraints POT --disable-rotation --trim-mode Polygon --algorithm {0} --extrude 1 --border-padding 0 --shape-padding 0 \"";
+        args = string.Format(args, algorithm);
         MakeAtlas(name, pathSrc, pathDst, args);
     }
     #endregion

@@ -37,7 +37,8 @@ public class AtlasManager
         m_AtlasMap = AssetDatabase.LoadAssetAtPath<AtlasMap>(pathAtlasMap);
         m_AtlasMap.Init();
     }
-    public bool GetIsPolyAtlas(string spriteName){
+    public bool GetIsPolyAtlas(string spriteName)
+    {
         bool isPoly;
         if (m_IsPolyDic.TryGetValue(spriteName, out isPoly))
         {
@@ -46,7 +47,7 @@ public class AtlasManager
         string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(spriteName);
         AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
         isPoly = atlasInfo.m_IsPoly;
-        m_IsPolyDic.Add(spriteName,isPoly);
+        m_IsPolyDic.Add(spriteName, isPoly);
         return isPoly;
     }
     public Vector4 GetPadding(string spriteName)
@@ -62,7 +63,8 @@ public class AtlasManager
         m_PaddingDic.Add(spriteName, padding);
         return padding;
     }
-    public AtlasInfo GetAtlasInfo(string atlasName){
+    public AtlasInfo GetAtlasInfo(string atlasName)
+    {
         AtlasInfo atlasInfo;
         if (!m_AtlasInfoDic.TryGetValue(atlasName, out atlasInfo))
         {
@@ -77,7 +79,8 @@ public class AtlasManager
         }
         return atlasInfo;
     }
-    public Sprite GetSprite(string sprName){
+    public Sprite GetSprite(string sprName)
+    {
         string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);
         if (string.IsNullOrEmpty(atlasName))
         {
@@ -86,7 +89,8 @@ public class AtlasManager
         AtlasInfo atlasInfo = GetAtlasInfo(atlasName);
         return atlasInfo.GetSprite(sprName);
     }
-    public void GetSpriteAndMat(string sprName,out Sprite spr, out Material mat){
+    public void GetSpriteAndMat(string sprName, out Sprite spr, out Material mat)
+    {
         string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);
         if (string.IsNullOrEmpty(atlasName))
         {

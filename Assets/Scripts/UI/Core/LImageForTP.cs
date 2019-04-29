@@ -95,7 +95,7 @@ namespace UnityEngine.UI
                 float w;
                 float h;
                 #region LImageForTP
-                if (m_UseTPAtlas)
+                if (m_UseTPAtlas && (type == Image.Type.Sliced || type == Image.Type.Simple))
                 {
                     var padding = GetPadding(overrideSprite);
                     w = (overrideSprite.rect.width + padding.x + padding.z) / pixelsPerUnit;
