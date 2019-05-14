@@ -1,0 +1,51 @@
+<exporter version="1.0">
+    <!-- identifier of the exporter -->
+    <name>plain</name>
+	
+    <!-- display name of the exporter for the combo box -->
+    <displayName>~~~ Your custom exporter ~~~</displayName>
+	
+    <!-- description of the exporter -->
+    <description>Exporter to demonstrate how to crate your own exporters</description>
+
+    <!-- exporter version -->
+    <version>1.0</version>
+	
+    <!-- currently only one file allowed - more to come with update -->
+    <files>
+        <file>
+            <!-- name of this file variable -->
+            <name>plaintext</name>
+
+            <!-- human readable name (for GUI) -->
+            <displayName>Plain text file</displayName>
+
+            <!-- file extension for the file -->
+            <fileExtension>txt</fileExtension>
+
+            <!-- name of the template file -->
+            <template>plain.txt</template>
+        </file>
+    </files>
+
+    <!-- target framework supports trimming -->
+    <supportsTrimming>true</supportsTrimming>
+
+    <!-- target framework supports rotated sprites -->
+    <supportsRotation>true</supportsRotation>
+
+    <!-- rotated sprites direction (cw/ccw) -->
+    <rotationDirection>cw</rotationDirection>
+
+    <!-- supports npot sizes -->
+    <supportsNPOT>true</supportsNPOT>
+
+    <!-- supports file name stripping (remove .png etc) -->
+    <supportsTrimSpriteNames>yes</supportsTrimSpriteNames>
+
+    <!-- supports texure subpath -->
+    <supportsTextureSubPath>yes</supportsTextureSubPath>
+
+</exporter>
+
+

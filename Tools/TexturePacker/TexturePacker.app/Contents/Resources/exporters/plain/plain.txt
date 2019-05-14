@@ -1,0 +1,119 @@
+Simple plain text exporter for demo purposes
+
+See http://www.grantlee.org/apidox/for_themers.html for more information
+
+Texture data:
+    texture.width  = {{texture.size.width}}
+    texture.height = {{texture.size.height}}
+
+    texture.trimmedName = {{texture.trimmedName}}
+    texture.fullName = {{texture.fullName}}
+    texture.absoluteFileName = {{texture.absoluteFileName}}
+
+SmartUpdateHash: {{smartUpdateKey}}
+
+Settings:
+
+Access to all values in the settings (.tps file):
+
+settings.premultiplyAlpha = {{settings.premultiplyAlpha}}
+settings.dataFormat = {{settings.dataFormat}}
+settings.allowRotation = {{settings.allowRotation}}
+settings.flipPVR = {{settings.flipPVR}}
+settings.ditherType = {{settings.ditherType}}
+...
+
+Sprite data:
+
+There are 2 variants:
+- sprites - contains the sprites, aliases are available in the
+  aliasList property and are not added top level
+
+- allSprites - list of all sprites
+
+Load javascript filter plugin, must be located in the exporter's folder in a subfolder
+grantlee/0.2/makecssselector.qs
+{% load makecssselector %}
+
+// set width & height for calculations using the javascript filter
+{{texture.size.width|setWidth}}
+{{texture.size.width|setHeight}}
+
+{% for sprite in allSprites %}
+    =========================================================================
+
+    Use the javascript filter plugin to replace -hover with :hover
+    {{sprite.fullName|makecssselector}}
+
+    -- name without image type extension
+    sprite.trimmedName      = {{sprite.trimmedName}}
+
+    -- name with image extension
+    sprite.fullName         = {{sprite.fullName}}
+
+    -- offset of the center of the trimmed sprite from the
+    -- center of the original sprite (used by cocos2d)
+    sprite.absoluteOffset.x = {{sprite.absoluteOffset.x}}
+    sprite.absoluteOffset.y = {{sprite.absoluteOffset.y}}
+
+    -- list of alias sprites for this one
+    sprite.aliasList = {% for a in sprite.aliasList %} {{ a.trimmedName }} {% endfor %}
+
+    --- frame rectangle with pixel coordinates
+    sprite.frameRect.x = {{sprite.frameRect.x}}
+    sprite.frameRect.y = {{sprite.frameRect.y}}
+    sprite.frameRect.width = {{sprite.frameRect.width}}
+    sprite.frameRect.height = {{sprite.frameRect.height}}
+
+    --- frame rectangle with uv coordinates (0..1)
+    sprite.frameRectRel.x = {{sprite.frameRectRel.x}}
+    sprite.frameRectRel.y = {{sprite.frameRectRel.y}}
+    sprite.frameRectRel.width = {{sprite.frameRectRel.width}}
+    sprite.frameRectRel.height = {{sprite.frameRectRel.height}}
+
+    --- frame rectangle with uv coordinates (0..1) calculated through JS
+    sprite.frameRectRel.x = {{sprite.frameRect.x|makeRelX}}
+    sprite.frameRectRel.y = {{sprite.frameRect.y|makeRelY}}
+    sprite.frameRectRel.width = {{sprite.frameRect.width|makeRelX}}
+    sprite.frameRectRel.height = {{sprite.frameRect.height|makeRelY}}
+
+    --- version of the frame rect with "original" width and height
+    sprite.frameRectWithoutRotation.x = {{sprite.frameRectWithoutRotation.x}}
+    sprite.frameRectWithoutRotation.y = {{sprite.frameRectWithoutRotation.y}}
+    sprite.frameRectWithoutRotation.width = {{sprite.frameRectWithoutRotation.width}}
+    sprite.frameRectWithoutRotation.height = {{sprite.frameRectWithoutRotation.height}}
+
+    -- true if the sprite was rotated
+    sprite.rotated        = {{sprite.rotated}}
+
+    -- true if the sprite does not contain any transparent pixels
+    sprite.isSolid        = {{sprite.isSolid}}
+
+    -- true if the sprite was trimmed
+    sprite.trimmed        = {{sprite.trimmed}}
+
+    sprite.sourceRect.x = {{sprite.sourceRect.x}}
+    sprite.sourceRect.y = {{sprite.sourceRect.y}}
+    sprite.sourceRect.width = {{sprite.sourceRect.width}}
+    sprite.sourceRect.height = {{sprite.sourceRect.height}}
+
+    sprite.cornerOffset.x = {{sprite.cornerOffset.x}}
+    sprite.cornerOffset.y = {{sprite.cornerOffset.y}}
+
+    sprite.untrimmedSize.width = {{sprite.untrimmedSize.width}}
+    sprite.untrimmedSize.height = {{sprite.untrimmedSize.height}}
+
+    -- the file absolute file name of the sprite
+    sprite.fileData.absoluteFileName = {{sprite.fileData.absoluteFileName}}
+
+    -- the modification date of the sprite
+    sprite.fileData.lastModified = {{sprite.fileData.lastModified}}
+
+    -- the creation date of the sprite
+    sprite.fileData.created = {{sprite.fileData.created}}
+
+    -- the file size of the sprite
+    sprite.fileData.fileSize = {{sprite.fileData.fileSize}}
+
+{% endfor %}
+

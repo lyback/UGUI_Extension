@@ -1,0 +1,15 @@
+{
+"images": ["{{settings.textureSubPath}}{{texture.fullName}}"],
+"frames": [
+{% for sprite in allSprites %}
+    [{{sprite.frameRect.x}}, {{sprite.frameRect.y}}, {{sprite.frameRect.width}}, {{sprite.frameRect.height}}]{% if not forloop.last %}, {% endif %}{% endfor %}
+],
+"animations": {
+    {% for sprite in allSprites %}
+        "{{sprite.trimmedName}}":[{{ forloop.counter0 }}]{% if not forloop.last %}, {% endif %}{% endfor %}
+},
+"texturepacker": [
+        "SmartUpdateHash: {{smartUpdateKey}}",
+        "Created with TexturePacker (http://www.texturepacker.com) for EaselJS"
+]
+}
