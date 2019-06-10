@@ -1,2 +1,3 @@
 *.cs linguist-language=C#
 *.meta linguist-language=C#
+*.* linguist-language=C#
