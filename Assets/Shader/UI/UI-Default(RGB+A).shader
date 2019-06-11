@@ -101,6 +101,12 @@ Shader "UI/Default(RGB+A)"
 
 				color.a = color.a * alpha.r;
 
+				color *= IN.color;
+
+				#ifdef UNITY_UI_ALPHACLIP
+					clip (color.a - 0.001);
+				#endif
+				
 				return color;
 			}
 		ENDCG
