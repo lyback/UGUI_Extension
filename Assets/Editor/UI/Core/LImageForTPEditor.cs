@@ -87,7 +87,7 @@ namespace UnityEditor.UI
         }
 
         private Sprite _lastSprite;
-        private string _lastSpriteName;
+        private string _lastSpriteName = "";
         private void SetTPMat()
         {
             LImageForTP image = target as LImageForTP;
