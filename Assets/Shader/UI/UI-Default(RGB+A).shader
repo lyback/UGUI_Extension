@@ -101,7 +101,16 @@ Shader "UI/Default(RGB+A)"
 
 				color.a = color.a * alpha.r;
 
-				color *= IN.color;
+				if (IN.gray == 0) 
+				{
+					fixed grey = dot(color.rgb, float3(0.299, 0.587, 0.114));
+					color.rgb = fixed3(grey, grey, grey);
+					color.a *= IN.color.a;
+				}
+				else
+				{
+					color = color * IN.color;
+				}
 
 				#ifdef UNITY_UI_ALPHACLIP
 					clip (color.a - 0.001);
