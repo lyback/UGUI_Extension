@@ -54,6 +54,8 @@ Shader "UI/Default(RGB+A)"
 			#include "UnityCG.cginc"
 			#include "UnityUI.cginc"
 			
+			#pragma multi_compile __ UNITY_UI_ALPHACLIP
+			
 			struct appdata_t
 			{
 				float4 vertex   : POSITION;
