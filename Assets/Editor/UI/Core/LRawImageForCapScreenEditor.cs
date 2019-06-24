@@ -10,20 +10,8 @@ using UnityEngine;
 public class LRawImageForCapScreenEditor : RawImageEditor
 {
     //################################
-    // Constant or Static Members.
-    //################################
-    public enum QualityMode : int
-    {
-        Fast = (DesamplingRate.x2 << 0) + (DesamplingRate.x2 << 4) + (FilterMode.Bilinear << 8) + (2 << 10),
-        Medium = (DesamplingRate.x1 << 0) + (DesamplingRate.x1 << 4) + (FilterMode.Bilinear << 8) + (3 << 10),
-        Detail = (DesamplingRate.None << 0) + (DesamplingRate.x1 << 4) + (FilterMode.Bilinear << 8) + (5 << 10),
-        Custom = -1,
-    }
-    //################################
     // Private Members.
     //################################
-    const int Bits4 = (1 << 4) - 1;
-    const int Bits2 = (1 << 2) - 1;
     SerializedProperty _spTexture;
     SerializedProperty _spColor;
     SerializedProperty _spRaycastTarget;
@@ -57,6 +45,8 @@ public class LRawImageForCapScreenEditor : RawImageEditor
     /// </summary>
     public override void OnInspectorGUI()
     {
+        bool isNeedBuildMat = false;
+
         var graphic = (target as LRawImageForCapScreen);
         serializedObject.Update();
 
@@ -79,7 +69,7 @@ public class LRawImageForCapScreenEditor : RawImageEditor
         //================
         GUILayout.Space(10);
         EditorGUILayout.LabelField("Blur Effect", EditorStyles.boldLabel);
-        LBlurEffectEditor.DrawBlurProperties(serializedObject);
+        isNeedBuildMat = LBlurEffectEditor.DrawBlurProperties(serializedObject);
 
         //================
         // Advanced option.
@@ -120,6 +110,13 @@ public class LRawImageForCapScreenEditor : RawImageEditor
                 graphic.Release();
             }
             EditorGUI.EndDisabledGroup();
+        }
+
+        if (isNeedBuildMat || (spMaterial.objectReferenceValue == null && _spBlurMode.intValue != 0))
+        {
+            Shader shader = Shader.Find("UI/Hidden/UI-EffectCapture-Blur");
+            spMaterial.objectReferenceValue = MaterialUtility.GetOrGenerateMaterialVariant(shader, (BlurMode)_spBlurMode.intValue);
+            serializedObject.ApplyModifiedProperties();
         }
     }
     /// <summary>

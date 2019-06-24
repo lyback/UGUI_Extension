@@ -5,7 +5,6 @@ using UnityEngine.Rendering;
 
 public class LRawImageForCapScreen : LEffect_Prop_CapScreen
 {
-	BlurMode _curBlurMode = BlurMode.None;
     void Init()
     {
         if (s_CopyId == 0)
@@ -15,19 +14,14 @@ public class LRawImageForCapScreen : LEffect_Prop_CapScreen
             s_EffectId2 = Shader.PropertyToID("_LRawImageForCapScreen_s_EffectId2");
             s_EffectFactorId = Shader.PropertyToID("_EffectFactor");
         }
-        if (effectMaterial == null)
-        {
-            effectMaterial = new Material(Shader.Find("UI/Hidden/UI-EffectCapture-Blur"));
-			
-        }
-		if (_curBlurMode != blurMode)
-		{
-			effectMaterial.shaderKeywords = new string[]{Enum.GetName(typeof(BlurMode),blurMode).ToUpper()};
-			_curBlurMode = blurMode;
-		}
         if (s_CommandBuffer == null)
         {
             s_CommandBuffer = new CommandBuffer();
+        }
+
+        if (effectMaterial == null)
+        {
+            Debug.LogError("LRawImageForCapScreen not Fine effectMaterial");
         }
     }
     public void Capture()

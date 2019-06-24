@@ -9,11 +9,13 @@ public class LBlurEffectEditor : Editor
     //================
     // Blur setting.
     //================
-    public static void DrawBlurProperties(SerializedObject serializedObject)
+    public static bool DrawBlurProperties(SerializedObject serializedObject)
     {
-
+        bool isBlurModeChanger = false;
         var spBlurMode = serializedObject.FindProperty("m_BlurMode");
+        EditorGUI.BeginChangeCheck();
         EditorGUILayout.PropertyField(spBlurMode);
+        isBlurModeChanger = EditorGUI.EndChangeCheck();
 
         // When blur is enable, show parameters.
         if (spBlurMode.intValue != (int)BlurMode.None)
@@ -28,5 +30,6 @@ public class LBlurEffectEditor : Editor
             }
             EditorGUI.indentLevel--;
         }
+        return isBlurModeChanger;
     }
 }

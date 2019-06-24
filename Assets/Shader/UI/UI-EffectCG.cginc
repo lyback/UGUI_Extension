@@ -18,7 +18,7 @@ fixed4 Tex2DBlurring1D (sampler2D tex, half2 uv, half2 blur)
 	#elif DETAILBLUR
 	const int KERNEL_SIZE = 7;
 	#else
-	const int KERNEL_SIZE = 1;
+	const int KERNEL_SIZE = 2;
 	#endif
 	float4 o = 0;
 	float sum = 0;
