@@ -79,6 +79,23 @@ public class AtlasManager
         }
         return atlasInfo;
     }
+    public AtlasInfo GetAtlasInfoBySpriteName(string sprName)
+    {
+        string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);
+        AtlasInfo atlasInfo;
+        if (!m_AtlasInfoDic.TryGetValue(atlasName, out atlasInfo))
+        {
+            string pathAtlas = string.Format("{0}/{1}/{2}.asset", UIConfig.PATH_ATLAS_TP, atlasName, atlasName);
+            //加载,todo:多平台加载
+            atlasInfo = AssetDatabase.LoadAssetAtPath<AtlasInfo>(pathAtlas);
+            if (atlasInfo != null)
+            {
+                atlasInfo.Init();
+                m_AtlasInfoDic.Add(atlasName, atlasInfo);
+            }
+        }
+        return atlasInfo;
+    }
     public Sprite GetSprite(string sprName)
     {
         string atlasName = m_AtlasMap.GetAtlasNameBySpriteName(sprName);

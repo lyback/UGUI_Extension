@@ -133,7 +133,11 @@ namespace UnityEditor.UI
             Material mat;
             AtlasManager.Instance.GetSpriteAndMat(sprName,out spr,out mat);
             m_Sprite.objectReferenceValue = spr;
-            m_Material.objectReferenceValue = mat;
+            var uieffect = ((LImageForTP)target).GetComponent<LUIEffectBase>();
+            if (uieffect == null || !uieffect.isActiveAndEnabled)
+            {
+                m_Material.objectReferenceValue = mat;
+            }
             m_SpriteName.stringValue = sprName;
         }
     }

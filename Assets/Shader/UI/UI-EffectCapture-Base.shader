@@ -1,4 +1,4 @@
-﻿Shader "Hidden/UI-EffectCapture-Base"
+﻿Shader "UI/Hidden/UI-EffectCapture-Base"
 {
 	Properties
 	{

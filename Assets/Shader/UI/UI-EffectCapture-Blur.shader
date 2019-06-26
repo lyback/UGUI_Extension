@@ -15,7 +15,7 @@
             Mode off
         }
         
-        UsePass "Hidden/UI-EffectCapture-Base/EFFECTCAPTURE-BASE"
+        UsePass "UI/Hidden/UI-EffectCapture-Base/EFFECTCAPTURE-BASE"
         
         Pass
         {
