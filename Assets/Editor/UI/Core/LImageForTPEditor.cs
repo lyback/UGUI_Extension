@@ -125,6 +125,13 @@ namespace UnityEditor.UI
                         _lastSprite = m_Sprite.objectReferenceValue as Sprite;
                         _lastSpriteName = sprName;
                     }
+                    else if (m_Material.objectReferenceValue == null)
+                    {
+                        string sprName = m_SpriteName.stringValue;
+                        ResetSpriteByName(sprName);
+                        _lastSprite = m_Sprite.objectReferenceValue as Sprite;
+                        _lastSpriteName = sprName;
+                    }
                 }
             }
         }
@@ -137,6 +144,10 @@ namespace UnityEditor.UI
             if (uieffect == null || !uieffect.isActiveAndEnabled)
             {
                 m_Material.objectReferenceValue = mat;
+            }
+            else if (uieffect)
+            {
+                EditorApplication.delayCall += uieffect.ModifyMaterial;
             }
             m_SpriteName.stringValue = sprName;
         }

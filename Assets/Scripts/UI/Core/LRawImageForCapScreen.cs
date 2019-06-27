@@ -60,7 +60,7 @@ namespace UnityEngine.UI
 #if UNITY_EDITOR
             s_CommandBuffer.Blit(Resources.FindObjectsOfTypeAll<RenderTexture>().FirstOrDefault(x => x.name == "GameView RT"), s_CopyId, effectMaterial, 0);
 #else
-		s_CommandBuffer.Blit(BuiltinRenderTextureType.BindableTexture, s_CopyId, effectMaterial, 0);
+		    s_CommandBuffer.Blit(BuiltinRenderTextureType.BindableTexture, s_CopyId, effectMaterial, 0);
 #endif
 
             //Iterate blurring operation.

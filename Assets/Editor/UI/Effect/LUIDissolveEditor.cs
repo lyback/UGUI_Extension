@@ -31,9 +31,6 @@ namespace UnityEditor.UI
 			_spNoiseTexture = serializedObject.FindProperty("m_NoiseTexture");
 			_spKeepAspectRatio = serializedObject.FindProperty("m_KeepAspectRatio");
 
-			_shader = Shader.Find ("TextMeshPro/Distance Field (UIDissolve)");
-			_mobileShader = Shader.Find ("TextMeshPro/Mobile/Distance Field (UIDissolve)");
-			_spriteShader = Shader.Find ("TextMeshPro/Sprite (UIDissolve)");
 		}
 
 		/// <summary>
@@ -70,20 +67,22 @@ namespace UnityEditor.UI
 			EditorGUILayout.PropertyField(_spEffectArea);
 			EditorGUILayout.PropertyField(_spKeepAspectRatio);
 
-            if ((isNeedBuildMat || _spMaterial.objectReferenceValue == null) &&_spNoiseTexture.objectReferenceValue != null)
+			//================
+			// Set Mat.
+			//================
+			var obj = target as LUIDissolve;
+            if ((isNeedBuildMat || _spMaterial.objectReferenceValue == null || _lastGraphic != obj.targetGraphic) &&_spNoiseTexture.objectReferenceValue != null)
             {
-                var obj = target as LUIDissolve;
                 if (obj.targetGraphic is LImageForTP)
                 {
                     Shader shader = Shader.Find("UI/Hidden/UI-Effect-Dissolve(RGB+A)");
                     _spMaterial.objectReferenceValue = MaterialUtility.GetOrGenerateMaterialVariant(shader, (ColorMode)(_spColorMode.intValue));
-                    serializedObject.ApplyModifiedProperties();
-                }
+				}
                 else{
                     Shader shader = Shader.Find("UI/Hidden/UI-Effect-Dissolve");
                     _spMaterial.objectReferenceValue = MaterialUtility.GetOrGenerateMaterialVariant(shader, (ColorMode)(_spColorMode.intValue));
-                    serializedObject.ApplyModifiedProperties();
                 }
+				_lastGraphic = obj.targetGraphic;
             }
 
 			serializedObject.ApplyModifiedProperties();
@@ -102,8 +101,6 @@ namespace UnityEditor.UI
 		SerializedProperty _spNoiseTexture;
 		SerializedProperty _spEffectArea;
 		SerializedProperty _spKeepAspectRatio;
-		Shader _shader;
-		Shader _mobileShader;
-		Shader _spriteShader;
+		Graphic _lastGraphic;
     }
 }

@@ -40,6 +40,10 @@ public class MaterialCache
             };
             materialCaches.Add(cache);
         }
+        else if (cache.material == null)
+        {
+            cache.material = onCreateMaterial();
+        }
         return cache;
     }
 

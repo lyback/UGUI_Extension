@@ -31,6 +31,11 @@ namespace UnityEngine.UI
         public Material effectMaterial { get { return m_EffectMaterial; } }
 
         /// <summary>
+        /// graphic material.
+        /// </summary>
+        public virtual Material material { get { return graphic.material; } set { graphic.material = value; } }
+
+        /// <summary>
         /// Modifies the material.
         /// </summary>
         public virtual void ModifyMaterial()

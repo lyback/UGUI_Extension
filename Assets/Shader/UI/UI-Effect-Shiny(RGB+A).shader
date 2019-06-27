@@ -1,10 +1,9 @@
-﻿Shader "UI/Hidden/UI-Effect-Dissolve(RGB+A)"
+Shader "UI/Hidden/UI-Effect-Shiny(RGB+A)"
 {
 	Properties
 	{
-		[PerRendererData] _MainTex ("Sprite Texture", 2D) = "white" {}
+		[PerRendererData] _MainTex ("Main Texture", 2D) = "white" {}
 		_AlphaTex ("Alpha Texture", 2D) = "white" {}
-
 		_Color ("Tint", Color) = (1,1,1,1)
 		
 		_StencilComp ("Stencil Comparison", Float) = 8
@@ -18,9 +17,6 @@
 		[Toggle(UNITY_UI_ALPHACLIP)] _UseUIAlphaClip ("Use Alpha Clip", Float) = 0
 
 		_ParamTex ("Parameter Texture", 2D) = "white" {}
-		
-		[Header(Dissolve)]
-		_NoiseTex("Noise Texture (A)", 2D) = "white" {}
 	}
 
 	SubShader
@@ -59,14 +55,12 @@
 			#pragma fragment frag
 			#pragma target 2.0
 			
-			#define DISSOLVE 1
 			#pragma multi_compile __ UNITY_UI_ALPHACLIP
-			#pragma shader_feature __ ADD SUBTRACT FILL
 
 			#include "UnityCG.cginc"
 			#include "UnityUI.cginc"
 			#include "UI-EffectCG.cginc"
-
+			
 			struct appdata_t
 			{
 				float4 vertex   : POSITION;
@@ -83,17 +77,16 @@
 				float4 worldPosition : TEXCOORD1;
 				UNITY_VERTEX_OUTPUT_STEREO
 
-				half3 param : TEXCOORD2;
+				half2 param : TEXCOORD2;
 			};
 			
 			fixed4 _Color;
 			fixed4 _TextureSampleAdd;
 			float4 _ClipRect;
-
 			sampler2D _MainTex;
-			float4 _MainTex_ST;
+			float4 _MainTex_TexelSize;
 			sampler2D _AlphaTex;
-			
+
 			v2f vert(appdata_t IN)
 			{
 				v2f OUT;
@@ -103,26 +96,22 @@
 
 				OUT.vertex = UnityObjectToClipPos(IN.vertex);
 
-				OUT.texcoord = IN.texcoord;
-				
 				OUT.color = IN.color * _Color;
 
 				OUT.texcoord = UnpackToVec2(IN.texcoord.x);
-				OUT.param = UnpackToVec3(IN.texcoord.y);
+				OUT.param = UnpackToVec2(IN.texcoord.y);
 				return OUT;
 			}
 
 			fixed4 frag(v2f IN) : SV_Target
 			{
-
 				half4 color = (tex2D(_MainTex, IN.texcoord) + _TextureSampleAdd) * IN.color;
 				fixed4 alpha = tex2D(_AlphaTex, IN.texcoord);
 				color.a = color.a * alpha.r;
 				color.a *= UnityGet2DClipping(IN.worldPosition.xy, _ClipRect);
-				
-				// Dissolve
-				color = ApplyTransitionEffect(color, IN.param) * IN.color;
 
+				color = ApplyShinyEffect(color, IN.param);
+				
 				#ifdef UNITY_UI_ALPHACLIP
 				clip (color.a - 0.001);
 				#endif

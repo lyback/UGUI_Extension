@@ -21,7 +21,6 @@ namespace UnityEngine.UI
         // Serialize Members.
         //################################
         [Tooltip("Current location[0-1] for dissolve effect. 0 is not dissolved, 1 is completely dissolved.")]
-        [FormerlySerializedAs("m_Location")]
         [SerializeField] [Range(0, 1)] float m_EffectFactor = 0.5f;
 
         [Tooltip("Edge width.")]
@@ -51,24 +50,6 @@ namespace UnityEngine.UI
         //################################
         // Public Members.
         //################################
-
-        /// <summary>
-        /// Effect factor between 0(start) and 1(end).
-        /// </summary>
-        [System.Obsolete("Use effectFactor instead (UnityUpgradable) -> effectFactor")]
-        public float location
-        {
-            get { return m_EffectFactor; }
-            set
-            {
-                value = Mathf.Clamp(value, 0, 1);
-                if (!Mathf.Approximately(m_EffectFactor, value))
-                {
-                    m_EffectFactor = value;
-                    SetDirty();
-                }
-            }
-        }
 
         /// <summary>
         /// Effect factor between 0(start) and 1(end).
@@ -194,11 +175,6 @@ namespace UnityEngine.UI
         public ColorMode colorMode { get { return m_ColorMode; } }
 
         /// <summary>
-        /// graphic material.
-        /// </summary>
-        public virtual Material material { get { return graphic.material; } set { graphic.material = value; } }
-
-        /// <summary>
         /// Gets the parameter texture.
         /// </summary>
         public override ParameterTexture ptex { get { return _ptex; } }
@@ -215,23 +191,23 @@ namespace UnityEngine.UI
         {
             bool isTpImage = false;
             Texture _AlphaTex = null;
+            string key = "";
             if (graphic is LImageForTP)
             {
                 var image = graphic as LImageForTP;
                 isTpImage = true;
                 _AlphaTex = AtlasManager.Instance.GetAtlasInfoBySpriteName(image.m_SpriteName).m_Mat.GetTexture("_AlphaTex");
-            }
-            string key = "";
-            if (isTpImage)
-            {
+                
                 string noiseKey = (m_NoiseTexture ? m_NoiseTexture.GetInstanceID().ToString() : "null");
                 string spriteKey = _AlphaTex.GetInstanceID().ToString();
                 key = string.Format("{0}{1}{2}", noiseKey, spriteKey, m_ColorMode);
             }
             else
             {
-                key = (m_NoiseTexture ? m_NoiseTexture.GetInstanceID().ToString() : "null");
+                string noiseKey = (m_NoiseTexture ? m_NoiseTexture.GetInstanceID().ToString() : "null");
+                key = string.Format("{0}{1}", noiseKey, m_ColorMode);
             }
+            
             if (_materialCache != null && (_materialCache.key != key || !isActiveAndEnabled || !m_EffectMaterial))
             {
                 MaterialCache.Unregister(_materialCache);

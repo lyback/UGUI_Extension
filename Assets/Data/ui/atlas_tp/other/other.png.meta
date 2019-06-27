@@ -49,7 +49,7 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 2
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -102,11 +102,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 2
-        width: 121
-        height: 112
+        y: 7
+        width: 120
+        height: 109
       alignment: 9
-      pivot: {x: 0.49173555, y: 0.4732143}
+      pivot: {x: 0.4875, y: 0.48623854}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -115,7 +115,7 @@ TextureImporter:
       name: frame_equipment_wall_03
       rect:
         serializedVersion: 2
-        x: 140
+        x: 131
         y: 451
         width: 118
         height: 60
@@ -129,8 +129,8 @@ TextureImporter:
       name: icon_alchemlab_lock_01
       rect:
         serializedVersion: 2
-        x: 342
-        y: 455
+        x: 131
+        y: 393
         width: 47
         height: 56
       alignment: 0
@@ -144,11 +144,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 252
-        width: 136
-        height: 259
+        y: 263
+        width: 128
+        height: 248
       alignment: 9
-      pivot: {x: 0.50735295, y: 0.5212355}
+      pivot: {x: 0.5078125, y: 0.5080645}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -158,11 +158,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 105
+        y: 118
         width: 150
-        height: 147
+        height: 143
       alignment: 9
-      pivot: {x: 0.5, y: 0.50340134}
+      pivot: {x: 0.5, y: 0.5174825}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: icon_equipment_storagebox
       rect:
         serializedVersion: 2
-        x: 260
-        y: 440
-        width: 80
-        height: 71
+        x: 123
+        y: 51
+        width: 76
+        height: 65
       alignment: 9
-      pivot: {x: 0.5125, y: 0.5633803}
+      pivot: {x: 0.5131579, y: 0.53846157}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -185,8 +185,8 @@ TextureImporter:
       name: progress_alchemlab_02
       rect:
         serializedVersion: 2
-        x: 1
-        y: 483
+        x: 123
+        y: 21
         width: 28
         height: 28
       alignment: 0

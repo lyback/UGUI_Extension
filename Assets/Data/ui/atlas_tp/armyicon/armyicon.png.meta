@@ -88,8 +88,8 @@ TextureImporter:
       name: armyicon_b_501
       rect:
         serializedVersion: 2
-        x: 1
-        y: 654
+        x: 817
+        y: 852
         width: 403
         height: 442
       alignment: 9
@@ -102,8 +102,8 @@ TextureImporter:
       name: armyicon_b_512
       rect:
         serializedVersion: 2
-        x: 1
-        y: 1568
+        x: 611
+        y: 1120
         width: 392
         height: 479
       alignment: 9
@@ -116,8 +116,8 @@ TextureImporter:
       name: armyicon_b_513
       rect:
         serializedVersion: 2
-        x: 395
-        y: 1586
+        x: 20
+        y: 1201
         width: 435
         height: 461
       alignment: 9
@@ -130,8 +130,8 @@ TextureImporter:
       name: armyicon_b_514
       rect:
         serializedVersion: 2
-        x: 1
-        y: 212
+        x: 349
+        y: 1474
         width: 433
         height: 440
       alignment: 9
@@ -145,7 +145,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1
-        y: 1098
+        y: 1579
         width: 429
         height: 468
       alignment: 9
