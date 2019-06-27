@@ -25,20 +25,23 @@ Unity Version：2017.4.23f1
 相关组件：LImageForTP.cs || AtlasInfo.cs || AtlasManager.cs || AtlasMap.cs  
 
 优点：  
-1.TP打图集更加可控，可使用多种不同模式打图集，使图集更加紧凑，多边形网格优化[(参考)](https://www.codeandweb.com/texturepacker/tutorials/using-spritesheets-with-unity)
+1.TP打图集更加可控，可使用多种不同模式打图集，使图集更加紧凑，多边形网格优化[(参考)](https://www.codeandweb.com/texturepacker/tutorials/using-spritesheets-with-unity)  
 2.可手动拆分图集透明通道（支持所有平台）
 
 ## 3.RawImage扩展功能（截屏模糊）
 
-相关组件：LRawImageForCapScreen.cs
+相关组件：LRawImageForCapScreen.cs  
 
-描述：便捷的截图模糊功能，多用于弹窗背景。
+描述：便捷的截图模糊功能，多用于弹窗背景。  
 
+![Image text](img-folder/UIEffect/CapScreen.png)
 ## 3.UI特效扩展
 
-相关组件：LUIDissolve.cs || LUIShiny.cs
+相关组件：LUIDissolve.cs || LUIShiny.cs  
 
-描述：实现UI的溶解和流光特效。
+描述：实现UI的溶解和流光特效。  
+
+![Image text](img-folder/UIEffect/UIEffect.png)
 
 
 
