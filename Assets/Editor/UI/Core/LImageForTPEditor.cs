@@ -43,9 +43,6 @@ namespace UnityEditor.UI
             if (EditorGUILayout.BeginFadeGroup(m_ShowTPAtlasProperty.faded))
                 EditorGUILayout.PropertyField(m_SpriteName, m_SpriteNameContent);
             EditorGUILayout.EndFadeGroup();
-
-            SetTPMat();
-
             #endregion
             
             SpriteGUI();
@@ -82,12 +79,14 @@ namespace UnityEditor.UI
             EditorGUILayout.EndFadeGroup();
             #endregion
 
+            #region LimageForTP
+            SetTPMat();
+            #endregion
+
             NativeSizeButtonGUI();
             serializedObject.ApplyModifiedProperties();
         }
 
-        private Sprite _lastSprite;
-        private string _lastSpriteName = "";
         private void SetTPMat()
         {
             LImageForTP image = target as LImageForTP;
@@ -109,28 +108,22 @@ namespace UnityEditor.UI
                 }
                 else
                 {
-                    if (m_Sprite.objectReferenceValue != _lastSprite)
+                    if (m_Sprite.objectReferenceValue != image.sprite)
                     {
-                        string sprName = m_Sprite.objectReferenceValue ? m_Sprite.objectReferenceValue.name : "";
-                        Debug.Log("m_Sprite change:"+sprName);
-                        ResetSpriteByName(sprName);
-                        _lastSprite = m_Sprite.objectReferenceValue as Sprite;
-                        _lastSpriteName = sprName;
+                        image.m_SpriteName = m_Sprite.objectReferenceValue ? m_Sprite.objectReferenceValue.name : "";
+                        m_SpriteName.stringValue = image.m_SpriteName;
+                        ResetSpriteByName(image.m_SpriteName);
                     }
-                    else if (!string.IsNullOrEmpty(m_SpriteName.stringValue) && !_lastSpriteName.Equals(m_SpriteName.stringValue))
+
+                    if (!string.IsNullOrEmpty(image.m_SpriteName) && !image.m_SpriteName.Equals(m_SpriteName.stringValue))
                     {
-                        string sprName = m_SpriteName.stringValue;
-                        Debug.Log("m_SpriteName change:"+sprName);
-                        ResetSpriteByName(sprName);
-                        _lastSprite = m_Sprite.objectReferenceValue as Sprite;
-                        _lastSpriteName = sprName;
+                        ResetSpriteByName(m_SpriteName.stringValue);
                     }
-                    else if (m_Material.objectReferenceValue == null)
+                    
+                    if (m_Material.objectReferenceValue == null)
                     {
                         string sprName = m_SpriteName.stringValue;
                         ResetSpriteByName(sprName);
-                        _lastSprite = m_Sprite.objectReferenceValue as Sprite;
-                        _lastSpriteName = sprName;
                     }
                 }
             }
