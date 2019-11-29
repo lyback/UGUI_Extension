@@ -8,7 +8,7 @@ Unity Version：2017.4.23f1
 
 |属性|描述|
 --|--|
-|Shape Type |裁剪形状|  
+|Shape Type |裁剪形状(正方形，矩形，圆形)|  
 |Anchors | 裁剪锚点，有八个方向|  
 |OffSet |UV偏移，用来微调裁剪位置，取值-1到1 |  
 |includePadding |计算锚点时，是否包括Padding的值，以保证取到原图大小的中心，但会出现截取到图集其他像素，需要配合ShapeScale使用 |  

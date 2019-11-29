@@ -25,6 +25,7 @@ namespace UnityEngine.UI
             None,
             Square,
             Circle,
+            Rectangle,
         }
         public enum ShapeAnchors
         {
@@ -38,6 +39,13 @@ namespace UnityEngine.UI
             BottomLeft,
             BottomRight,
         }
+        //裁剪模式（目前仅用在矩形裁剪中）
+        public enum CutMode
+        {   
+            Vertical = 1,    //竖直方向裁剪
+            Horizontal = 2,  //水平方向裁剪
+        }
+
         [SerializeField]
         private ShapeType m_ShapeType = ShapeType.None;
         public ShapeType shapeType { get { return m_ShapeType; } set { if (SetPropertyUtility.SetStruct(ref m_ShapeType, value)) SetVerticesDirty(); } }
@@ -58,6 +66,9 @@ namespace UnityEngine.UI
         [Range(0f, 1f), SerializeField]
         float m_CircleShape_FillPercent = 1f; // 显示比例
         public float circleShape_FillPercent { get { return m_CircleShape_FillPercent; } set { if (SetPropertyUtility.SetStruct(ref m_CircleShape_FillPercent, value)) SetVerticesDirty(); } }
+        [SerializeField]
+        private CutMode m_RectangleShape_CutMode = CutMode.Vertical;
+        public CutMode cutMode { get { return m_RectangleShape_CutMode;} set{ if(SetPropertyUtility.SetStruct(ref m_RectangleShape_CutMode, value)) SetVerticesDirty();}}
         #endregion
         /// Image's dimensions used for drawing. X = left, Y = bottom, Z = right, W = top.
         protected virtual Vector4 GetDrawingDimensions(bool shouldPreserveAspect)
@@ -131,6 +142,8 @@ namespace UnityEngine.UI
                             GenerateSimpleCircleSprite(toFill, preserveAspect);
                         else if (m_ShapeType == ShapeType.Square)
                             GenerateSimpleSquareSprite(toFill, preserveAspect);
+                        else if (m_ShapeType == ShapeType.Rectangle)
+                            GenerateSimpleRectangleSprite(toFill, preserveAspect);
                         else
                             GenerateSimpleSprite(toFill, preserveAspect);
                         break;
@@ -309,6 +322,66 @@ namespace UnityEngine.UI
             }
             return uv;
         }
+        //设置矩形图的UV
+        Vector4 SetRectangleShapeUV(Vector4 uv)
+        {
+            Sprite overrideSprite = this.overrideSprite;
+            if (overrideSprite == null)
+            {
+                return uv;
+            }
+
+            float rectWidth = this.rectTransform.rect.width;
+            float rectHeight = this.rectTransform.rect.height;
+
+            float textureWitdh = overrideSprite.rect.width;
+            float textureHeight = overrideSprite.rect.height;
+
+            if(m_RectangleShape_CutMode == CutMode.Horizontal)  //水平方向裁剪，竖直方向保持完整
+            {
+                float uvWidth = uv.z - uv.x;               
+                float preferredRectWidth = (rectHeight/textureHeight) * textureWitdh;
+                float widthScale = rectWidth/preferredRectWidth;                
+                float uvDeltaX = (1 - Mathf.Clamp01(widthScale)) * uvWidth;
+
+                if(shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.BottomLeft)
+                {
+                    uv.z -= uvDeltaX;
+                }
+                else if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.Bottom)
+                {
+                    uv.z -= uvDeltaX/2;
+                    uv.x += uvDeltaX/2;
+                }
+                else if (shapeAnchorsType == ShapeAnchors.Right || shapeAnchorsType == ShapeAnchors.TopRight || shapeAnchorsType == ShapeAnchors.BottomRight)
+                {
+                    uv.x += uvDeltaX;
+                }
+            }
+            else   //竖直方向裁剪，水平方向保持完整
+            {
+                float uvHeight = uv.w - uv.y;
+                float preferredRectHeight = (rectWidth/textureWitdh) * textureHeight;
+                float heightScale = rectHeight/preferredRectHeight;                
+                float uvDeltaY = (1 - Mathf.Clamp01(heightScale)) * uvHeight;
+
+                if(shapeAnchorsType == ShapeAnchors.Top || shapeAnchorsType == ShapeAnchors.TopLeft || shapeAnchorsType == ShapeAnchors.TopRight)
+                {
+                    uv.y += uvDeltaY;
+                }
+                else if (shapeAnchorsType == ShapeAnchors.Center || shapeAnchorsType == ShapeAnchors.Left || shapeAnchorsType == ShapeAnchors.Right)
+                {
+                    uv.y += uvDeltaY/2;
+                    uv.w -= uvDeltaY/2;
+                }
+                else if (shapeAnchorsType == ShapeAnchors.Bottom || shapeAnchorsType == ShapeAnchors.BottomLeft || shapeAnchorsType == ShapeAnchors.BottomRight)
+                {
+                    uv.w -= uvDeltaY;
+                }
+            }
+
+            return uv;
+        }
         /// <summary>
         /// 绘制圆形图片
         /// </summary>
@@ -402,6 +475,36 @@ namespace UnityEngine.UI
                 v_z += r.height + dx;
                 v_w += r.height;
             }
+
+            vh.AddVert(new Vector3(v_x, v_y), color, new Vector2(uv.x, uv.y));
+            vh.AddVert(new Vector3(v_x, v_w), color, new Vector2(uv.x, uv.w));
+            vh.AddVert(new Vector3(v_z, v_w), color, new Vector2(uv.z, uv.w));
+            vh.AddVert(new Vector3(v_z, v_y), color, new Vector2(uv.z, uv.y));
+
+            vh.AddTriangle(0, 1, 2);
+            vh.AddTriangle(2, 3, 0);
+        }
+        //绘制矩形图形
+        void GenerateSimpleRectangleSprite(VertexHelper vh, bool lPreserveAspect)
+        {            
+            Sprite activeSprite = this.overrideSprite;
+            Color32 color = this.color;
+            vh.Clear();
+            var uv = (activeSprite != null) ? Sprites.DataUtility.GetOuterUV(activeSprite) : Vector4.zero;
+            uv = SetRectangleShapeUV(uv);
+            uv = SetShapeScale(uv);
+            uv = SetShapeAnchorsOffset(uv);
+            if (m_ShapeAnchorsCalPadding)
+            {
+                uv = IncludePaddingUV(uv);
+            }
+
+            Rect r = GetPixelAdjustedRect();
+
+            float v_x = r.x;
+            float v_y = r.y;
+            float v_z = r.x + r.width;
+            float v_w = r.y + r.height;
 
             vh.AddVert(new Vector3(v_x, v_y), color, new Vector2(uv.x, uv.y));
             vh.AddVert(new Vector3(v_x, v_w), color, new Vector2(uv.x, uv.w));

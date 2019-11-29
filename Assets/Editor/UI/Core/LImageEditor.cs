@@ -34,10 +34,12 @@ namespace UnityEditor.UI
         SerializedProperty m_ShapeScale;
         SerializedProperty m_CircleShape_Segements;
         SerializedProperty m_CircleShape_FillPercent;
+        SerializedProperty m_RectangleShape_CutMode;
         protected AnimBool m_ShowShapeType;
         AnimBool m_ShowCommonShapeType;
         AnimBool m_ShowSquareShape;
         AnimBool m_ShowCircleShape;
+        AnimBool m_ShowRectangleShape;
         #endregion
         #region PolyImage属性
         protected SerializedProperty m_UsePolyMesh;
@@ -66,16 +68,19 @@ namespace UnityEditor.UI
             m_ShapeScale = serializedObject.FindProperty("m_ShapeScale");
             m_CircleShape_Segements = serializedObject.FindProperty("m_CircleShape_Segements");
             m_CircleShape_FillPercent = serializedObject.FindProperty("m_CircleShape_FillPercent");
+            m_RectangleShape_CutMode = serializedObject.FindProperty("m_RectangleShape_CutMode");
 
             var shapeTypeEnum = (LImage.ShapeType)m_ShapeType.enumValueIndex;
             m_ShowShapeType = new AnimBool(m_Sprite.objectReferenceValue != null && (Image.Type)m_Type.enumValueIndex == Image.Type.Simple);
             m_ShowShapeType.valueChanged.AddListener(Repaint);
-            m_ShowCommonShapeType = new AnimBool(shapeTypeEnum == LImage.ShapeType.Square || shapeTypeEnum == LImage.ShapeType.Circle);
+            m_ShowCommonShapeType = new AnimBool(shapeTypeEnum != LImage.ShapeType.None);
             m_ShowCommonShapeType.valueChanged.AddListener(Repaint);
             m_ShowSquareShape = new AnimBool(shapeTypeEnum == LImage.ShapeType.Square);
             m_ShowSquareShape.valueChanged.AddListener(Repaint);
             m_ShowCircleShape = new AnimBool(shapeTypeEnum == LImage.ShapeType.Circle);
             m_ShowCircleShape.valueChanged.AddListener(Repaint);
+            m_ShowRectangleShape = new AnimBool(shapeTypeEnum == LImage.ShapeType.Rectangle);
+            m_ShowRectangleShape.valueChanged.AddListener(Repaint);
             #endregion
             #region PolyImage
             m_UsePolyMesh = serializedObject.FindProperty("m_UsePolyMesh");
@@ -95,6 +100,7 @@ namespace UnityEditor.UI
             m_ShowCommonShapeType.valueChanged.RemoveListener(Repaint);
             m_ShowSquareShape.valueChanged.RemoveListener(Repaint);
             m_ShowCircleShape.valueChanged.RemoveListener(Repaint);
+            m_ShowRectangleShape.valueChanged.RemoveListener(Repaint);
             #endregion
             #region PolyImage
             m_ShowUsePolyMesh.valueChanged.RemoveListener(Repaint);
@@ -159,9 +165,10 @@ namespace UnityEditor.UI
 
             ++EditorGUI.indentLevel;
             {
-                m_ShowCommonShapeType.target = typeEnum == LImage.ShapeType.Square || typeEnum == LImage.ShapeType.Circle;
+                m_ShowCommonShapeType.target = typeEnum != LImage.ShapeType.None;
                 m_ShowSquareShape.target = (!m_ShapeType.hasMultipleDifferentValues && typeEnum == LImage.ShapeType.Square);
                 m_ShowCircleShape.target = (!m_ShapeType.hasMultipleDifferentValues && typeEnum == LImage.ShapeType.Circle);
+                m_ShowRectangleShape.target = (!m_ShapeType.hasMultipleDifferentValues && typeEnum == LImage.ShapeType.Rectangle);
 
                 if (EditorGUILayout.BeginFadeGroup(m_ShowCommonShapeType.faded))
                 {
@@ -182,6 +189,12 @@ namespace UnityEditor.UI
                     EditorGUILayout.PropertyField(m_CircleShape_Segements);
                 }
                 EditorGUILayout.EndFadeGroup();
+
+                if (EditorGUILayout.BeginFadeGroup(m_ShowRectangleShape.faded))
+                {
+                    EditorGUILayout.PropertyField(m_RectangleShape_CutMode, new GUIContent("Cut Mode"));
+                }
+                EditorGUILayout.EndFadeGroup(); 
             }
             --EditorGUI.indentLevel;
         }
